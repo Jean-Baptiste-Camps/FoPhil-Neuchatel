@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Essai d'encodage des Characteres de Cureau de la Chambre</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Encodé par <persName>Simon Gabay</persName> en <date>2018</date></p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Il s'agit des <title>Characteres des Passions</title> de <persName>Marin Cureau de La Chambre (<date>1662</date>)</persName></p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   
+  <text>
+     <front>
+        <pb n="np" facs="http://gallica.bnf.fr/ark:/12148/bpt6k1510402v/f7.image"/>
+        
+        <titlePage rend="center">
+           <docTitle>
+              <titlePart type="main">
+                 <lb/>LES
+                 <lb/>CHARACTERES
+                 <lb/>DES PASSIONS.
+              </titlePart>
+              <titlePart type="sub">
+                 <lb/>DERNIER VLOLVME
+                 <lb/>Où il eſt traitté de la Nature des
+                 <lb/>Cauſes &amp; des Effects
+                 <lb/>DES LARMES,
+                 <lb/>DE LA CRAINTE,
+                 <lb/>DV DESESPOIR.
+              </titlePart>
+           </docTitle>
+           <byline>
+              <lb/>Par le Sieur <docAuthor>DE LA CHAMBRE</docAuthor>, Conſeiller du Roy en ſes
+              <lb/>Conſeils, &amp; premier Medecin Ordinaire de ſa Majeſté.
+              <lb/> de la Garde.
+           </byline>
+           <figure>
+              <graphic url="title_fleuron.jpg"/>
+           </figure>
+           <docImprint>
+              <lb/>A <pubPlace>PARIS</pubPlace>,
+              <lb/>Chez <publisher>IACQVES D'ALLIN</publisher>,ruë Saint Iacques, au coin de
+              <lb/>la ruë de la Parcheminerie, à l'Image S. Eſtienne.
+              <lb/><docDate when="1662">M. DC. LXII.</docDate>
+           </docImprint>
+           <imprimatur>Auec Priuilege de ſa Majeſté.</imprimatur>
+        </titlePage>
+        
+        <div type="epistle" subtype="dedication">
+           
+           <figure>
+              <graphic url="dedication_headpiece.jpg"/>
+           </figure>
+           
+           <head>
+              <lb/>AV ROY.
+           </head>
+           
+           <p>
+              <lb n="1"/><hi rend="initial" facs="dedication_initial1.jpg">S</hi>ire
+           </p>
+           
+           <p rend="italic">
+              <lb n="2" type="indent"/>Quoy que les <hi rend="regular">larmes</hi> ſe vantent
+              <lb n="3"/>d'auoir de fauorables entrées dans le
+              <lb n="4"/>Ciel &amp; de plaire meſme au ſouuerain
+              <lb n="5"/>Monarque de l'Vniuers; Elles n'oſeroient
+              
+              <fw type="sig" n="ã3" place="bot-right">ã iij</fw>
+              <pb n="np" facs="http://gallica.bnf.fr/ark:/12148/bpt6k1510402v/f10.image"/>
+              <fw type="header" place="top-center">EPISTRE.</fw>
+              
+              <lb n="6"/>pourtant aujourd'huy ſe promettre les
+              <lb n="7"/>meſmes auantages aupres de Voſtre
+              <lb n="8"/>Majeſté. Elles ſçauent que Vous ne tra-
+              <lb break="no" n="9"/>uailleZ qu'à les bannir de la France; que
+              <lb n="10"/>tous vos ſoint ſont occupez à en tarir les
+              <lb n="11"/>ſources, &amp; qu'eſtant filles de la Dou-
+              <lb break="no" n="12"/>leur elles ne peuuent eſtre bien receües
+              <lb n="13"/>dans vne Cour où leurs Ennemis ont vn
+              <lb n="14"/>ſi grand pouuoir. I'ay beau leur repre-
+              <lb break="no" n="15"/>ſenter qu'elles ont contribué à Voſtre
+              <lb n="16"/>Naiſſance; que Vous auez eſté vn ve-
+              <lb break="no" n="17"/>ritable Enfant de Larmes; &amp; que cel-
+              <lb break="no" n="18"/>les que la plus Auguſte de toutes les
+              <lb n="19"/>Reynes a ſi ſouuent reſpanduës, ont at-
+              <lb break="no" n="20"/>tiré la pluſpart des Benedictions que
+              <lb n="21"/>Dieu a versées ſur Voſtre Eſtat &amp; ſur
+              <lb n="22"/>Voſtre Sacrée Perſonne. Ie leur dis meſ-
+              <lb break="no" n="23"/>me que ie ne pretens pas les faire paſ-
+              <lb break="no" n="24"/>ſer pour vn Preſent que ie faſſe à V. M.
+              <lb n="25"/>mais pour vn Trophée que ie veux éle-
+              <lb break="no" n="26"/>uer à ſa Gloire &amp; pour vn Monument
+              
+              <pb n="np" facs="http://gallica.bnf.fr/ark:/12148/bpt6k1510402v/f11.image"/>
+              <fw type="header" place="top-center">EPISTRE.</fw>
+              
+              <lb n="27"/>de la Victoire qu'elle a remportée ſur les
+              <lb n="28"/>malheurs de la France. Ie leur dis qu'el-
+              <lb break="no" n="29"/>les ne ſeruiront que d'vn Tableau qui
+              <lb n="30"/>repreſentera l'hiſtoire des Maux que
+              <lb n="31"/>nous auons ſoufferts; Et qu'il eſt neceſſai-
+              <lb break="no" n="32"/>re, puis qu'elles ne doiuent plus couler
+              
+              <gap reason="sampling"/>
+              
+              <lb/>ſon regne cauſera à tous les ſiecles à venir;
+              <lb/>&amp; quelle eſt enfin la <hi rend="regular">Paſſion</hi> qu'a pour ſa
+              <lb/>Gloire
+           </p>
+           
+           <p>
+              <lb/>SIRE,
+              <lb/>de V.M.
+              <lb rend="right"/>Le tres-humble, tres-obeïſſant
+              <lb rend="right"/>&amp; tres-fidelle Sujet
+              <lb rend="right"/>LA CHAMBRE
+           </p>
+
+        </div>
+     
+     </front>
+     
+     <body>
+        
+        <pb n="1" facs="http://gallica.bnf.fr/ark:/12148/bpt6k1510402v/f13.image"/>
+        <fw type="pageNum" place="top-right">1</fw>
+        
+        <div type="caractere" n="larmes">
+           
+           <figure>
+              <graphic url="larmes_part1_headpiece.jpg"/>
+           </figure>
+           
+           <head rend="center">
+              <lb n="1"/>LES
+              <lb n="2"/>CHARACTERES
+              <lb n="3"/>DES LARMES
+           </head>
+           
+           <div type="part" n="1">
+              
+              <head rend="center-it">
+                 <lb n="4"/>PREMIERE PARTIE.
+              </head>
+              
+              <p>
+                 <lb n="5"/><hi rend="initial" facs="larmes_part1_initial.jpg">L</hi>ERIS ayant trouué place
+                 <lb n="6"/>parmy les Characters des
+                 <lb n="7"/>Paſſions, nous ne pouuons
+                 <lb n="8"/>dénier aux Larmes le rang
+                 <lb n="9"/>qu'elles y demandent. Elles
+                 <lb n="10"/>ont des prieres &amp; des ſollicitations trop
+                 <lb n="11"/>preſſantes pour leur pouuoir refuſer ce qui
+                 <lb n="12"/>leur eſt deu par iuſtice, puiſqu'elles ſont
+                 <lb n="13"/>en poſſeſſion d'obtenir les choſes meſmes
+                 
+                 <fw type="sig" n="A1" place="bot-right">A</fw>
+                 <pb n="2" facs="http://gallica.bnf.fr/ark:/12148/bpt6k1510402v/f14.image"/>
+                 <fw type="pageNum" place="top-left">2</fw>
+                 <fw type="header" place="top-center">LES CHARACTERES</fw>
+                 
+                 <lb n="14"/>qui ne ſ>ont que de grace. Car bien qu'el-
+                 <lb break="no" n="15"/>les n'ayent eſté priſes iuſques icy que pour
+                 <lb n="16"/>vn effet &amp; vn Charactere de la Douleur;
+                 <lb n="17"/>Elles pretendent neantmoins que l'Ame
+                 <lb n="18"/>leur ayant affecté vn mouuement parti-
+                 <lb break="no" n="19"/>culier &amp; vn motif different de celuy de la
+                 <lb n="20"/>Triſteſſe; elles meritent d'entrer dans l'Or-
+                 <lb break="no" n="21"/>dre &amp; dans la Famille des Paſſions, &amp; de
+                 <lb n="22"/>paſſer pluſtoſt pour les Compagnes, ou
+                 <lb n="23"/>pour les Filles de la Douleur que pour ſes
+                 <lb n="24"/>Suiuantes. Et certainement elles font vn
+                 <lb n="25"/>party ſi conſiderable dans l'Empire de
+                 <lb n="26"/>l'Ame; Elles occupent vne ſi grande por-
+                 <lb break="no" n="27"/>tion de la vie naturelle &amp; ciuile, &amp; ſont
+                 <lb n="28"/>meſme ſi fauoriſées du Ciel qu'elles ont
+                 <lb n="29"/>droit de nous demander vn Chapitre tout
+                 <lb n="30"/>entier, qui puiſſe faire connoiſtre leur na-
+                 <lb break="no" n="31"/>ture, les cauſes &amp; leurs vſages.
+              </p>
+              
+              <p>
+                 <lb n="32"/><hi rend="dropcap">Q</hi>VAND on a dit que les Larmes
+                 <lb n="33"/>eſtoient le ſang de l'Ame, il ne ſe
+                 <lb n="34"/>pouuoit rien dire de plus ingenieux, ny
+                 <lb n="35"/>qui repreſentaſt mieux leur nature: Non
+                 <lb n="36"/>ſeulement parce qu'elles coulent des bleſ-
+                 <lb break="no" n="37"/>ſeures de l'Ame, comme le Sang de celles
+                 
+                 <pb n="3" facs="http://gallica.bnf.fr/ark:/12148/bpt6k1510402v/f15.image"/>
+                 <fw type="header" place="top-center">DES LARMES <hi rend="italic">I. Partie</hi></fw>
+                 <fw type="pageNum" place="top-right">3</fw>
+                 
+                 <lb n="38"/>du Corps: Mais encore parce que comme le
+                 <lb n="39"/>Sang tout compoſé qu'il eſt de diuerſes
+                 <lb n="40"/>humeurs, porte le nom de celle qui en
+                 <lb n="41"/>fait la principale partie; On donne auſſi
+                 <lb n="42"/>aux Larmes le nom du plus conſiderable
+                 <lb n="43"/>Charactere de la Paſſion qu'elles deſi-
+                 <lb break="no" n="44"/>gent.
+              </p>
+              
+              <p>
+                 <lb n="45"/>Car il ne faut pas croire que par le mot
+                 <lb n="46"/>de <hi rend="italic">Pleurs</hi> &amp; de <hi rend="italic">Larmes</hi> on entende ſeule-
+                 <lb break="no" n="47"/>ment ces goutes d'eau qui ſortent des yeux
+                 <lb n="48"/>puis que l'on dit que la vie de l'Homme
+                 <lb n="49"/>commence par les Larmes, quoy qu'il ne
+                 <lb n="50"/>ſoit capable d'en ietter que quarante iours
+                 <lb n="51"/>apres qu'il eſt venu au monde; Et qu'il n'y
+                 <lb n="52"/>a rien de ſi ordinaire que de dire que les
+                 <lb n="53"/>Enfans pleurent, &amp; que les Hommes pleu-
+                 <lb break="no" n="54"/>rent leurs pechez, quoy que ſouuent les
+                 <lb n="55"/>vns ny les autres ne répandent point de
+                 <lb n="56"/>Larmes. Mais ſous ce mot on comprend
+                 <lb n="57"/>les cris, les plaintes, l'air du viſage, le
+                 <lb n="58"/>mouuement des parties &amp; les autres effets
+                 <lb n="59"/>qui accompagnent cette pluye orageuſe
+                 <lb n="60"/>qui tombe des yeux. Car il eſt vray que
+                 <lb n="61"/>c'eſt vn Orage où la pluye eſt meſlée auec
+                 <lb n="62"/>le vent des ſoûpirs &amp; des ſanglots; auec
+                 
+                 <fw type="sig" n="A2" place="bot-right">A ij</fw>
+                 <pb n="4" facs="http://gallica.bnf.fr/ark:/12148/bpt6k1510402v/f16.image"/>
+                 <fw type="pageNum" place="top-left">4</fw>
+                 <fw type="header" place="top-center">LES CHARACTERES</fw>
+                 
+                 <lb n="63"/>l'éclat &amp; le bruit des cris &amp; des gemiſſe-
+                 <lb break="no" n="64"/>mens; où enfin toute la ſerenité du viſage
+                 <lb n="65"/>ſe perd &amp; ſe change en vn air ſombre &amp;
+                 <lb n="66"/>tenebreux. Et ce ſont là les choſes
+                 <lb n="67"/>qui doiuent entrer dans le Tableau que nous
+                 <lb n="68"/>en deuons faire ſuiuant la methode que
+                 <lb n="69"/>nous auons tenuë iuſques icy.
+              </p>
+              
+              <gap reason="sampling"/>
+              
+           </div>
+           
+        </div>
+        
+     </body>
+     
+     <back>
+        
+        <div type="errata">
+           <head rend="center">ERRATA.</head>
+           <list>
+              <item>Page 10. ligne 6. pleurs, liſez pleurer.</item>
+              <item>Page 25. ligne 13. veine, liſ. vrine.</item>
+              <item>Page 121. ligne 18. qu'elle y a, liſ. qu'elle a.</item>
+              <item>Page 139. ligne 18. ſe pare, liſ. ſepare.</item>
+              <item>Page 168. ligne 9. trop-toſt, liſ. trop-toſt cuit.</item>
+              <item>Page 175. ligne 24. ſoleil, liſ. l'œil.</item>
+              <item>Page 176. ligne 18. ſeul, liſ. ſeule.</item>
+              <item>Page 273. ligne 17. le, liſ. les.</item>
+              <item>Page 357. ligne 23. fuir;tout, liſ. fuir tout.</item>
+              <item>Page 395. ligne 23. ces, liſ. ſes.</item>
+              <item>Page 455. ligne 4. eſmeuës, liſ. eſmeus.</item>
+              <item>Page 490. ligne 11. les, liſ. ſes.</item>
+              <item>Page 516. ligne 2. reuerſement, liſ. renuerſement.</item>
+           </list>
+        </div>
+        
+        <div type="erratum_autreVersion">
+           <head rend="center">ERRATA.</head>
+           <table rows="13" cols="4">
+              <row>
+                 <cell>Page 10.</cell>
+                 <cell>ligne 6.</cell>
+                 <cell>pleurs,</cell>
+                 <cell>liſez pleurer.</cell>
+              </row>
+              <row>
+                 <cell>Page 25.</cell>
+                 <cell>ligne 13.</cell>
+                 <cell>veine,</cell>
+                 <cell>liſ. vrine.</cell>
+              </row>
+              <row>
+                 <cell>Page 121.</cell>
+                 <cell>ligne 18.</cell>
+                 <cell>qu'elle y a,</cell>
+                 <cell>liſ. qu'elle a.</cell>
+              </row>
+              <row>
+                 <cell>Page 139.</cell>
+                 <cell>ligne 18.</cell>
+                 <cell>ſe pare,</cell>
+                 <cell>liſ. ſepare.</cell>
+              </row>
+              <row>
+                 <cell>Page 168.</cell>
+                 <cell>ligne 9.</cell>
+                 <cell>trop-toſt,</cell>
+                 <cell>liſ. trop-toſt cuit.</cell>
+              </row>
+              <row>   
+                 <cell>Page 175.</cell>
+                 <cell>ligne 24.</cell>
+                 <cell>ſoleil,</cell>
+                 <cell>liſ. l'œil.</cell>
+              </row>
+              <row>
+                 <cell>Page 176.</cell>
+                 <cell>ligne 18.</cell>
+                 <cell>ſeul,</cell>
+                 <cell>liſ. ſeule.</cell>
+              </row>
+              <row>
+                 <cell>Page 273.</cell>
+                 <cell>ligne 17.</cell>
+                 <cell>le,</cell>
+                 <cell>liſ. les.</cell>
+              </row>
+              <row>
+                 <cell>Page 357.</cell>
+                 <cell>ligne 23.</cell>
+                 <cell>fuir;tout,</cell>
+                 <cell>liſ. fuir tout.</cell>
+              </row>
+              <row>
+                 <cell>Page 395.</cell>
+                 <cell>ligne 23.</cell>
+                 <cell>ces,</cell>
+                 <cell>liſ. ſes.</cell>
+              </row>
+              <row>
+                 <cell>Page 455.</cell>
+                 <cell>ligne 4.</cell>
+                 <cell>eſmeuës,</cell>
+                 <cell>liſ. eſmeus.</cell>
+              </row>
+              <row>
+                 <cell>Page 490.</cell>
+                 <cell>ligne 11.</cell>
+                 <cell>les,</cell>
+                 <cell>liſ. ſes.</cell>
+              </row>
+              <row>
+                 <cell>Page 516.</cell>
+                 <cell>ligne 2.</cell>
+                 <cell>reuerſement, liſ.</cell>
+                 <cell>renuerſement.</cell>
+              </row>
+           </table>
+        </div>
+        
+        <div type="privilege">
+           <head rend="center">Extraict du Priuilege du Roy.</head>
+           <p>
+              <lb n="1"/><hi rend="dropcap">P</hi>AR Lettres Patentes du Roy, données à
+              <lb n="2"/><placeName>Paris</placeName> le <date when="1662-06-28">28. Iuin 1662</date>. Signées, par le Roy
+              <lb n="3"/>en ſon Conſeil, <persName>COVPEAU</persName>; &amp; ſcellées du grand
+              <lb n="4"/>Sceau de cire jaune; Il eſt permis au Sieur <persName>DE
+                 <lb n="5"/>LA CHAMBRE</persName>, de faire imprimer le dernier
+              <lb n="6"/>VOLUME des <title rend="italic">Characteres des Paſſions</title>, où il eſt
+              <lb n="7"/>traité <hi rend="italic">de la Nature &amp; des Effets des Larmes, de la
+                 <lb n="8"/>Crainte, &amp; Du Deſeſpoir</hi>, par tel Imprimeur &amp;
+              <lb n="9"/>Libraire qu'il voudra choiſir, pendant le temps
+              <lb n="10"/>&amp; eſpace de vingt ans: Et deffences ſont faites
+              <lb n="11"/>à tous autres Imprimeurs &amp; Libraires de contre-
+              <lb n="12"/>faire ny faire conrefaire ledit Liure, pendant
+              <lb n="13"/>ledit temps, à peine de trois mil liures d'amen-
+              <lb n="14"/>de, &amp; de tous dépens, dommages &amp; intereſts,
+              <lb n="15"/>ainſi qu'il eſt plus au long contenu eſdites Let-
+              <lb n="16"/>tres de Priuilege.
+              <lb n="17"/>
+           </p>
+           
+           
+           <p>
+              <lb n="18" rend="indent"/>Et ledit Sieur<persName> DE LA CHAMBRE</persName> a cedé &amp;
+              <lb n="19"/>tranſporté ſon droict de Priuilege à <persName>IACQVES
+                 <lb n="20"/>DALLIN</persName>, Marchand Libraire, pour en joüir
+              <lb n="21"/>pendant le temps porté par iceluy, ſuiuant l'ac-
+              <lb n="22"/>cord fait entr'eux.
+           </p>
+        </div>
+        
+        <div type="colophon">
+           <p rend="center">
+              <lb n="23" rend="indent"/>Acheué d'imprimer le <date when="1662-07-11">vnZiéme Iuillet 1662</date>.
+           </p>
+        </div>
+        
+     </back>
+
+  </text>
+</TEI>

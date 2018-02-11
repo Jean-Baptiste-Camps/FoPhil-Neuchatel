@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Essai d'encodage des Characteres de Cureau de la Chambre</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Encodé par <persName>Simon Gabay</persName> en <date>2018</date></p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Il s'agit des <title>Characteres des Passions</title> de <persName>Marin Cureau de La Chambre (<date>1662</date>)</persName></p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   
+  <text>
+     <front>
+        
+        <titlePage rend="center">
+           <docTitle>
+              <titlePart type="main">
+                 <lb/>LES
+                 <lb/>CHARACTERES
+                 <lb/>DES PASSIONS.
+              </titlePart>
+              <titlePart type="sub">
+                 <lb/>DERNIER VLOLVME
+                 <lb/>Où il eſt traitté de la Nature des
+                 <lb/>Cauſes &amp; des Effects
+                 <lb/>DES LARMES,
+                 <lb/>DE LA CRAINTE,
+                 <lb/>DV DESESPOIR.
+              </titlePart>
+           </docTitle>
+           <byline>
+              <lb/>Par le Sieur <docAuthor>DE LA CHAMBRE</docAuthor>, Conſeiller du Roy en ſes
+              <lb/>Conſeils, &amp; premier Medecin Ordinaire de ſa Majeſté.
+              <lb/> de la Garde.
+           </byline>
+           <figure>
+              <graphic url="title_fleuron.jpg"/>
+           </figure>
+           <docImprint>
+              <lb/>A <pubPlace>PARIS</pubPlace>,
+              <lb/>Chez <publisher>IACQVES D'ALLIN</publisher>,ruë Saint Iacques, au coin de
+              <lb/>la ruë de la Parcheminerie, à l'Image S. Eſtienne.
+              <lb/><docDate when="1662">M. DC. LXII.</docDate>
+           </docImprint>
+           <imprimatur>Auec Priuilege de ſa Majeſté.</imprimatur>
+        </titlePage>
+       
+     </front>
+     
+     <body>
+        <div/>
+     </body>
+
+  </text>
+</TEI>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Paris, BNF, Fr 12768</title>
+            <respStmt>
+               <persName xml:id="SG">Simon Gabay</persName>
+               <resp><date>2018</date>Editeur scientifique</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1">
+               <date type="publication" n="1" when="2017-11-12">12/11/2017</date>
+               <date type="revision" n="1" when="2018-01-01">01/01/2018</date>
+            </edition>
+            <respStmt>
+               <persName ref="#SG">Simon Gabay</persName>
+               <resp><date>janvier 2018</date>Contrôle de la transcription</resp>
+            </respStmt>
+         </editionStmt>
+         <extent>37KB</extent>
+         <publicationStmt>
+            <authority>Université de Neuchâtel</authority>
+            <address>
+               <street>Espace Louis Agassiz 1</street>
+               <postCode>2000</postCode>
+               <settlement>Neuchâtel</settlement>
+            </address>
+            <availability status="restricted">
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Edition diplomatique de la correspondance de Madame de Sévigné sur ses manuscrits autographes.</note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <country>France</country>
+                  <settlement>Paris</settlement>
+                  <institution>Bibliothèque nationale de France</institution>
+                  <repository>Département des manuscrits</repository>
+                  <collection>Fonds français</collection>
+                  <idno type="shelfmark">12768</idno>
+                  <altIdentifier type="old">
+                     <collection>Supplément français</collection>
+                     <idno>1133</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <head>Recueil de lettres autographes de grands personnages des XVIIe et XVIIIe siècles.</head>
+               <msContents>
+                  <p>Recueil factice, cf. la description par partie. </p>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <material>papier</material>
+                        </support>
+                        <extent>
+                           <measure unit="page" n="327">327 pages</measure>
+                        </extent>
+                        <foliation>Chaque page est numérotée.</foliation>
+                     </supportDesc>
+                  </objectDesc>
+                  <bindingDesc>
+                     <binding>
+                        <p>Demi-reliure.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <p>L'histoire du manuscrit est inconnue.</p>
+               </history>
+               <additional>
+                  <surrogates>
+                     <listBibl>
+                        <bibl>
+                           <title>Microfilm en noir et blanc</title>
+                           <idno>MF 33833</idno>
+                        </bibl>
+                        <bibl>
+                           <title>Matrice</title>
+                           <idno>R 10543</idno>
+                        </bibl>
+                        <bibl>
+                           <title>Version numérique en ligne</title>
+                           <idno>ark:/12148/btv1b90070437</idno>
+                           <ptr target="http://gallica.bnf.fr/ark:/12148/btv1b90070437"/>
+                        </bibl>
+                     </listBibl>
+                  </surrogates>
+               </additional>
+               <msPart xml:id="msPart1">
+                  <msIdentifier>
+                     <idno>Français 12768, pp. 3-6</idno>
+                  </msIdentifier>
+                  <msContents>
+                     <msItem>
+                        <locus scheme="page" from="3" to="6">pp. 3-6</locus>
+                        <author>
+                           <persName xml:id="sevigne">Madame de Sévigné</persName>
+                        </author>
+                        <docDate when="1690-07-12">17 juin 1671</docDate>
+                        <incipit>je vous écrit avec un serrement de coeur</incipit>
+                        <explicit>et que je l'aime toujours</explicit>
+                        <filiation type="autograph"/>
+                     </msItem>
+                  </msContents>
+               </msPart>
+               <msPart xml:id="msPart9">
+                  <msIdentifier>
+                     <idno>Français 12768, pp. 79-90</idno>
+                  </msIdentifier>
+                  <msContents>
+                     <msItem>
+                        <locus scheme="page" from="79" to="90">pp. 79-90</locus>
+                        <author>
+                           <persName ref="#sevigne">Madame de Sévigné</persName>
+                        </author>
+                        <author>
+                           <persName>Charles de Sévigné</persName>
+                        </author>
+                        <docDate when="1690-07-12">12 juillet 1690</docDate>
+                        <incipit>ce fut un grand jour, ma chère bonne</incipit>
+                        <explicit>la base veut monter au rand de la corniche et finit par juste Ciel</explicit>
+                        <filiation type="autograph"/>
+                     </msItem>
+                  </msContents>
+               </msPart>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>FoPhil: école d'hiver de l'université de Neuchâtel</p>
+         </projectDesc>
+         <editorialDecl>
+            <correction>
+               <p>Les corrections sont encodées</p>
+            </correction>
+            <hyphenation>
+               <p>La césure des mots en fin de ligne respecte l'original</p>
+            </hyphenation>
+            <normalization>
+               <p>Aucune intervention (segmentation, abréviations, etc.)</p>
+            </normalization>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy xml:id="rameau">
+               <bibl>
+                  Répertoire d’autorité-matière encyclopédique et alphabétique unifié (Rameau) de la <orgName>Bibliothèque nationale de France</orgName>
+                  <ptr target="http:rameau.bnf.fr"/>
+               </bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc corresp="msPart1">
+            <correspAction type="sent">
+               <persName ref="#sevigne">Madame de Sévigné</persName>
+               <placeName>Château des Rochers</placeName>
+               <date when="1690-07-12">mercredi 17 juin 1671</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName>M. d'Hacqueville</persName>
+            </correspAction>
+         </correspDesc>
+         <correspDesc corresp="msPart9">
+            <correspAction type="sent">
+               <persName ref="#sevigne">Madame de Sévigné</persName>
+               <persName>Charles de Sévigné</persName>
+               <placeName>Château des Rochers</placeName>
+               <date when="1690-07-12">mercredi 12 juillet 1690</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="grignan">Madame de Grignan</persName>
+            </correspAction>
+            <correspContext>
+               <p>Réponse à la lettre du <date when="1690-07-01">premier juillet</date></p>
+            </correspContext>
+         </correspDesc>
+         <textClass>
+            <keywords scheme="rameau">
+               <list>
+                  <item>Littérature française -- Femmes écrivains</item>
+                  <item>Littérature française -- 17e siècle</item>
+                  <item>Correspondance</item>
+               </list>
+            </keywords>
+         </textClass>
+         <langUsage>
+            <language ident="fr">Français moderne</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2018-02-01" who="#SG">
+            <persName>Simon Gabay</persName>
+            Correction de la transcription.
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   
+  <text>
+      <body>
+         <p></p>
+      </body>
+  </text>
+</TEI>

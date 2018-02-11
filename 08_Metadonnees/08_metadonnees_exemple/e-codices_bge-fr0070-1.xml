@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+	version="5.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ../xsd/TEI-P5/1.7/tei-p5-e-codices_1.7.xsd"
+	xml:lang="deu"
+	xml:id="eCod_bge-fr0070-1"
+	xml:base="http://www.e-codices.unifr.ch/en/description/bge/fr0070-1">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>La Bouquechardière, de <persName role="author" key="pnd_10436369X">Jean de Courcy</persName>, seigneur de Bourg-Achard (1360-1431)</title>
+			</titleStmt>
+			<editionStmt>
+				<edition>Elektronische Version nach TEI P5.1</edition>
+				<respStmt>
+					<resp>Konvertierung nach TEI: <persName>Marina Bernasconi</persName>
+						<date when="2014-01-15">15.01.2014</date>
+					</resp>
+					<name>e-codices - Virtual Manuscript Library of Switzerland</name>
+				</respStmt>
+			</editionStmt>
+			<publicationStmt>
+				<availability status="restricted" n="cc-by">
+					<licence target="http://creativecommons.org/licenses/by/3.0/">
+						<p>Creative Commons Attribution 3.0 Unported (CC BY 3.0)</p>
+					</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc xml:id="bge-fr0070-1" xml:lang="fra">
+					<msIdentifier>
+						<settlement>Genève</settlement>
+						<repository>Bibliothèque de Genève</repository>
+						<idno>Ms. fr. 70/1</idno>
+						</msIdentifier>
+					<head>
+						<title>La Bouquechardière, de <persName role="author" key="pnd_10436369X">Jean de Courcy</persName>, seigneur de Bourg-Achard (1360-1431)</title>
+						<origPlace>Atelier lyonnais (voir Décoration)</origPlace>
+						<origDate notBefore="1457" notAfter="1482">Seconde moitié du XVe siècle, ca. 1457-1482 (Voir <hi rend="small-caps">Fontannaz</hi>, p. 18)</origDate>
+					</head>
+					<msContents>
+						<summary>Compilation d’histoire ancienne sur la création du monde, la ville de Thèbes, la guerre de Troie, les faits de Philippe et Alexandre le Grand et l’histoire des Macchabées. L’œuvre est divisée en 6 livres : 1. Histoire de la Grèce. 2. Troie et sa destruction. 3. Histoire des Troyens échappés à la ruine de leur cité. 4. Les Assyriens. 5. Les Macédoniens. 6. Les Macchabées<lb/>
+							Le premier volume contient les trois premiers livres  (Livres 1-3)<lb/>
+						</summary>
+						<msItem>
+							<locus from="2r">F. 2</locus>
+							<note>(<quote>prologue</quote>)</note>
+							<incipit> Ou nom du Pere, du glorieux Filz, et du benoist Sainct Esperit, trois personnes en une subsustance. Moy, Jehan de Coercy, chevalier normant, plain de jours, vuyde de jeunesse, desirant l’estat de paix et de repox</incipit>
+							<explicit><note><locus from="240r">F. 240</locus></note> En laquelle benoiste et sainctefyee gloire nous vueille heriter Dieu Nostre Seigneur qui vit et regne pardurablement par tous les siecles des siecles. Amen. Explicit liber tercius</explicit>
+						</msItem>
+						<msItem>
+							<locus from="2r" to="2v">fol. 2-2v°</locus> 
+							<title>prologue</title>
+						</msItem>
+						<msItem>
+							<locus from="2v" to="3v">fol. 2v°-3v°</locus>
+							<title>table des chapitres du 1er livre</title>
+						</msItem>
+						<msItem>
+							<locus from="4r" to="111v">fol. 4-111v°</locus>
+							<title>1er livre</title> 
+						
+								<msItem>
+									<locus from="5r">f. 5</locus> 
+									<title>« De Noé et du grant deluge qui advint en son temps. Premier chappitre »</title>
+								</msItem>
+								<msItem>
+									<locus from="6r">f. 6</locus>
+									<title>« Des trois filz Noé et comme la noblesse fut premier establie en Grece. IIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="7v">f. 7v</locus>
+									 <title>« Du roy Ignacus qui fut le premier regnant en Grece en royal. IIe c.»</title>
+									<note>(le rubricateur s’est trompé dans la numérotation du chapitre. Il s’agit en fait du chapitre III)</note>
+								</msItem>
+								<msItem>
+									<locus from="8r">f. 8</locus>
+									 <title>« Du second roy nommé Pharoneus et comme il regna. IIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="10r">f. 10</locus>
+									 <title>« Du roy Apiz et de son ante et de aultres roys qui regnerent en Grece. Ve chap. »</title>
+								</msItem>
+								<msItem>
+									<locus from="11r">f. 11</locus>
+									 <title>« Du roy Abdras qui regna en Cophes et de son filz Gorgonis. VIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="12v">f. 12v</locus>
+									 <title>« De Saturnus premier roy de Crette et de son filz Jupiter qui de son regne le degecta. VIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="13v">f. 13v</locus>
+									 <title>« De Jupiter et d’autres plusieurs pourquoy ilz furent dieux clamez du peuple. VIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="15r">f. 15</locus>
+									 <title>« De Acrisius qui regnoit en Grece en la cité d’Arges  et de Perseuz. IXe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="16r">f. 16</locus>
+									 <title>« Comme Perceuz occist la bellue et conquist sa femme. Xe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="17r">f. 17</locus>
+									 <title>« Comme Dionisius aultrement  dit liber pater fut desconfit  par Perceuz. XIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="18r">f. 18:</locus>
+									<title>« Cy commence l’istoire d’Athenes et comme elle fut premier fondee. XIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="19r">f. 19</locus>
+									 <title>« De Pandion, roy d’Athenes, et du roy Thezus qui vint a son secours. XIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="20v">f. 20v</locus>
+									 <title>« Comme Thezus espousa la fille au roy Pandion nommee Progue. XIIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="21r">f. 21</locus>
+									 <title>« Comme Thezus ama Philomene, la seur de sa femme. XVe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="22v">f. 22v</locus>
+									 <title>« Comme Thezus força ladicte Philomene et lui coupa la langue. XVIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="24r">f. 24</locus>
+									 <title>« Comme Progue trouva sa seur qui avoit la langue couppee. XVIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="26v">f. 26v</locus>
+									 <title>« De la royne Progue qui occist son filz en despit de son pere. XVIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="27v">f. 27v</locus>
+									 <title>« Du roy d’Athenes et de Orice sa fille. XIXe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="29r">f. 29</locus>
+									 <title>« De Cephalus et de Procriz sa femme, fille du roy Ysteus. XXe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="31r">f. 31</locus>
+									 <title>« Cy commence l’ystoire de Hercules comme il fut né et des proesses qu’il fit en Auffrique. XXIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="32r">f. 32</locus>
+									 <title>« De Herculles qui espousa sa premiere femme nommee Othea. XXIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="33v">f. 33v</locus>
+									 <title>« Comme Hercules conquesta Dyamire sa deuxieme femme. XXIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="34v">f. 34v</locus>
+									<title>« Comme Hercules desconfit le centour et reconnu Dyamire sa femme. XXIIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="35v">f. 35v</locus>
+									 <title>« Comme Hercules desconfit Cacus et Ydra le serpent. XXVe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="37r">f. 37</locus>
+									 <title>« Comme Hercules passa en Aise et apres es contrees d’Inde. XXVIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="38r">f. 38</locus>
+									 <title>« Cy commence l’istoire du roy Vezane et de Colponis qui roy estoit de Siche. XXVIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="39v">f. 39v</locus>
+									 <title>« De Marpasie et de Lampheto, deux roynes des amazones. XXVIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="40v">f. 40v</locus>
+									 <title>« De la royne Sinope, fille de Marpasie, royne des amazones. XXIXe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="41r">f. 41</locus>
+									 <title>« Du roy Egeus qui regnoit en Athenes et de Thezeus son filz. XXXe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="42r">f. 42</locus>
+									 <title>« Du roy Orcus, autrement Pluto nommé, qui ravist Proserpine et enprisonna Thezeus et son compaignon et comme  Hercules les ala de<supplied><quote>l</quote></supplied>ivrer. XXXIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="43r">f. 43v</locus>
+									 <title>« De la royne Antiope et de seurs Menalipe et Ypolite. XXXIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="44v">f. 44v</locus>
+									 <title>« De la grand valleur de Menalipe et Ypolite seurs. XXXIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="45v">f. 45v</locus>
+									 <title>« De la royne Penthasillee, fille de Anthiope. XXXIIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="46r">f. 46</locus>
+									 <title>« Cy commence l’istoire du roy Cathin, de Peleux et de Euson, ses enfans. XXXVe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="47v">f. 47v</locus>
+									 <title>« Comme Jazon ala conquester la toison d’or et de ses adventures. XXXVIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="48v">f. 48v</locus>
+									 <title>« Comme Jazon conquist la toyson d’or par le sens de Medee. XXXVIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="50r">f.  50</locus>
+									 <title>« Comme Jazon enamena  Medee et comme elle occist son frere. XXXVIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="51r">f. 51</locus>
+									 <title>« Comme Jazon et Hercules destruire premierement la cité de Troye. XXXIXe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="52v">f. 52v</locus>
+									 <title>« Comme Hercules fut tempté de l’amour de Yollant. XLe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="53v">f. 53v</locus>
+									 <title>« De la mort Herculles et de la doulleur qu’il sentist au mourrir. XLIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="54v">f. 54v</locus>
+									 <title>« Comme Ylus, le filz Hercules, espousa Yollant. XLIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="55v">f. 55v</locus>
+									 <title>« Comme Medee fit resjouenir  Eson, le pere de son mari Jazon. XLIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="56v">f. 56v</locus>
+									<title>« Comme Medee fit mourrir Peleux affin qu’elle fut royne. XLIIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="57v">f. 57v</locus>
+									 <title>« Comme Jazon se enamoura d’une femme nommé Crura. XLIIIIe c. »</title>
+								 	<note>(cet intitulé de chapitre n’apparaît pas dans la table du livre. La main du rubricateur hésite d’ailleurs dans la numérotation du chapitre)</note>
+								</msItem>
+								<msItem>
+									<locus from="58v">f. 58v</locus>
+									 <title>« Comme Medee fit mourir Crura, l’amye de Jazon. XLVe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="60r">f. 60</locus>
+									 <title>« Comme Egeus, roy d’Athenes, espousa Medee qui vers lui s’estoit tiree. XLVIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="60v">f. 60v</locus>
+									 <title>« Cy commence l’istoire du roy Minox de Crette  et de Pasiphe, sa femme. XLVIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="62r">f. 62</locus>
+									 <title>« Comme le roy Minox mist en subgection la cité d’Athenes. XLVIIIe c. »</title>
+									<note>(ce chapitre est numéroté 49 dans la table, le chapitre 48 ayant pour intitulé « De la guerre qui fut entre le roy Minos et ceulx d’Athenes »)</note>
+								</msItem>
+								<msItem>
+									<locus from="63r">f. 63</locus>
+									 <title>« De la guerre qui fut entre le roy Minox et le roy Nysus. XLIXe c. »</title>
+									<note>(ce chapitre est numéroté 50 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="64v">f. 64v</locus>
+									 <title>« De Silla qui trahit son père et livra sa cité. Le c. »</title>
+									<note>(ce chapitre est numéroté 51 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="65v">f. 65v</locus>
+									 <title>« De la royne Pasiphe qui ayma ung tor et en conceupt ung terrible monstre. LIe c. »</title>
+									<note>(ce chapitre est numéroté 52 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="67r">f. 67</locus>
+									 <title>« Comme le roy Minox fit par Dedalus enfermer cellui monstre. LIIe c. »</title>
+									<note>(ce chapitre est numéroté 53 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="67v">f. 67v</locus>
+									 <title>« Comme Dedalus se partit de Crecte et comme son filz cheust en la mer. LIIIe c. »</title>
+									<note>(ce chapitre est numéroté 54 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="68v">f. 68v</locus>
+									 <title>« Comme le roy Minox poursuivit Dedalus en l’isle de Euliotha. LIIIIe c. »</title>
+									<note>(ce chapitre est numéroté 55 dans la table)</note>
+								</msItem> 
+								<msItem>
+									<locus from="69v">f. 69v</locus>
+									 <title>« Comme Thezeus alla en Crecte pour payer le truaige des Atheniens. LVe c. »</title>
+									<note>(ce chapitre est numéroté 56 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="70v">f. 70v</locus>
+									 <title>« Comme Thezeus conquist Minoxtaurus par le sens Adriane. LVIe c. »</title>
+									<note>(ce chapitre est numéroté 57 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="71v">f. 71v</locus>
+									 <title>« Comme Thezeus se partit de Crette et faulça sa foy vers Adrienne. LVIIe c. »</title>
+									<note>(ce chapitre est numéroté 58 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="72v">f. 72v</locus>
+									 <title>« Comme le roy Bacus trouva Adrienne et l’espousa. LVIIIe c. »</title>
+									<note>(ce chapitre est numéroté 59 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="73v">f. 73v</locus>
+									 <title>« De la grant feste qui fut faicte en Athenes quant Thezeus fut revenu de Crette. LIXe c. »</title>
+									<note>(ce chapitre est numéroté 60 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="74v">f. 74v</locus>
+									 <title>« Cy commence l’ystoire du roy Eneus et du senglier qui vint en Calidonne. LXe c. »</title>
+									<note>(ce chapitre est numéroté 61 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="75v">f. 75v</locus>
+									 <title>« De la grant grant  (ce dernier mot exponctué) guerre qui se meust entre les seigneurs pour ce senglier. LXIe c. »</title>
+									<note>(ce chapitre est numéroté 62 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="77r">f. 77</locus>
+									 <title>« De Altee qui par ung charme fit mourir Meleager son  filz. LXIIe »</title>
+									<note>(ce chapitre est numéroté 63 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="78r">f. 78</locus>
+									 <title>« Comme Thideus se partit de Calidonne pour la suspection de Meleager. LXIIIe c. »</title>
+									<note>(ce chapitre est numéroté 64 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="79v">f. 79v</locus>
+									 <title>« Icy traicte de Athalente et de Ypomenus le jouvencel. LXIIIIe c. »</title>
+									<note>(ce chapitre est numéroté 65 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="80v">f. 80v</locus>
+									 <title>« Cy commence l’istoire de Thebes et comme la cité fut premierement par Cadmus fondee. LXVe c. »</title>
+									<note>(ce chapitre est numéroté 66 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="81v">f. 81v</locus>
+									 <title>« De plusieurs roys qui regnerent a Thebes, de Layus et de Jocaste sa femme. LXVIe c. »</title>
+									<note>(ce chapitre est numéroté 67 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="83r">f. 83</locus>
+									 <title>« Comme Edipus fut nourri aprez ce qu’il fut trouvé au boys. LXVIIe c. »</title>
+									<note>(ce chapitre est numéroté 68 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="84r">f. 84</locus>
+									 <title>« Comme Edipus occist par fortune le roy Layus son pere. LXVIIIe c. »</title>
+									<note>(ce chapitre est numéroté 69 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="85v">f. 85v</locus>
+									 <title>« De Edipus qui occist le merveilleux monstre. LXIXe c. »</title>
+									<note>(ce chapitre est numéroté 70 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="86v">f. 86v</locus>
+									 <title>« Comme Edipus espousa Jocaste sa mere. LXXe c. »</title>
+									<note>(ce chapitre est numéroté 71 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="88r">f. 88</locus>
+									 <title>« Des famines et pestillences qui advindrent a Thebes durant ycellui mariage. LXXIe c. »</title>
+									<note>(ce chapitre est numéroté 72 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="88v">f. 88v</locus>
+									 <title>« Comme le pechié fut congneu entre Edipus et Jocaste sa mere. LXXIIe c. »</title>
+									<note>(ce chapitre est numéroté 73 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="90r">f. 90</locus>
+									 <title>« Comme Edipus pour celle cause fut desprisié de ses enfans. LXXIIIe c. »</title>
+									<note>(ce chapitre est numéroté 74 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="90v">f. 90v</locus>
+									 <title>« Cy commence l’istoire d’Ethiocles et Polimices freres. LXXIIIIe c. »</title>
+									<note>(ce chapitre est numéroté 75 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="91v">f. 91v</locus>
+									 <title>« Du roy Adrascus qui pour lors regnoit en Grece. LXXVe c. »</title>
+									<note>(ce chapitre est numéroté 76 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="92v">f. 92v</locus>
+									 <title>« Comme Thideus se partit de Calidonne pour aller vers le roy Adrascus aide querir. LXXVIe c. »</title>
+									<note>(ce chapitre est numéroté 77 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="93v">f. 93v</locus>
+									<title>« Comme Adrascus bailla ses filles a Thideus et Polimices par mariage. LXXVIIe c. »</title>
+									<note>(ce chapitre est numéroté 78 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="94v">f. 94v</locus>
+									 <title>« Comme Thideus alla a Thebes pour Polimices. LXXVIIIe c. »</title>
+									<note>(ce chapitre est numéroté 79 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="95r">f. 95</locus>
+									 <title>« Comme Ethiocles trahit Thideus au retour de Thebes. LXXIXe c. »</title>
+									<note>(ce chapitre est numéroté 80 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="96v">f. 96v</locus>
+									 <title>« Du roy Adrascus qui assembla grant armee pour aller a Thebes. IIII XXe c. »</title>
+									<note>(ce chapitre est numéroté 81 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="97v">f. 97v</locus>
+									 <title>« De Eraphane qui accusa Amphiarius son mary pour ung fermail. IIII XXIe c. »</title>
+									<note>(ce chapitre est numéroté 82 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="99r">f. 99</locus>
+									 <title>« Comme le roy Adrascus se partit d’Arges a tout son armee pour aler a Thebes et du filz Ligorgus qui fut mort. IIII XX IIe c. »</title>
+									<note>(ce chapitre est numéroté 83 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="100r">f. 100</locus>
+									 <title>« Comme Ligorgus pardonna a une damoiselle la mort de son filz. IIII XX IIIe c. »</title>
+									<note>(ce chapitre est numéroté 84 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="101v">f. 101v</locus>
+									 <title>« Comme Adrascus arriva devant Thebes et de sa premiere bataille. IIII XX IIIIe c. »</title>
+									<note>(ce chapitre est numéroté 85 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="102v">f. 102v</locus>
+									 <title>« De la bataille qui fut devant Thebes pour la mort d’une tigre. IIII XX Ve c. »</title>
+									<note>(ce chapitre est numéroté 86 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="103v">f. 103v</locus>
+									 <title>« Comme Jocaste se occist par son desespoir doulloureux. IIII XX VIe c. »</title>
+									<note>(ce chapitre est numéroté 87 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="104r">f. 104</locus>
+									 <title>« De fiere et orrible bataille ou Ethiocles et Polimices s’entreoccirent. IIII XX VIIe c. »</title>
+									<note>(ce chapitre est numéroté 88 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="105v">f. 105v</locus>
+									 <title>« Cy commence l’istoire comme la cité de Thebes fut destruicte. IIII XX VIIIe c. »</title>
+									<note>(ce chapitre est numéroté 89 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="106v">f. 106v</locus>
+									<title>« De Creonces qui print Thebes apres la mort Ethiocles et Polimices. IIII XX IXe c. »</title>
+									<note>(ce chapitre est numéroté 90 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="107r">f. 107</locus>
+									 <title>« Comme Thezeus alla au secours de Argie et Deyphile, filles Adrastus, pour destruire Thebes. IIII XX Xe c. »</title>
+									<note>(ce chapitre est numéroté 91 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="108v">f. 108v</locus>
+									 <title>« Comme Thezeus fit assallir Thebes et comme elle fut prinse tant par les dames d’Arges que par Thezeus.IIII XX XIe c. »</title>
+									<note>(ce chapitre est numéroté 92 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="110r">f. 110</locus>
+									 <title>« Le derrenier chappitre du premier livre qui parle de la ruyne de Thebes et des roys qui regnerent apres en Athenes. IIII XX XIIe c. »</title>
+									<note>(ce chapitre est numéroté 93 dans la table)</note>
+								</msItem>
+								<msItem>
+									<locus from="111v">f. 111v</locus>
+									 <title>« Explicit liber primus. Deo gracias »</title>
+								</msItem>
+							</msItem>
+						<msItem>
+							<locus from="112r" to="112v">fol. 112-112v°</locus>
+							<note>feuillets blancs</note>
+						</msItem>
+						
+						<msItem>
+							<locus from="113r" to="113v">fol. 113-113v°</locus> 
+							<title>table des chapitres du 2e livre</title>
+						</msItem>
+						<msItem>
+							<locus from="114r" to="114v">fol. 114-114v°</locus> 
+							<title>prologue</title>
+						</msItem>
+						<msItem>
+							<locus from="114v" to="179v">fol. 114v°-179v°</locus> 
+							<title>2e livre</title>
+							
+							<msItem>
+								<locus from="114v">f. 114v</locus>
+								<title>« De quelle ligniee yssurent ceulx de Troye. Premier chappitre »</title>
+							</msItem>
+							<msItem>
+								<locus from="115v">f. 115v</locus>
+								<title>« De la reedification de celle cité par le roy Priant faicte. IIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="116v">f. 116v</locus>
+								<title>« Comme Anthenor fut envoyé en Grece pour recouvrer Exionam. IIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="117v">f. 117v</locus>
+								<title>« Du conseil de Troye qui fut tenu pour faire guerre aux Grecz. IIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="119r">f. 119</locus>
+								<title>« De Paris qui alla en Grece et ravit Heleine la femme Menelaus. Ve c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="120r">f. 120</locus>
+								<title>« Comme Paris retourna a Troye et espousa Heleine. VIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="121r">f. 121</locus>
+								<title>« Cy commence l’istoire de la destruction de Troye et de la guerre. VIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="122r">f. 122</locus>
+								<title>« Comme les Troyens envoyerent en l’isle Delphe pour avoir respons du dieu Apollo. VIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="122v">f. 122v</locus>
+								<title>« Comme les Gregeoys partirent de Grece pour passer en Frige. IXe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="123v">f. 123v</locus>
+								<title>« Du parlement que les Gregeoys tindrent pour venir a Troye. Xe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="124v">f. 124v</locus>
+								<title>« Comme les Gregeoys descendirent devant Troye. XIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="125v">f. 125v</locus>
+								<title>« De la premiere bataille qui fut faicte devant Troye. XIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="126v">f. 126v</locus>
+								<title>« De la seconde bataille qui par entreux XL jours dura. XIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="128r">f. 128</locus>
+								<title>« De la IIIe bataille qui dura par XXX jours. XIIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="128v">f. 128v</locus>
+								<title>« De la IIIIe bataille en laquelle Hector fut occiz. XVe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="129v">f. 129v</locus>
+								<title>« Comme Palamedes eust tout le gouvernement de l’ost de Grece. XVIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="130v">f. 130v</locus>
+								<title>« De la Ve bataille qui par IX jours dura. XVIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="131v">f. 131v</locus>
+								<title>« Comme Achilles fut amoureux de Polixene la fille au roy Priant. XVIIIe c. »</title> 
+							</msItem>
+							<msItem>
+								<locus from="132v">f. 132v</locus>
+								<title>« De la VIe bataille en laquelle mourut Palamedes et Deyphebus. XIXe c. »</title> 
+							</msItem>
+							<msItem>
+									<locus from="133r">f. 133</locus>
+									<title>« Comme Agamenon refut estably sur l’ost des Grecz gouverneur. XXe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="134r">f. 134</locus>
+									<title>« De la VIIIe bataille qui par II jours d’espace dura. XXIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="135r">f. 135</locus>
+									<title>« De la IXe bataille qui moult fiere fut et dura II jours dura. XXIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="136r">f. 136</locus>
+									<title>« De la Xe bataille qui dura VI jours en laquelle Troyllus fut occiz. XXIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="137r">f. 137</locus>
+									<title>« De la XIe bataille qui a ung jour naturel a grant force ce passa. XXIIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="137v">f. 137v</locus>
+									<title>« Comme Paris occist Achille en ung temple par trahison. XXVe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="139r">f. 139</locus>
+									<title>« Comme les Grecz envoyerent querir Pirrus, le filz Achilles, et de la XIIe bataille. XXVIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="140r">f. 140</locus>
+									<title>« De la royne Panthasilee qui vint au secours de Troye et de la XIIIe bataille. XXVIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="141v">f. 141v</locus>
+									<title>« De la XIIIIe bataille qui dura plusieurs jours en laquelle la royne Panthasillee mourut. XXVIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="142v">f. 142v</locus>
+									<title>«  Cy commence l’istoire comme la cité fut trahie et livree aux ennemiz. XXIXe c. »</title>
+								</msItem> 
+								<msItem>
+									<locus from="144r">f. 144</locus>
+									<title>« Comme les trahites assemblere le conseil de Troye pour trahir la cité. XXXe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="145r">f. 145</locus>
+									<title>« Du sacrifice que les Troyens firent, de quoy ilz se esbahirent. XXXIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="145v">f. 145v</locus>
+									<title>« Comme le Paladion fut emblé et baillé aux Gregeoys. XXXIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="146v">f. 146v</locus>
+									<title>« Du faulx serment que les Grectz firent et des feux par ou ilz passoient. XXXIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="147v">f. 147v</locus>
+									<title>« Du cheval de fut qui fut fait en recompenssassement du Paladion. XXXIIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="148r">f. 148</locus>
+									<title>« Comme les Gregeoys refuserent a recueillir la royne Heleine. XXXVe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="149r">f. 149</locus>
+									<title>« Comme la cité de Troye fut prise et de l’occision qui y fut faicte. XXXVIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="150r">f. 150</locus>
+									<title>« Comme Troye fut arse et le peuple destruict et occiz. XXXVIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="151r">f. 151</locus> 
+									<title>« Comme les Grecz se partirent de Troye et comme Pirrus occist Polixene, fille au roy Priant. XXXVIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="152r">f. 152</locus>
+									<title>« Cy commence l’istoire comme les Gregeoys retournerent chascun en sa contree et comment il leur advint. XXXIXe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="153r">f. 153</locus>
+									<title>« Comme Ulixes se retrayst a Ismaron pour la souspeçon de la mort Thalamon. XLe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="153v">f. 153v</locus>
+									<title>« De la trahison que Ulixes fit a Palamedes. XLIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="154v">f. 154v</locus>
+									<title>« Comme Ulixes tua Palamedes dedans le fons d’ung puis selon aucuns acteurs. XLIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="155v">f. 155v</locus>
+									<title>« Du tourment que les Grecz eurent en mer. XLIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="156r">f. 156</locus>
+									<title>« Du roy Naulus et Ayaulx son filz, comme ilz trahirent les chevalliers de Grece. XLIIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="157v">f. 157v</locus>
+									<title>« De Dyomedes qui fut par sa femme refusez de rentrer en ses possessions. XLVe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="158v">f. 158v</locus>
+									<title>« Comment Climestra fit occire son mary Agamenon. XLVIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="159r">f. 159</locus>
+									<title>« De Demophon et du roy Athamas qui par leurs femmes furent chassiez de leurs terres. XLVIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="160v">f. 160v</locus>
+									<title>« Comme Orrestes, le filz Agamenon, vengea la mort son père. XLVIIIe »</title>
+								</msItem>
+								<msItem>
+									<locus from="161v">f. 161v</locus>
+									<title>« Comment le roy Menelaus cuida faire mourir Orrestes son nepveu. XLIXe »</title>
+								</msItem>
+								<msItem>
+									<locus from="163r">f. 163</locus>
+									<title>« Des grandes fortunes que Ulixes trouva sur la mer et comment il alla en l’isle de Cecille. Le c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="164r">f. 164</locus>
+									<title>« Comme Ulixes alla par fortune es isles de Lay. LIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="165r">f. 165</locus>
+									<title>« Comme Ulixes passa par le plus hault de la mer en lieux inhabitables. LIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="165v">f. 165v</locus>
+									<title>« Des estranges isles et diverses gens que Ulixes trouva. LIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="166v">f. 166v</locus>
+									<title>« Comme Ulixes eschappa par art magique des gens Thelanion. LIIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="167v">f. 167v</locus>
+									<title>« Comme Ulixes retourna avecques Penelope sa femme. LVe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="169r">f. 169</locus>
+									<title>« Comme Ulixes mist en prison Thelemacus son filz. XLVIe c. »</title>
+									<note>(le rubricateur s’est trompé d’une dizaine dans la numérotation du chapitre. Il s’agit en fait du chapitre 56)</note>
+								</msItem>
+								<msItem>
+									<locus from="170r">f. 170</locus>
+									<title>« De Thelogonus, le filz Ulixes, qui par fortune occist son père. LVIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="171r">f. 171</locus>
+									<title>« Comme Thelemacus regna aprez Ulixes son père. LVIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="172r">f. 172</locus>
+									<title>« De Pirrus qui arriva en Grece ou il trouva de grandes fortunes. LIXe »</title>
+								</msItem>
+								<msItem>
+									<locus from="173r">f. 173</locus> 
+									<title>« Comme Penelipus occist en trahison Menelipus et Plistenes en une forest. LXe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="174r">f. 174</locus>
+									<title>« Comme Thetis accorda Pirrus et Alatastus son père. LXIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="175r">f. 175</locus>
+									<title>« Comment Pirrus embla a Orrestes sa femme et la tint par sa force. LXIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="176v">f. 176v</locus>
+									<title>« Cy commence l’istoire comme Orrestes occist Pirrus en l’isle  Delphe. LXIIIe c. »</title>
+								</msItem> 
+								<msItem>
+									<locus from="177v">f. 177v</locus>
+									<title>« Comme Landomatha et Achilles son frere, filz de Hector, de Troye retournerent en Frige pour conquester leur terre. LXIIIIe c. »</title>
+								</msItem>
+								<msItem>
+									<locus from="178v">f. 178v</locus>
+									<title>« S’ensuit le derrenier chappitre qui dit de Heleine, femme du roy Menon qui ala querir a Troye les os de son mary. LXVe c. »</title>
+								</msItem>		
+							</msItem>
+						<msItem>
+							<locus from="179ar">[fol. 179bis] :</locus>
+							<note>feuillet blanc</note>
+						</msItem>
+						
+						<msItem>
+							<locus from="180r" to="180v">fol. 180-180v°</locus> 
+							<title>table des chapitres du 3e livre</title>
+						</msItem>
+						<msItem>
+							<locus from="181r" to="181v">fol. 181-181v°</locus> 
+							<title>prologue</title>
+						</msItem>
+							
+						<msItem>
+							<locus from="181v" to="240r">fol. 181v°-240</locus> 
+							<title>troisième livre</title>
+							
+							<msItem>
+								<locus from="181v">f. 181v</locus> 
+								<title>« De Helenus, filz du roy Priant qui s’en alla en Macedonne. Premier chappitre »</title>
+							</msItem>
+							<msItem>
+								<locus from="182v">f. 182v</locus> 
+								<title>« Comme les Troyens fonderent premier Venise et la peuplerent d’eux mesmes. IIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="183v">f. 183v</locus> 
+								<title>« De Anthenor qui se trouva avec ceulx qui fonderent Venise. IIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="184v">f. 184v</locus> 
+								<title>« Du jeune Priant qui se partit de Venise et en Pavonye alla ou il fonda Sychambre. IIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="186r">f. 186</locus> 
+								<title>« Comme ceulx de Sycambre refurerent (sic) le tribut au Rommains. Ve c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="186v">f. 186v</locus> 
+								<title>« Comme ceulx de Sycambre peuplerent Germanye. VIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="188r">f. 188</locus> 
+								<title>« Comme Francio et Turcus alerent es parties d’Europe pour querir habitacion. VIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="188v">f. 188v</locus> 
+								<title>« De ceulx de Germanie comme ilz entrerent en Gaulle pour y habiter. VIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="190r">f. 190</locus> 
+								<title>« Cy commence l’istoire de Eneas comme il se partit de Troye et de la vision que lors lui advint. IXe c. »</title>
+							</msItem> 
+							<msItem>
+								<locus from="191r">f. 191</locus> 
+								<title>« De la grant fortune qui survint a Eneas quant il fut party de  Frige. Xe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="192r">f. 192</locus> 
+								<title>« Du roy Bellus et de Dido sa fille qui estoient en la cité de Thir. XIe c »</title>
+							</msItem>
+							<msItem>
+								<locus from="193r">f. 193</locus>
+								<title>« Comment Dido s’en ala en Libe et la fonda la cité de Cartaige. XIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="194r">f. 194</locus> 
+								<title>« Du roy Jobar qui voult avoir Dido par mariage a femme. XIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="195r">f. 195</locus> 
+								<title>« Comme Eneas arriva en Libe a tout la moindre part de ses nefz. XIIIIe  c. »</title>
+							</msItem> 
+							<msItem>
+								<locus from="196r">f. 196</locus> 
+								<title>« Comme Eneas entra en Cartaige et ala au temple Juno. XVe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="197r">f. 197</locus> 
+								<title>« Comme Nysus et Erialus trouverent Eneas au temple Juno. XVIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="198r">f. 198</locus> 
+								<title>« Comme les Troyens allerent vers la royne Dido pour grace requerir. XVIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="199r">f. 199</locus> 
+								<title>« Comme Eneas racompta a Dido comme Troye avoit esté par les Grecz destruicte. XVIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="200r">f. 200</locus> 
+								<title>« Comme Eneas presenta a Dido des riches joyaulx qu’il avoit aporté de Troye. XIXe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="201v">f. 201v</locus> 
+								<title>« Comme la royne Dido et Eneas se entreacointerent en une forest. XXe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="202v">f. 202v</locus> 
+								<title>« Comme Eneas se partit de Dido et comme elle se occist pour lui. XXIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="204r">f. 204</locus> 
+								<title>« Comme Eneas arriva en Cecille par le voulloir du vent. XXIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="205r">f. 205</locus> 
+								<title>« Icy dit pourquoy Eneas fonda en l’isle de Cecille une cité. XXIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="206r">f. 206</locus>
+								<title>« Comme Eneas arriva en l’isle de Euliota ou il trouva ung temple. XXIIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="207r">f. 207</locus> 
+								<title>« Comme Eneas arriva aux terres d’Itallie sur le fleuve du Timbre. XXVe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="208r">f. 208</locus> 
+								<title>« De la descripcion du pays d’Ytalie et du roy latin. XXVIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="208v">f. 208v</locus> 
+								<title>« Comme Eneas envoya ses messaiges devers le roy latin. XXVIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="210r">f. 210</locus> 
+								<title>« Du roy Latin qui donna place a Eneas pour soy logier en sa terre d’Ytalie. XXVIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="211r">f. 211</locus> 
+								<title>« Cy commence l’istoire de Turnus, filz au roy Clavius, qui fut contre Eneas. XXIXe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="212r">f. 212</locus> 
+								<title>« D’une grant meslee qui advint adoncq entre Turnus et Eneas pour ung serf privé. XXXe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="213r">f. 213</locus> 
+								<title>« Du roy Enander qui fonda la cité de Palance. XXXIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="213v">f. 213v</locus> 
+								<title>« Comme Eneas ala querir secours au roy Enander. XXXIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="215r">f. 215</locus> 
+								<title>« Des alyances que Turnus fit pour guerroyer Eneas. XXXIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="215v">f. 215v</locus> 
+								<title>« Comme Turnus ala devant la place que Eneas avoit emparee. XXXIIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="216v">f. 216v</locus> 
+								<title>« Comme Nisus et Erialus yssirent secretement de la place pour pour (sic) aller haster Eneas. XXXVe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="217v">f. 217v</locus> 
+								<title>« Comme Nisus et Erialus moururent l’ung pour l’autre. XXXVIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="218v">f. 218v</locus> 
+								<title>« Comme Turnus fit assaillir la place qu’il avoit bastie sur ses gens. XXXVIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="219v">f. 219v</locus> 
+								<title>« De la premiere bataille qui fut entre Turnus et Eneas. XXXVIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="220v">f. 220v</locus> 
+								<title>« Comme Turnus entra en une nef aprez ung deable qui le decepvoit. XXXIXe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="221v">f. 221v</locus> 
+								<title>« De Pallax, le fils Enander qui mourrut en celle bataille. XLe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="222v">f. 222v</locus> 
+								<title>« Comme les corps des mors furent enterrez aprez la bataille. XLIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="223v">f. 223v</locus>
+								<title>« Du conseil que le roy Latin tint apres celle bataille. XLIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="224r">f. 224</locus> 
+								<title>« De la deuxziesme bataille qui fut devant Laurence et de royne Camille. XLIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="225v">f. 225v</locus> 
+								<title>« Comme Turnus et Eneas devoient combatre corps a corps. XLIIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="226v">f. 226v</locus> 
+								<title>« De la IIIe bataille et comme la royne Amatha se pendit. XLVe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="227v">f. 227v</locus> 
+								<title>« Comme Eneas combatit a Turnus corps a corps et l’occist en champ. XLVIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="228v">f. 228v</locus> 
+								<title>« Comme Eneas espousa Lavine et comme il mourrut. XLVIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="229v">f. 229v</locus> 
+								<title>« De Ascanius, le filz Eneas, et de plusieurs autres de celle lignee. XLVIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="230v">f. 230v</locus> 
+								<title>« Comme Remus et Remullus furent nez et miz sur la rive d’une eaue. XLIXe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="231v">f. 231v</locus> 
+								<title>« De la fondacion de Romme et par qui fut premierement fondee. Le c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="232v">f. 232v</locus> 
+								<title>« De Neuma Pompillius et de plusieurs aultres qui regnerent a Romme. LIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="234r">f. 234</locus> 
+								<title>« Cy commence l’istoire de Brutus qui conquist plusieurs terres. LIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="234v">f. 234v</locus> 
+								<title>« Comme Brutus print par agaict le roy Pandrasus. LIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="235v">f. 235v</locus> 
+								<title>« Comment Brutus espousa Ignogent, fille du roy Pandrasus. LIIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="236v">f. 236v</locus> 
+								<title>« Comme Brutus et Cormee se acompaignierent sur mer. LVe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="237v">f. 237v</locus> 
+								<title>« Comme Brutus descendist en l’isle d’Albion et comme il la conquist. LVIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="238r">f. 238</locus>
+								<title>« Des trois filz de Brutus et de plusieurs aultres qui tindrent celle terre. LVIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="239r">f. 239</locus> 
+								<title>« Comme les Angloys conquirent celle ysle et pour eulx fut puis nommee Angleterre. LVIIIe c. »</title>
+							</msItem>
+							<msItem>
+								<locus from="240r">f. 240</locus> 
+								<title>« Explicit liber tercius »</title>
+							</msItem>
+						</msItem>
+						
+						<msItem>
+							<locus from="240v" to="241v">f. 240v-241v</locus> 
+							<note>feuillets blancs</note>
+						</msItem>
+						
+									
+				</msContents>
+					<physDesc>
+						<objectDesc form="codex">
+							<supportDesc material="perg">
+								<support>Vélin</support>
+								<extent>
+									<measure type="leavesCount" n="241">(I) garde antérieure (foliotée 1)  + 241 f. (240 f. foliotés 2-241 + f. [179bis],  soit le dernier folio blanc d’un binion non folioté) + (II) garde postérieure (non foliotée)</measure>
+									<measure type="pageDimensions" n="35 x 25,5 cm">350  x 255  mm</measure>
+								</extent>
+								<foliation>Foliotation moderne en chiffres arabes,  au crayon gris</foliation>
+								<collation>
+									13 <term>quaternions</term> (<locus from="2r" to="9v">2-9v</locus> ; <locus from="10r" to="17v">10-17v</locus> ; <locus from="18r" to="26v">18-26v</locus> (la foliotation passe, par erreur, de 24 à 26); <locus from="27r" to="34v">27-34v</locus> ; <locus from="35r" to="42v">35-42v</locus> ; <locus from="43r" to="50v">43-50v</locus> ; <locus from="51r" to="58v">51-58v</locus> ; <locus from="59r" to="66v">59-66v</locus> ; <locus from="67r" to="74v">67-74v</locus> ; <locus from="75r" to="82v">75-82v</locus> ; <locus from="83r" to="90v">83-90v</locus> ; <locus from="91r" to="98v">91-98v</locus> ; <locus from="99r" to="106v">99-106v</locus>) + 1 ternion (107-112v) + 8 quaternions (<locus from="113r" to="120v">113-120v</locus> ; <locus from="121r" to="128v">121-128v</locus> ; <locus from="129r" to="136v">129-136v</locus> ; <locus from="137r" to="144v">137-144v</locus> ; <locus from="145r" to="152v">145-152v</locus> ; <locus from="153r" to="160v">153-160v</locus> ; <locus from="161r" to="168v">161-168v</locus> ; <locus from="169r" to="176v">169-176v</locus>) + 1 binion (<locus from="177r" to="179av">177-[179bis]</locus> (le dernier folio du binion, réglé mais sans texte, n’est pas folioté)  + 7 quaternions (<locus from="180r" to="187v">180-187v</locus> ; <locus from="188r" to="195v">188-195v</locus> ; <locus from="196r" to="203v">196-203v</locus> ; <locus from="204r" to="211v">204-211v</locus> ; <locus from="212r" to="219v">212-219v</locus> ; <locus from="220r" to="227v">220-227v</locus> ; <locus from="228r" to="235v">228-235v</locus>) + 1 ternion (<locus from="236r" to="241v">236-241v</locus>) - <catchwords>Réclames</catchwords>
+								</collation>
+								<condition>bon</condition>
+							</supportDesc>
+							<layoutDesc>
+								<layout columns="2" writtenLines="44">Lignes justifiantes -  2 colonnes - Cadre de justification : <measure type="written">235 x 170 mm (75 mm par colonne)</measure> - Piqûres - 44 lignes par pages pour les colonnes standards - Réglure à l’encre rose
+								</layout>
+							</layoutDesc>
+						</objectDesc>
+						<handDesc>
+							<handNote script="bastarda">
+								<p>Ecriture bâtarde</p>
+								<p>Encre noire</p>
+							</handNote>
+						</handDesc>
+						<decoDesc>
+							<decoNote>Ce manuscrit, en deux volumes, a été produit dans l’<persName role="illuminator">atelier lyonnais dit de Guillaume Lambert</persName>. Cet atelier, actif dans le <date>dernier quart du XVe siècle</date>,  tire son nom  de convention du copiste <persName role="scribe">Guillaume Lambert</persName> responsable de la transcription d’un livre d’heures en <date>1484</date> à <placeName>Lyon</placeName>  (<bibl>Londres, catalogue Quaritch, 1931, n°47. Voir <hi rend="small-caps">Avril</hi> et <hi rend="small-caps">Reynaud</hi></bibl>).</decoNote>
+							<decoNote>Le texte s’ouvre sur une miniature illustrant <persName role="author" key="pnd_10436369X">Jean de Courcy</persName> et un scribe (<locus from="2r">f. 2</locus>).</decoNote>
+							<decoNote>Enluminures à demi-page, placées au début de chacun des trois premiers livres de la chronique : 
+									<list>
+										<item><locus from="4r">f. 4</locus> : Adam et Eve dans le jardin d’Eden</item>
+										<item><locus from="114r">f. 114</locus> : Priam, roi de Troie, et ses courtisans derrière les remparts de la ville</item>
+										<item><locus from="181r">f. 181</locus> : destruction de Troie</item>
+									</list>
+								</decoNote>
+							<decoNote>Les peintures sont encadrées d’un ruban doré qui se déroule en spirale autour d’une tige, élément important pour établir la provenance lyonnaise du manuscrit (voir <bibl><hi rend="small-caps">Fontannaz</hi>, p. 4 et <hi rend="small-caps">Avril</hi> et <hi rend="small-caps">Reynaud</hi></bibl>)</decoNote>
+								<decoNote>Rubriques</decoNote>
+								<decoNote>Lettrines</decoNote>
+								<decoNote>Lettres champiées</decoNote>
+								<decoNote>Bouts de ligne</decoNote>
+								<decoNote>Pieds de mouche</decoNote>
+								<decoNote>Rinceaux</decoNote>
+								<decoNote>Baguettes</decoNote>
+							<decoNote>Marges partiellement fleuries (<locusGrp><locus from="2r">f. 2</locus> <locus from="5r">5</locus> <locus from="38r">38</locus> <locus from="46r">46</locus> <locus from="60v">60v</locus> <locus from="74v">74v</locus> <locus from="80v">80v</locus> <locus from="90v">90v</locus> <locus from="105v">105v</locus> <locus from="113r">113</locus> <locus from="121r">121</locus> <locus from="142v">142v</locus> <locus from="152r">152</locus> <locus from="176v">176v</locus> <locus from="190r">190</locus> <locus from="234r">234</locus></locusGrp>)</decoNote>
+						</decoDesc>
+						<additions>Sur le contre-plat inférieur :<lb/>
+							<p>Etiquette imprimée <quote>Bibliothèque de Genève, Mss. Inventaire 228</quote> et, en dessous, au crayon gris, <quote>Inv. 228</quote> (<hi rend="italic">229</hi> biffé)</p>
+							<p>Etiquette à rabat avec l’inscription imprimée :  <quote>MS. FRANÇAIS- CHRONIQUE DE JEAN DE COERCY, chevalier normand. HISTOIRE ANCIENNE SUR VELIN. 15<hi rend="sup"><quote>me</quote></hi> siècle. Donné en <date>1742</date> par <persName role="former_possessor" key="pnd_117667455">A. Lullin</persName></quote></p>
+						</additions>
+						<bindingDesc>
+							<binding notBefore="1570" notAfter="1699">
+								<p>
+									<locus from="Vorderseite">Basane brune</locus> datant des Petau (<date>fin XVIe- XVIIe siècle</date>). Motifs estampés à froid et dorés. Au centre  un médaillon doré et ovale, à entrelacs, est ceint d’un cadre délimité par 6 filets dont deux dorés avec, dans les angles, des fleurons également dorés.</p>
+									<p>Tranche dorée</p>
+							</binding>
+						</bindingDesc>
+						</physDesc>
+					<history>
+						<origin>
+							<p>Cette compilation de récits mythologiques, bibliques et légendaires, écrite <date>entre 1416 et 1422</date>, est intitulée la <quote>Bouquechardière</quote>, du nom du fief de <persName>Jean de Courcy</persName>.</p>
+							
+							<p>L’auteur s’inspire de plusieurs œuvres. « Il prend pour cadre la <quote>Chronique dite de Baudoin d’Avesne</quote> ou <quote>Trésor de Sapience</quote> et le remplit avec l’<quote>Histoire ancienne jusqu’à César</quote>, le <quote>Manuel d’histoire de Philippe VI de Valois</quote>. Il puise aussi à d’autres sources comme l’<quote>Ovide moralisé</quote> » (voir <bibl><hi rend="italic">Dictionnaire des lettres françaises. Le Moyen Age</hi>, p. 764</bibl>).</p>
+							<p>35 manuscrits répertoriés</p>
+						</origin>
+						<provenance>
+							<p>Armoiries  au bas de chacune des peintures frontispice. Aubert attribue le blason « d’azur à une bande d’or, accompagnée en chef d’une tête de lion arrachée du même, lampassée de gueules et couronnée d’argent, à la bordure dentelée de gueules » à la <persName role="former_possessor">famille du Périer</persName>, originaire de <placeName>Lyon</placeName>. <hi rend="small-caps">Gagnebin</hi>, <hi rend="small-caps">de Chancel</hi> et <hi rend="small-caps">Avril</hi> et <hi rend="small-caps">Reynaud</hi> avancent le nom de  <persName role="former_possessor">Louis du Périer</persName></p>
+							<p>Collection <persName role="former_possessor">Petau</persName> (n°25)</p>
+							<p><persName role="former_possessor" key="pnd_117667455">Ami Lullin</persName> (<date>1720</date>)</p>
+						</provenance>
+						<acquisition><placeName>Bibliothèque de Genève</placeName> (<date>1756</date>, legs <persName role="former_possessor" key="pnd_117667455">Ami Lullin</persName>)
+							</acquisition>
+					</history>
+					<additional>
+						<adminInfo>
+							<recordHist>
+								<source>
+									<bibl type="not_for_e-codices">Notice de Paule Hochuli Dubuis, Bibliothèque de Genève, pour e-codices <date>2013</date>.</bibl>
+								</source>
+							</recordHist>
+						</adminInfo>
+						<listBibl>
+							<listBibl>
+								<head>Bibliographie:</head>
+								<bibl><hi rend="italic">Dictionnaire des lettres françaises. Le Moyen Age</hi>. La Pochothèque, 1992, p. 764.</bibl>
+								<bibl>Isabelle <hi rend="small-caps">Delaunay</hi>, Jean-Baptiste <hi rend="small-caps">Lebigue</hi> et al., <hi rend="italic">L’enluminure en France au temps de Jean Fouquet</hi>, Paris, 2003, p. 56-59.</bibl>
+								<bibl>Claudia <hi rend="small-caps">Rabel</hi>, « Artiste et clientèle à la fin du Moyen Age : les manuscrits profane du Maître de l’échevinage de Rouen » dans <hi rend="italic">Revue de l’art</hi>, 84, 1989, p. 48-60.</bibl>
+							</listBibl>
+							<listBibl>
+								<head>Bibliographie générale:</head>
+								<bibl>Hippolyte <hi rend="small-caps">Aubert</hi>, <hi rend="italic">Notices sur les manuscrits Petau conservés à la bibliothèque de Genève</hi>, Paris 1911, p. 69-73.</bibl>
+								<bibl>François <hi rend="small-caps">Avril</hi> et Nicole <hi rend="small-caps">Reynaud</hi>, <hi rend="italic">Les manuscrits à peinture en France, 1440-1520</hi>, Paris, 1993, p. 358-360.</bibl>
+								<bibl>Béatrice <hi rend="small-caps">de Chancel</hi>, «Les manuscrits de la Bouquechardière de Jean de Courcy» dans <hi rend="italic">Revue d’histoire des textes</hi>, éd. du C.N.R.S, t. XVII, 1987, p. 219-290 et dans <hi rend="italic">Positions des thèses</hi>, Ecole nationale des Chartes, 1986.</bibl> 
+								<bibl>Frédéric <hi rend="small-caps">Elsig</hi>, « Dossier lyonnais » dans <hi rend="italic">Quand la peinture était dans les livres. Mélanges en l’honneur de François Avril</hi>, Paris, 2007, p. 89-97.</bibl>
+								<bibl>Nicole <hi rend="small-caps">Fontannaz</hi>, <hi rend="italic">Les Chroniques de la Bouquechardière de Jean de Courcy, Genève, BPU Ms. Fr. 70/1-70/2</hi>, travail de mémoire de licence, Université de Lausanne, Faculté des Lettres, Section  d’Histoire d l’art, décembre 2007.</bibl>
+								<bibl>Bernard <hi rend="small-caps">Gagnebin</hi>, <hi rend="italic">L’enluminure de Charlemagne à François I<hi rend="sup">er</hi></hi>. Genève, 1976, p. 135-137.</bibl>
+								<bibl>Marc-René <hi rend="small-caps">Jung</hi>, <hi rend="italic">La légende de Troie en France au Moyen Age</hi>, Bâle, 1996, p. 631-634.</bibl>
+								<bibl>Beat Matthias <hi rend="small-caps">von Scarpatetti</hi>, <hi rend="italic">Katalog der datierten Handschriften in der Schweiz in lateinischer Schrift vom Anfang des Mittelalters bis 1550</hi>, Dietikon-Zürich, 1983, Band 2. n°611.</bibl>
+								<bibl><hi rend="italic">Scriptorium</hi>, t. 49, 1995, B 420.</bibl>
+								<bibl>Jean <hi rend="small-caps">Senebier</hi>, <hi rend="italic">Catalogue raisonné des manuscrits</hi>, Genève, 1779, p. 332-334.</bibl>
+								<bibl>Notices IRHT (déposées au département des manuscrits de la BGE).</bibl>
+							</listBibl>
+						</listBibl>
+					</additional>
+					
+				</msDesc>
+			</sourceDesc>
+		</fileDesc>
+		<!--
+		<revisionDesc>
+			<change who="" when=""></change>
+		</revisionDesc>
+		-->
+	</teiHeader>
+	<text>
+		<body>
+			<p></p>
+		</body>
+	</text>
+</TEI>

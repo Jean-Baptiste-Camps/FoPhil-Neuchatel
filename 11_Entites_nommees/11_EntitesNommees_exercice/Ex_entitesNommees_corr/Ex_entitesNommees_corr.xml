@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Paris, BNF, Fr 12768</title>
+            <respStmt>
+               <persName xml:id="SG">Simon Gabay</persName>
+               <resp><date>2018</date>Editeur scientifique</resp>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1">
+               <date type="publication" n="1" when="2017-11-12">12/11/2017</date>
+               <date type="revision" n="1" when="2018-01-01">01/01/2018</date>
+            </edition>
+            <respStmt>
+               <persName ref="#SG">Simon Gabay</persName>
+               <resp><date>janvier 2018</date>Contrôle de la transcription</resp>
+            </respStmt>
+         </editionStmt>
+         <extent>37KB</extent>
+         <publicationStmt>
+            <authority>Université de Neuchâtel</authority>
+            <address>
+               <street>Espace Louis Agassiz 1</street>
+               <postCode>2000</postCode>
+               <settlement>Neuchâtel</settlement>
+            </address>
+            <availability status="restricted">
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>Edition diplomatique de la correspondance de Madame de Sévigné sur ses manuscrits autographes.</note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <country>France</country>
+                  <settlement>Paris</settlement>
+                  <institution>Bibliothèque nationale de France</institution>
+                  <repository>Département des manuscrits</repository>
+                  <collection>Fonds français</collection>
+                  <idno type="shelfmark">12768</idno>
+                  <altIdentifier type="old">
+                     <collection>Supplément français</collection>
+                     <idno>1133</idno>
+                  </altIdentifier>
+               </msIdentifier>
+               <head>Recueil de lettres autographes de grands personnages des XVIIe et XVIIIe siècles.</head>
+               <msContents>
+                  <p>Recueil factice, cf. la description partie par partiel. </p>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>
+                           <material>papier</material>
+                        </support>
+                        <extent>
+                           <measure unit="page" n="327">327 pages</measure>
+                        </extent>
+                        <foliation>Chaque page est numérotée.</foliation>
+                     </supportDesc>
+                  </objectDesc>
+                  <bindingDesc>
+                     <binding>
+                        <p>Demi-reliure.</p>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <p>L'histoire du manuscrit est inconnue.</p>
+               </history>
+               <additional>
+                  <surrogates>
+                     <listBibl>
+                        <bibl>
+                           <title>Microfilm en noir et blanc</title>
+                           <idno>MF 33833</idno>
+                        </bibl>
+                        <bibl>
+                           <title>Matrice</title>
+                           <idno>R 10543</idno>
+                        </bibl>
+                        <bibl>
+                           <title>Version numérique en ligne</title>
+                           <idno>ark:/12148/btv1b90070437</idno>
+                           <ptr target="http://gallica.bnf.fr/ark:/12148/btv1b90070437"/>
+                        </bibl>
+                     </listBibl>
+                  </surrogates>
+               </additional>
+               <msPart xml:id="msPart1">
+                  <msIdentifier>
+                     <idno>Français 12768, pp. 3-6</idno>
+                  </msIdentifier>
+                  <msContents>
+                     <msItem>
+                        <locus scheme="page" from="3" to="6">pp. 3-6</locus>
+                        <author>
+                           <persName ref="#sevigne">Madame de Sévigné</persName>
+                        </author>
+                        <docDate when="1690-07-12">17 juin 1671</docDate>
+                        <incipit>je vous écrit avec un serrement de coeur</incipit>
+                        <explicit>et que je l'aime toujours</explicit>
+                        <filiation type="autograph"/>
+                     </msItem>
+                  </msContents>
+               </msPart>
+               <msPart xml:id="msPart9">
+                  <msIdentifier>
+                     <idno>Français 12768, pp. 79-90</idno>
+                  </msIdentifier>
+                  <msContents>
+                     <msItem>
+                        <locus scheme="page" from="79" to="90">pp. 79-90</locus>
+                        <author>
+                           <persName ref="#sevigne">Madame de Sévigné</persName>
+                        </author>
+                        <author ref="#sevigneCharles">
+                           <persName>Charles de Sévigné</persName>
+                        </author>
+                        <docDate when="1690-07-12">12 juillet 1690</docDate>
+                        <incipit>ce fut un grand jour, ma chère bonne</incipit>
+                        <explicit>la base veut monter au rand de la corniche et finit par juste Ciel</explicit>
+                        <filiation type="autograph"/>
+                     </msItem>
+                  </msContents>
+               </msPart>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>FoPhil: école d'hiver de l'université de Neuchâtel</p>
+         </projectDesc>
+         <editorialDecl>
+            <correction>
+               <p>Les corrections sont encodées</p>
+            </correction>
+            <hyphenation>
+               <p>La césure des mots en fin de ligne respecte l'original</p>
+            </hyphenation>
+            <normalization>
+               <p>Aucune intervention (segmentation, abréviations, etc.)</p>
+            </normalization>
+         </editorialDecl>
+         <classDecl>
+            <taxonomy xml:id="rameau">
+               <bibl>
+                  Répertoire d’autorité-matière encyclopédique et alphabétique unifié (Rameau) de la <orgName>Bibliothèque nationale de France</orgName>
+                  <ptr target="http:rameau.bnf.fr"/>
+               </bibl>
+            </taxonomy>
+         </classDecl>
+      </encodingDesc>
+      <profileDesc>
+         <correspDesc corresp="msPart1">
+            <correspAction type="sent">
+               <persName ref="#sevigne">Madame de Sévigné</persName>
+               <placeName ref="#rochers">Château des Rochers</placeName>
+               <date when="1690-07-12">mercredi 17 juin 1671</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="#dhacqueville">M. d'Hacqueville</persName>
+            </correspAction>
+         </correspDesc>
+         <correspDesc corresp="msPart9">
+            <correspAction type="sent">
+               <persName ref="#sevigne">Madame de Sévigné</persName>
+               <persName ref="#sevigneCharles">Charles de Sévigné</persName>
+               <placeName ref="#rochers">Château des Rochers</placeName>
+               <date when="1690-07-12">mercredi 12 juillet 1690</date>
+            </correspAction>
+            <correspAction type="received">
+               <persName ref="grignan">Madame de Grignan</persName>
+            </correspAction>
+            <correspContext>
+               <p>Réponse à la lettre du <date when="1690-07-01">premier juillet</date></p>
+            </correspContext>
+         </correspDesc>
+         <textClass>
+            <keywords scheme="rameau">
+               <list>
+                  <item>Littérature française -- Femmes écrivains</item>
+                  <item>Littérature française -- 17e siècle</item>
+                  <item>Correspondance</item>
+               </list>
+            </keywords>
+         </textClass>
+         <langUsage>
+            <language ident="fr">Français moderne</language>
+         </langUsage>
+         <particDesc>
+            <listPerson>
+               <person xml:id="sevigne">
+                  <persName ref="http://www.isni.org/isni/0000000122780157">
+                     <forename>Marie</forename>
+                     <nameLink>de</nameLink>
+                     <surname>Rabutin-Chantal</surname>
+                     <roleName>marquise</roleName>
+                     <nameLink>de</nameLink>
+                     <placeName>Sévigné</placeName>
+                  </persName>
+                  <birth>
+                     <placeName>Paris</placeName>
+                     <date when="1626-02-05">5 février 1626</date>
+                  </birth>
+                  <death>
+                     <placeName>Grignan</placeName>
+                     <date when="1696-04-17">17 avril 1696</date>
+                  </death>
+               </person>
+               <person xml:id="sevigneCharles">
+                  <persName ref="http://www.isni.org/isni/0000000051527954">
+                     <forename>Charles</forename>
+                     <nameLink>de</nameLink>
+                     <placeName>Sévigné</placeName>
+                  </persName>
+                  <birth>
+                     <placeName>Vitré</placeName>
+                     <date when="1648-03-12">12 mars 1648</date>
+                  </birth>
+                  <death>
+                     <placeName>Paris</placeName>
+                     <date when="1713-04-26">26 mars 1713</date>
+                  </death>
+               </person>
+               <person xml:id="dubois">
+                  <persName ref="http://www.isni.org/isni/0000000118621313">
+                     <forename>Philippe</forename>
+                     <surname>Goibaud-Dubois</surname>
+                  </persName>
+                  <birth>
+                     <placeName>Poitiers</placeName>
+                     <date when="1626-06-03">3 juin 1626</date>
+                  </birth>
+                  <death>
+                     <date when="1694-07-01">1er juillet 1694</date>
+                  </death>
+               </person>
+               <person xml:id="grignan">
+                  <persName ref="http://www.isni.org/isni/0000000109133924">
+                     <forename>Françoise</forename>
+                     <nameLink>de</nameLink>
+                     <placeName>Sévigné</placeName>
+                     <roleName>comtesse</roleName>
+                     <nameLink>de</nameLink>
+                     <placeName>Grignan</placeName>
+                  </persName>
+                  <birth>
+                     <placeName>Paris</placeName>
+                     <date when="1646-10-10">10 octobre 1646</date>
+                  </birth>
+                  <death>
+                     <placeName>Marseille</placeName>
+                     <date when="1705-08-13">13 août 1705</date>
+                  </death>
+               </person>
+               <person xml:id="dhacqueville">
+                  <persName>
+                     <roleName>abbé</roleName>
+                     <nameLink>d'</nameLink>
+                     <placeName>H'acqueville</placeName>
+                  </persName>
+                  <death>
+                     <date when="1678">1678</date>
+                  </death>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <listPlace>
+               <place xml:id="rochers">
+                  <placeName ref="http://www.geonames.org/maps/google_48.08_-1.17.html">Château des Rochers</placeName>
+                  <settlement>Vitré</settlement>
+                  <region>Bretagne</region>
+                  <country>France</country>
+                  <location>
+                     <geo>48.081430, -1.166975</geo>
+                  </location>
+               </place>
+               <place xml:id="rennes">
+                  <settlement ref="http://www.geonames.org/maps/google_48.112_-1.674.html">Rennes</settlement>
+                  <region>Bretagne</region>
+                  <country>France</country>
+                  <location>
+                     <geo>48.11198, -1.67429</geo>
+                  </location>
+               </place>
+            </listPlace>
+         </settingDesc>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2018-02-01" who="#SG">
+            <persName>Simon Gabay</persName>
+            Correction de la transcription.
+         </change>
+      </revisionDesc>
+   </teiHeader>
+   
+  <text>
+      <body>
+         <div corresp="msPart1">
+            <pb n="3" facs="http://gallica.bnf.fr/ark:/12148/btv1b90070437/f4.item"/>
+            
+            <opener>
+               <lb n="1"/><dateline><date when="1671-06-17">mecredy, 17e iuin</date></dateline>
+            </opener>
+            <p>
+               <lb n="1"/>ie vous ecris avec un ſerrement de
+               <lb n="2"/>coeur qui me tue, ie ſuis incapable
+               <lb n="3"/>descrire d'écrire a dautres qua vous parce
+               <lb n="4"/>quil ny a que vous, qui ayes la bonté
+               <lb n="5"/>dentrer dans mes extremes tandreſſes
+               <lb n="6"/>enfin voila le ſecond ordinaire que
+               <lb n="7"/>ie ne recoy point de nouuelles
+               <lb n="8"/>de <rs ref="#grignan">ma fille</rs>, ie tremble depuis la
+               <lb n="9"/>teste iuſquaux pieds, ie nay pas
+               <lb n="10"/>lvſage de raiſon, ie ne dors point
+               <lb n="11"/>et ſy ie dors ie me reueille auec
+               <lb n="12"/>des ſurſauts qui ſont pire que de
+               <lb n="13"/>ne pas dormir, ie ne puis comprendre
+               <lb n="14"/>ce qui empesche que ie naye des lettres
+               <lb n="15"/>come iay acoutumé, <persName ref="#dubois">du bois</persName> me
+               <lb n="16"/>parle de mes lettres quil enuoye tres
+               <lb n="17"/>fidellement, mais il ne menuoye rien
+               <lb n="18"/>et ne me donne point de raiſon de celles de prouence, mais
+               
+               <pb n="4" facs="http://gallica.bnf.fr/ark:/12148/btv1b90070437/f5.item"/>
+               
+               <lb n="19"/>mon cher monſieur dou cela vient il
+               <lb n="20"/>ma fille ne mecrit elle plus, eſt elle
+               <lb n="21"/>malade, me prent on mes lettres, car
+               <lb n="22"/>pour les retardemens de la poſte cela
+               <lb n="23"/>ne pouroit pas faire un tel deſordre
+               <lb n="24"/>ha mon dieu que ie ſuis malheureuſe
+               <lb n="25"/>de nauoir perſonne avec qui pleurer
+               <lb n="26"/>iaurois cette conſolation avec vous,
+               <lb n="27"/>et toute voſtre ſageſſe, ne mempescheroit
+               <lb n="28"/>pas, de vous faire voir toute ma
+               <lb n="29"/>folie, mais nay ie pas raiſon
+               <lb n="30"/>destre en peine, ſoulages donc
+               <lb n="31"/>mon inquietude, et coures dans
+               <lb n="32"/>les lieux ou ma fille ecrit, affin
+               <lb n="33"/>que ie ſache au moins come elle
+               <lb n="34"/>ſe porte, ie macomoderay mieux
+               <lb n="35"/>de voir, quelle écrit a dautres que
+               <lb n="36"/>de linquietude ou ie ſuis de ſa ſanté
+               <lb n="37"/>enfin ie nay pas receu de ſes lettres
+               
+               <pb n="5" facs="http://gallica.bnf.fr/ark:/12148/btv1b90070437/f5.item"/>
+               
+               <lb n="38"/>depuis le 5e de ce mois, elles estoient
+               <lb n="39"/>du 23 et 26e may, voila donc douſe
+               <lb n="40"/>iours, et deux ordinaires de poſte, mon
+               <lb n="41"/>cher monſieur faites moy prontement
+               <lb n="42"/>reponce lestat ou ie ſuis vous feroit
+               <lb n="43"/>pitié, écriues vn peu mieux iay peine
+               <lb n="44"/>a lire vos lettres<note resp="#SG">l'abbé d'Hacqueville est connu pour écrire très mal</note>, et ien meurs denuie,
+               <lb n="45"/>ie ne repons point a toutes vos nouuelles
+               <lb n="46"/>ie ſuis incapable de tout, <rs ref="#sevigneCharles">mon fils</rs> est
+               <lb n="47"/>reuenu de <placeName ref="#rennes">rennes</placeName> il y a depenſe quatre
+               <lb n="48"/>cens frans en trois iours, la pluye est
+               <lb n="49"/>continuelle, mais tous ces chagrins
+               <lb n="50"/>ſeroient legers ſy iauois des lettres de
+               <lb n="51"/><placeName>prouence</placeName>, ayes pitié de moy coures
+               <lb n="52"/>a la poſte aprenes ce qui mempesche den auoir
+               <lb n="53"/>come a lordinaire, ie necris a perſonne
+               <lb n="54"/>et ie ſerois honteuſe de vous faire
+               <lb n="55"/>voir tant de febleſſes ſy ie ne
+               <lb n="56"/>conneſſois vos extremes bontés 
+               
+               <pb n="6" facs="http://gallica.bnf.fr/ark:/12148/btv1b90070437/f6.item"/>
+               
+               <lb n="57"/><rs ref="#dhacqueville">le gros abbé</rs> ſe plaint de moy, il dit
+               <lb n="58"/>quil n a receu quune de mes lettres
+               <lb n="59"/>ie luy ay ecrit deux fois, dittes luy
+               <lb n="60"/>et que ie layme touiours
+            </p>
+         </div>
+      </body>
+  </text>
+</TEI>

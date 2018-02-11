@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="andromaque_1668">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Essai d'encodage d'Andromaque de Racine</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Encodé par <persName>Simon Gabay</persName> en <date>2018</date></p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author><forename>Jean</forename> <surname>Racine</surname></author>
+               <title>Andromaque, tragédie</title>
+               <publisher>T. Girard</publisher>
+               <pubPlace>Paris</pubPlace>
+               <date>1668</date>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   
+  <text>
+     
+     <front>
+        
+        <pb n="NP" type="blank" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f5.image"/>
+        
+        <pb n="NP" type="blank" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f6.image"/>
+        
+        <titlePage>
+           
+           <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f7.image"/>
+           
+           <docTitle>
+              <titlePart type="main">
+                 <lb/>ANDROMAQVE,
+              </titlePart>
+              
+              <titlePart type="sub">
+                 <lb/><hi rend="italic">TRAGEDIE.</hi>
+              </titlePart>
+           </docTitle>
+           
+           <figure>
+              <graphic url="Ex_theatre_images/title_fleuron.jpg"/>
+              <desc>Fleuron</desc>
+           </figure>
+           
+           <docImprint>
+              <lb/>A <pubPlace>PARIS,</pubPlace>
+              <lb/>Chez <publisher>THEODORE GIRARD</publisher>, dans <placeName>la grand'
+                 <lb/>Salle du Palais, du coſté de la Cour
+                 <lb/>des Aydes, à l'Enuie.</placeName>
+              <!-- ligne -->
+              <lb/><docDate when="1668">M. DC. LXVIII.</docDate>
+              <lb/><hi rend="italic">AVEC PRIVILEGE DV ROY.</hi>
+           </docImprint>
+           
+        </titlePage>
+        
+        <pb n="NP" type="blank" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f8.image"/>
+        
+        <div type="epistle" subtype="dedication" xml:id="aMadame">
+           
+           <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f9.image"/>
+           
+           <figure>
+              <graphic url="Ex_theatre_images/dedication_headpiece.jpg"/>
+              <desc>Bandeau de l'épître dédicatoire</desc>
+           </figure>
+           
+           <head rend="center">
+              <lb/>A
+              <lb/>Madame
+           </head>
+           <note>La destinataire de la lettre est Henriette d'Angleterre (1644-†1670), épouse de Monsieur le frère du roi.</note>
+           
+           <opener>
+              <hi rend="intial" facs="Ex_theatre_images/dedication_initial">M</hi>
+              <hi rend="italic">ADAME</hi>,
+           </opener>
+           
+           <p rend="italic">
+              <lb rend="indent"/>Ce n’eſt pas ſans sujet que 
+              <lb/>ie mets voſtre illuſtre Nom à
+              
+              <fw type="sig">ã ij</fw>
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f10.image"/>
+              
+              <fw type="header" place="center">EPISTRE.</fw> 
+              
+              <lb/>la teſte de cét Ouurage. Et de 
+              <lb/>quel autre nom pourrois-ie eſ-
+              <lb break="no"/>bloüir les yeux de mes Lecteurs, 
+              <lb/>que de celuy dont mes Specta-
+              <lb break="no"/>teurs ont eſté ſi heureuſement 
+              <lb/>eſbloüis? On ſçauoit que
+              <lb/>VOSTRE ALTESSE
+              <lb/>ROYALE auoit daigné pren-
+              <lb break="no"/>dre ſoin de la conduite de ma 
+              <lb/>Tragedie. On ſçauoit que vous 
+              <lb/>m’auiez preſté quelques-vnes 
+              <lb/>de vos lumieres, pour y adjoû-
+              <lb break="no"/>ter de nouueaux ornemens. On 
+              <lb/>ſçauoit enfin que vous l’auiez 
+              <lb/>honnorée de quelques larmes, 
+              <lb/>dés la premiere lecture que ie 
+              <lb/>vous en fis. Pardonnez-moy,
+              <lb/>MADAME, ſi i’oſe me
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f11.image"/>
+              
+              <fw type="header" place="center">EPISTRE.</fw> 
+              
+              <lb/>vanter de cét heureux commen-
+              <lb break="no"/>cement de ſa deſtinée. Il me con-
+              <lb break="no"/>ſole bien glorieuſement de la du-
+              <lb break="no"/>reté de ceux qui ne voudroient 
+              <lb/>pas s’en laiſſer toucher. Ie leur 
+              <lb/>permets de condamner l’<title>Andro-
+              <lb break="no"/>maque</title> tant qu’ils voudront, 
+              <lb/>pourueû qu’il me ſoit permis 
+              <lb/>d’apeller de toutes les ſubtili-
+              <lb break="no"/>tez de leur eſprit, au Cœur de 
+              <lb/>V. A. R.
+           </p>
+           
+           <p rend="italic">
+              <lb rend="indent"/>Mais, MADAME, ce
+              <lb/>n’eſt pas ſeulement du cœur que
+              <lb/>vous iugez de la bonté d’vn
+              <lb/>Ouurage, c’eſt auec vne intel-
+              <lb break="no"/>ligence, qu’aucune fauſſe lueur
+              <lb/>ne ſçauroit tromper. Pouuons-
+              <lb/>nous mettre ſur la Scene vne
+              
+              <fw type="sig">ã iij</fw>
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f12.image"/>
+              
+              <fw type="header" place="center">EPISTRE.</fw> 
+              
+              <lb/>Hiſtoire que vous ne poſſediez
+              <lb/>außi bien que Nous? Pouuons- 
+              <lb/>nous faire joüer vne intrigue, 
+              <lb/>dont vous ne penetriez tous les 
+              <lb/>reſſorts? Et pouuons-nous con-
+              <lb break="no"/>ceuoir des ſentimens ſi nobles 
+              <lb/>&amp; ſi delicats, qui ne ſoient in-
+              <lb/>finiment au deſſous de la no-
+              <lb break="no"/>bleſſe &amp; de la delicateſſe de vos 
+              <lb/>penſées?
+           </p>
+           
+           <p rend="italic">
+              <lb rend="indent"/>On ſçait, MADAME,
+              <lb/>&amp; V. A. R. a beau s’en ca-
+              <lb break="no"/>cher, que dans ce haut degré 
+              <lb/>de gloire où la Nature &amp; la 
+              <lb/>Fortune ont pris plaiſir de vous
+              <lb/>eſleuer, Vous ne dédaignez 
+              <lb/>pas cette gloire obſcure que les 
+              <lb/>gens de lettres s’eſtoient reſer-
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f13.image"/>
+              
+              <fw type="header" place="center">EPISTRE.</fw> 
+              
+              <lb break="no"/>uée. Et il ſemble que vous
+              <lb/>ayez voulu auoir autant d’a-
+              <lb break="no"/>uantage ſur noſtre Sexe par les 
+              <lb/>connoiſſances &amp; par la ſolidité 
+              <lb/>de voſtre eſprit, que vous ex-
+              <lb break="no"/>cellez dans le voſtre par toutes 
+              <lb/>les graces qui vous enuironnent. 
+              <lb/>La Cour vous regarde comme 
+              <lb/>l’Arbitre de tout ce qui ſe fait 
+              <lb/>d’agreable. Et nous qui tra-
+              <lb break="no"/>uaillons pour plaire au public,
+              <lb/>nous n’auons plus que faire de 
+              <lb/>demander aux Sçauans ſi nous 
+              <lb/>trauaillons ſelon les Regles. La 
+              <lb/>Regle ſouueraine, eſt de plaire
+              <lb/>à V. A. R.
+           </p>
+           
+           <p rend="italic">
+              <lb rend="indent"/>Voila ſans doute la moin-
+              <lb break="no"/>dre de vos excellentes qualitez.
+              
+              <fw type="sig">ã iij</fw>
+              <note type="sic">ã iv</note>
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f14.image"/>
+              
+              <fw type="header" place="center">EPISTRE.</fw> 
+              
+              <lb/>Mais, MADAME, c’eſt la
+              <lb/>ſeule dont i’ay pû parler auec 
+              <lb/>quelque connoiſſance; les autres 
+              <lb/>ſont trop éleuées au deſſus de 
+              <lb/>moy. Ie n’en puis parler ſans les 
+              <lb/>rabaiſſer par la foibleſſe de mes 
+              <lb/>penſées, &amp; ſans ſortir de la 
+              <lb/>profonde veneration auec la-
+              <lb break="no"/>quelle ie ſuis,
+           </p>
+           
+           <closer>
+              <salute>
+                 <lb rend="indent"/><hi rend="italic">MADAME</hi>,
+                 <lb/>DE VOSTRE ALTESSE ROYALE,
+                 <lb/>Le tres-humble, tres-obeïſ-
+                 <lb break="no"/>ſant, &amp; tres-fidelle ſerui-
+                 <lb break="no"/>teur, </salute><signed><persName>RACINE</persName></signed>.
+           </closer>
+        </div>
+        
+        <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f15.image"/>
+
+        <div xml:id="foreword">
+           <figure>
+              <graphic url="Ex_theatre_images/foreword_headpiece.jpg"/>
+              <desc>Bandeau de la preface</desc>
+           </figure>
+           
+           <head>
+              <lb/>VIRGILE
+              <lb/>AU TROISIESME LIVRE
+              <lb/>DE L'ENEIDE.
+           </head>
+
+           <p>
+              <lb/>C’eſt Énée qui parle.
+           </p>
+           <p>
+              <lb/>Littoraque Epeiri legimus, portuque 
+              <lb/>ſubimus
+              <lb/>Chaonio, &amp; celſam Buthroti aſcen-
+              <lb break="no"/>dimus Vrbem.
+              Sollemnes tum forte dapes, &amp; triſtia dona
+              Libabat cineri Andromache, Maneſque vo-
+              <lb break="no"/>cabat
+              Hectoreū ad tumulū, viridi quem ceſpite inanē,
+              <lb/>Et geminas, causā lachrymis, ſacrauerat Aras…
+              Dejecit vultum, &amp; demiſsâ voce locuta eſt.
+              <lb/>O felix vna ante alias Priameïa Virgo,
+              <lb/>Hoſtilem ad tumulum, Trojæ ſub mœnibus altis
+              <lb/>Iuſſa mori! quæ ſortitus non pertulit vllos,
+              <lb/>Nec victoris heri tetigit Captiua cubile.
+              <lb/>Nos patria incenſa; diuerſa per æquora, vectæ,
+              <lb/>Stirpis Achilleæ faſtus, Iuuenemque ſuperbum
+              <lb/>Seruitio enixæ tulimus, qui deinde ſecutus
+              <lb/>Ledæam Hermionem, Lacedæmonioſque hy-
+              <lb break="no"/>menæos…
+              
+              <fw type="sig">ã v</fw>
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f16.image"/>
+              
+              <lb/>Aſt illum, ereptæ magno inflammatus amore
+              <lb/>Conjugis, &amp; ſcelerum Furiis agitatus, Oreſtes
+              <lb/>Excipit incautum, patriaſque obtruncat ad
+              <lb/>Aras.
+           </p>
+           
+           <p>
+              <lb rend="indent"/>Voila en peu de Vers tout le ſujet de cette
+              <lb/>Tragedie. Voila le lieu de la Scene, l’Action
+              <lb/>qui s’y paſſe, les quatre principaux Acteurs, &amp;
+              <lb/>meſme leurs Caracteres. Excepté celuy d’Her-
+              <lb break="no"/>mionne, dont la jalouſie &amp; les emportemens
+              <lb/>ſont aſſez marquez dans l’Andromaque d’Eu-
+              <lb break="no"/>ripide.
+           </p>
+           
+           <p>
+              <lb rend="indent"/>Mais veritablement mes Perſonnages ſont
+              <lb/>ſi fameux dans l’Antiquité, que pour peu qu’on
+              <lb/>la connoiſſe, on verra fort bien que je les ay
+              <lb/>rendus tels, que les anciens Poëtes nous les ont
+              <lb/>donnez. Auſſi n’ay-je pas penſé qu’il me fuſt
+              <lb/>permis de rien changer à leurs mœurs. Toute
+              <lb/>la liberté que j’ay priſe, ç’a eſté d’adoucir vn
+              <lb/>peu la férocité de Pyrrhus, que Seneque, dans
+              <lb/>ſa Troade, &amp; Virgile, dans le ſecond de l’E-
+              <lb break="no"/>neïde, ont pouſſée beaucoup plus loin que je
+              <lb/>n’ay crû le deuoir faire.
+           </p>
+           
+           <p>
+              <lb rend="indent"/>Encore s’eſt-il trouué des gens qui ſe ſont
+              <lb/>plaints qu’il s’emportaſt contre Andromaque,
+              <lb/>&amp; qu’il vouluſt épouſer cette Captiue à quel-
+              <lb break="no"/>que prix que ce fuſt. I’auouë qu’il n’eſt pas aſ-
+              <lb break="no"/>ſez reſigné à la volonté de ſa Maiſtreſſe, &amp; que
+              <lb/>Celadon a mieux connu que luy le parfait
+              <lb/>Amour. Mais que faire? Pyrrhus n’auoit pas
+              <lb/>lû nos Romans. Il eſtoit violent de ſon natu-
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f17.image"/>
+              
+              <lb break="no"/>rel. Et tous les Heros ne ſont pas faits pour
+              <lb/>eſtre des Celadons.
+           </p>
+           
+           <p>
+              <lb rend="indent"/>Quoy qu’il en ſoit, le public m’a eſté trop
+              <lb/>fauorable pour m’embarraſſer du chagrin par-
+              <lb break="no"/>ticulier de deux ou trois perſonnes qui vou-
+              <lb break="no"/>droient qu’on reformaſt tous les Heros de
+              <lb/>l’Antiquité pour en faire des Heros parfaits.
+              <lb/>Ie trouue leur intention fort bonne, de vou-
+              <lb break="no"/>loir qu’on ne mette ſur la Scene que des hom-
+              <lb break="no"/>mes impeccables. Mais je les prie de ſe ſouue-
+              <lb break="no"/>nir que ce n’est pas à moy de changer les re-
+              <lb break="no"/>gles du Theatre. Horace nous recommande
+              <lb/>de dépeindre Achile, farouche, inexorable,
+              <lb/>violent, tel qu’il eſtoit, &amp; tel qu’on dépeint
+              <lb/>ſon fils. Et Ariſtote, bien éloigné de nous de-
+              <lb break="no"/>mander des Heros parfaits, veut au contraire
+              <lb/>que les Perſonnages tragiques, c’eſt à dire,
+              <lb/>ceux dont le mal-heur fait la cataſtrophe de la
+              <lb/>Tragedie, ne ſoient ny tout à fait bons, ny
+              <lb/>tout à fait méchans. Il ne veut pas qu’ils ſoient
+              <lb/>extremément bons, parce que la punition d’vn
+              <lb/>homme de bien exciteroit plûtoſt l’indigna-
+              <lb break="no"/>tion, que la pitié du ſpectateur; ny qu’ils ſoient
+              <lb/>méchans auec excés, parce qu’on n’a point
+              <lb/>pitié d’un ſcelerat. Il faut donc qu’ils ayent
+              <lb/>vne bonté mediocre, c’eſt à dire, vne vertu
+              <lb/>capable de foibleſſe, &amp; qu’ils tombent dans
+              <lb/>le mal-heur par quelque faute qui les faſſe
+              <lb/>plaindre ſans les faire déteſter.
+           </p>
+        </div>
+        
+        <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f18.image"/>
+        
+        <div xml:id="castList">
+           
+           <figure>
+              <graphic url="Ex_theatre_images/castList_headpiece.jpg"/>
+              <desc>Bandeau de la distribution</desc>
+           </figure>
+           
+           <head rend="center"><hi rend="italic">ACTEVRS</hi>.</head>
+           <p>
+              <lb/>ANDROMAQUE, Veuve d’Hector, Captive de Pyrrhus.
+              <lb/>PYRRHUS, Fils d’Achille, Roy d’Epire.
+              <lb/>ORESTE, Fils d’Agamemnon.
+              <lb/>HERMIONNE, Fille d’Helene, accordée avec Pyrrhus.
+              <lb/>PYLADE, Amy d’Oreste.
+              <lb/>CLEONE, Confidente d’Hermione.
+              <lb/>CEPHISE, Confidente d’Andromaque.
+              <lb/>PHOENIX, Gouverneur d’Achille, &amp; ensuite de Pyrrhus.
+              <lb/>Suite d’ORESTE.
+           </p>    
+        </div>
+        
+        <div>
+           <p>La Scene est à Buthrot, ville d’Epire, dans une Salle du Palais de Pyrrhus.</p>
+        </div>
+     </front>
+     
+      <body>
+         <div type="play">
+            <p></p>
+         </div>
+      </body>
+  </text>
+</TEI>

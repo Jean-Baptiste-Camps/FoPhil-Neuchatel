@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="andromaque_1668">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Essai d'encodage d'Andromaque de Racine</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Encodé par <persName>Simon Gabay</persName> en <date>2018</date></p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author><forename>Jean</forename> <surname>Racine</surname></author>
+               <title>Andromaque, tragédie</title>
+               <publisher>T. Girard</publisher>
+               <pubPlace>Paris</pubPlace>
+               <date>1668</date>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   
+  <text>
+     
+     <front>
+        
+        <pb n="NP" type="blank" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f5.image"/>
+        
+        <pb n="NP" type="blank" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f6.image"/>
+        
+        <titlePage>
+           
+           <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f7.image"/>
+           
+           <docTitle>
+              <titlePart type="main">
+                 <lb/>ANDROMAQVE,
+              </titlePart>
+              
+              <titlePart type="sub">
+                 <lb/><hi rend="italic">TRAGEDIE.</hi>
+              </titlePart>
+           </docTitle>
+           
+           <figure>
+              <graphic url="Ex_theatre_images/title_fleuron.jpg"/>
+              <desc>Fleuron</desc>
+           </figure>
+           
+           <docImprint>
+              <lb/>A <pubPlace>PARIS,</pubPlace>
+              <lb/>Chez <publisher>THEODORE GIRARD</publisher>, dans <placeName>la grand'
+                 <lb/>Salle du Palais, du coſté de la Cour
+                 <lb/>des Aydes, à l'Enuie.</placeName>
+              <!-- ligne -->
+              <lb/><docDate when="1668">M. DC. LXVIII.</docDate>
+              <lb/><hi rend="italic">AVEC PRIVILEGE DV ROY.</hi>
+           </docImprint>
+           
+        </titlePage>
+        
+        <pb n="NP" type="blank" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f8.image"/>
+        
+        <div type="epistle" subtype="dedication" xml:id="aMadame">
+           
+           <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f9.image"/>
+           
+           <figure>
+              <graphic url="Ex_theatre_images/dedication_headpiece.jpg"/>
+              <desc>Bandeau de l'épître dédicatoire</desc>
+           </figure>
+           
+           <head rend="center">
+              <lb/>A
+              <lb/>Madame
+           </head>
+           <note>La destinataire de la lettre est Henriette d'Angleterre (1644-†1670), épouse de Monsieur le frère du roi.</note>
+           
+           <opener>
+              <hi rend="intial" facs="Ex_theatre_images/dedication_initial">M</hi>
+              <hi rend="italic">ADAME</hi>,
+           </opener>
+           
+           <p rend="italic">
+              <lb rend="indent"/>Ce n’eſt pas ſans sujet que 
+              <lb/>ie mets voſtre illuſtre Nom à
+              
+              <fw type="sig">ã ij</fw>
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f10.image"/>
+              
+              <fw type="header" place="center">EPISTRE.</fw> 
+              
+              <lb/>la teſte de cét Ouurage. Et de 
+              <lb/>quel autre nom pourrois-ie eſ-
+              <lb break="no"/>bloüir les yeux de mes Lecteurs, 
+              <lb/>que de celuy dont mes Specta-
+              <lb break="no"/>teurs ont eſté ſi heureuſement 
+              <lb/>eſbloüis? On ſçauoit que
+              <lb/>VOSTRE ALTESSE
+              <lb/>ROYALE auoit daigné pren-
+              <lb break="no"/>dre ſoin de la conduite de ma 
+              <lb/>Tragedie. On ſçauoit que vous 
+              <lb/>m’auiez preſté quelques-vnes 
+              <lb/>de vos lumieres, pour y adjoû-
+              <lb break="no"/>ter de nouueaux ornemens. On 
+              <lb/>ſçauoit enfin que vous l’auiez 
+              <lb/>honnorée de quelques larmes, 
+              <lb/>dés la premiere lecture que ie 
+              <lb/>vous en fis. Pardonnez-moy,
+              <lb/>MADAME, ſi i’oſe me
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f11.image"/>
+              
+              <fw type="header" place="center">EPISTRE.</fw> 
+              
+              <lb/>vanter de cét heureux commen-
+              <lb break="no"/>cement de ſa deſtinée. Il me con-
+              <lb break="no"/>ſole bien glorieuſement de la du-
+              <lb break="no"/>reté de ceux qui ne voudroient 
+              <lb/>pas s’en laiſſer toucher. Ie leur 
+              <!-- Title sans @rend="italic" -->
+              <lb/>permets de condamner l’<title>Andro-
+              <lb break="no"/>maque</title> tant qu’ils voudront, 
+              <lb/>pourueû qu’il me ſoit permis 
+              <lb/>d’apeller de toutes les ſubtili-
+              <lb break="no"/>tez de leur eſprit, au Cœur de 
+              <lb/>V. A. R.
+           </p>
+           
+           <p rend="italic">
+              <lb rend="indent"/>Mais, MADAME, ce
+              <lb/>n’eſt pas ſeulement du cœur que
+              <lb/>vous iugez de la bonté d’vn
+              <lb/>Ouurage, c’eſt auec vne intel-
+              <lb break="no"/>ligence, qu’aucune fauſſe lueur
+              <lb/>ne ſçauroit tromper. Pouuons-
+              <lb/>nous mettre ſur la Scene vne
+              
+              <fw type="sig">ã iij</fw>
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f12.image"/>
+              
+              <fw type="header" place="center">EPISTRE.</fw> 
+              
+              <lb/>Hiſtoire que vous ne poſſediez
+              <lb/>außi bien que Nous? Pouuons- 
+              <lb/>nous faire joüer vne intrigue, 
+              <lb/>dont vous ne penetriez tous les 
+              <lb/>reſſorts? Et pouuons-nous con-
+              <lb break="no"/>ceuoir des ſentimens ſi nobles 
+              <lb/>&amp; ſi delicats, qui ne ſoient in-
+              <lb/>finiment au deſſous de la no-
+              <lb break="no"/>bleſſe &amp; de la delicateſſe de vos 
+              <lb/>penſées?
+           </p>
+           
+           <p rend="italic">
+              <lb rend="indent"/>On ſçait, MADAME,
+              <lb/>&amp; V. A. R. a beau s’en ca-
+              <lb break="no"/>cher, que dans ce haut degré 
+              <lb/>de gloire où la Nature &amp; la 
+              <lb/>Fortune ont pris plaiſir de vous
+              <lb/>eſleuer, Vous ne dédaignez 
+              <lb/>pas cette gloire obſcure que les 
+              <lb/>gens de lettres s’eſtoient reſer-
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f13.image"/>
+              
+              <fw type="header" place="center">EPISTRE.</fw> 
+              
+              <lb break="no"/>uée. Et il ſemble que vous
+              <lb/>ayez voulu auoir autant d’a-
+              <lb break="no"/>uantage ſur noſtre Sexe par les 
+              <lb/>connoiſſances &amp; par la ſolidité 
+              <lb/>de voſtre eſprit, que vous ex-
+              <lb break="no"/>cellez dans le voſtre par toutes 
+              <lb/>les graces qui vous enuironnent. 
+              <lb/>La Cour vous regarde comme 
+              <lb/>l’Arbitre de tout ce qui ſe fait 
+              <lb/>d’agreable. Et nous qui tra-
+              <lb break="no"/>uaillons pour plaire au public,
+              <lb/>nous n’auons plus que faire de 
+              <lb/>demander aux Sçauans ſi nous 
+              <lb/>trauaillons ſelon les Regles. La 
+              <lb/>Regle ſouueraine, eſt de plaire
+              <lb/>à V. A. R.
+           </p>
+           
+           <p rend="italic">
+              <lb rend="indent"/>Voila ſans doute la moin-
+              <lb break="no"/>dre de vos excellentes qualitez.
+              
+              <fw type="sig">ã iij</fw>
+              <note type="sic">ã iv</note>
+              
+              <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f14.image"/>
+              
+              <fw type="header" place="center">EPISTRE.</fw> 
+              
+              <lb/>Mais, MADAME, c’eſt la
+              <lb/>ſeule dont i’ay pû parler auec 
+              <lb/>quelque connoiſſance; les autres 
+              <lb/>ſont trop éleuées au deſſus de 
+              <lb/>moy. Ie n’en puis parler ſans les 
+              <lb/>rabaiſſer par la foibleſſe de mes 
+              <lb/>penſées, &amp; ſans ſortir de la 
+              <lb/>profonde veneration auec la-
+              <lb break="no"/>quelle ie ſuis,
+           </p>
+           
+           <closer>
+              <salute>
+                 <lb rend="indent"/><hi rend="italic">MADAME</hi>,
+                 <lb/>DE VOSTRE ALTESSE ROYALE,
+                 <lb/>Le tres-humble, tres-obeïſ-
+                 <lb break="no"/>ſant, &amp; tres-fidelle ſerui-
+                 <lb break="no"/>teur, </salute><signed><persName>RACINE</persName></signed>.
+           </closer>
+        </div>
+        
+        <pb n="NP" facs="http://gallica.bnf.fr/ark:/12148/btv1b8610810z/f15.image"/>
+
+     </front>
+     
+      <body>
+        <div/>
+      </body>
+  </text>
+</TEI>

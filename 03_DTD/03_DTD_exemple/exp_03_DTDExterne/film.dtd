@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT film (title,casting)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT casting (director,actor+)>
+<!ELEMENT director (firstName,lastName)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT actor (#PCDATA)>

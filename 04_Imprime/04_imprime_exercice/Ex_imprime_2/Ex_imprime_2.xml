@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Essai d'encodage des Characteres de Cureau de la Chambre</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Encodé par <persName>Simon Gabay</persName> en <date>2018</date></p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Il s'agit des <title>Characteres des Passions</title> de <persName>Marin Cureau de La Chambre (<date>1662</date>)</persName></p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+
+  <text>
+     <front>
+        <pb n="np" facs="http://gallica.bnf.fr/ark:/12148/bpt6k1510402v/f7.image"/>
+        
+        <titlePage rend="center">
+           <docTitle>
+              <titlePart type="main">
+                 <lb/>LES
+                 <lb/>CHARACTERES
+                 <lb/>DES PASSIONS.
+              </titlePart>
+              <titlePart type="sub">
+                 <lb/>DERNIER VLOLVME
+                 <lb/>Où il eſt traitté de la Nature des
+                 <lb/>Cauſes &amp; des Effects
+                 <lb/>DES LARMES,
+                 <lb/>DE LA CRAINTE,
+                 <lb/>DV DESESPOIR.
+              </titlePart>
+           </docTitle>
+           <byline>
+              <lb/>Par le Sieur <docAuthor>DE LA CHAMBRE</docAuthor>, Conſeiller du Roy en ſes
+              <lb/>Conſeils, &amp; premier Medecin Ordinaire de ſa Majeſté.
+              <lb/> de la Garde.
+           </byline>
+           <figure>
+              <graphic url="title_fleuron.jpg"/>
+           </figure>
+           <docImprint>
+              <lb/>A <pubPlace>PARIS</pubPlace>,
+              <lb/>Chez <publisher>IACQVES D'ALLIN</publisher>,ruë Saint Iacques, au coin de
+              <lb/>la ruë de la Parcheminerie, à l'Image S. Eſtienne.
+              <lb/><docDate when="1662">M. DC. LXII.</docDate>
+           </docImprint>
+           <imprimatur>Auec Priuilege de ſa Majeſté.</imprimatur>
+        </titlePage>
+        
+        <div>
+           
+           AV ROY.
+           
+           Sire,
+
+           
+
+              Quoy que les larmes ſe vantent
+              d'auoir de fauorables entrées dans le
+              Ciel & de plaire meſme au ſouuerain
+              Monarque de l'Vniuers; Elles n'oſeroient
+              
+              ã iij
+              EPISTRE.
+              
+              pourtant aujourd'huy ſe promettre les
+              meſmes auantages aupres de Voſtre
+              Majeſté. Elles ſçauent que Vous ne tra-
+              uailleZ qu'à les bannir de la France; que
+              tous vos ſoint ſont occupez à en tarir les
+              ſources, & qu'eſtant filles de la Dou-
+              leur elles ne peuuent eſtre bien receües
+              dans vne Cour où leurs Ennemis ont vn
+              ſi grand pouuoir. I'ay beau leur repre-
+              ſenter qu'elles ont contribué à Voſtre
+              Naiſſance; que Vous auez eſté vn ve-
+              ritable Enfant de Larmes; & que cel-
+              les que la plus Auguſte de toutes les
+              Reynes a ſi ſouuent reſpanduës, ont at-
+              tiré la pluſpart des Benedictions que
+              >Dieu a versées ſur Voſtre Eſtat & ſur
+              Voſtre Sacrée Perſonne. Ie leur dis meſ-
+              me que ie ne pretens pas les faire paſ-
+              ſer pour vn Preſent que ie faſſe à V. M.
+              mais pour vn Trophée que ie veux éle-
+              uer à ſa Gloire & pour vn Monument
+              
+              EPISTRE.
+              
+              de la Victoire qu'elle a remportée ſur les
+              malheurs de la France. Ie leur dis qu'el-
+              les ne ſeruiront que d'vn Tableau qui
+              repreſentera l'hiſtoire des Maux que
+              nous auons ſoufferts; Et qu'il eſt neceſſai-
+              re, puis qu'elles ne doiuent plus couler
+              
+              [ON SAUTE QUELQUES PAGES]
+              
+              ſon regne cauſera à tous les ſiecles à venir;
+              & quelle eſt enfin la Paſſion qu'a pour ſa
+              Gloire
+           
+           
+
+              SIRE,
+              de V.M.
+              Le tres-humble, tres-obeïſſant
+              & tres-fidelle Sujet
+              LA CHAMBRE
+           
+
+        </div>
+     
+     </front>
+     
+     <body>
+        
+        1
+        
+        <div>
+
+              LES
+              CHARACTERES
+              DES LARMES
+              PREMIERE PARTIE.
+
+              
+
+                 LERIS ayant trouué place
+                 parmy les Characters des
+                 Paſſions, nous ne pouuons
+                 dénier aux Larmes le rang
+                 qu'elles y demandent. Elles
+                 ont des prieres & des ſollicitations trop
+                 preſſantes pour leur pouuoir refuſer ce qui
+                 leur eſt deu par iuſtice, puiſqu'elles ſont
+                 en poſſeſſion d'obtenir les choſes meſmes
+                 
+                 A
+                 2
+                 LES CHARACTERES
+                 
+                 qui ne ſ>ont que de grace. Car bien qu'el-
+                 les n'ayent eſté priſes iuſques icy que pour
+                 vn effet & vn Charactere de la Douleur;
+                 Elles pretendent neantmoins que l'Ame
+                 leur ayant affecté vn mouuement parti-
+                 culier & vn motif different de celuy de la
+                 Triſteſſe; elles meritent d'entrer dans l'Or-
+                 dre & dans la Famille des Paſſions, & de
+                 paſſer pluſtoſt pour les Compagnes, ou
+                 pour les Filles de la Douleur que pour ſes
+                 Suiuantes. Et certainement elles font vn
+                 party ſi conſiderable dans l'Empire de
+                 l'Ame; Elles occupent vne ſi grande por-
+                 tion de la vie naturelle & ciuile, & ſont
+                 meſme ſi fauoriſées du Ciel qu'elles ont
+                 droit de nous demander vn Chapitre tout
+                 entier, qui puiſſe faire connoiſtre leur na-
+                 ture, les cauſes & leurs vſages.
+              
+              
+
+                 QVAND on a dit que les Larmes
+                 eſtoient le ſang de l'Ame, il ne ſe
+                 pouuoit rien dire de plus ingenieux, ny
+                 qui repreſentaſt mieux leur nature: Non
+                 ſeulement parce qu'elles coulent des bleſ-
+                 ſeures de l'Ame, comme le Sang de celles
+                 
+                 DES LARMES I. Partie
+                 3
+                 
+                 du Corps: Mais encore parce que comme le
+                 Sang tout compoſé qu'il eſt de diuerſes
+                 humeurs, porte le nom de celle qui en
+                 fait la principale partie; On donne auſſi
+                 aux Larmes le nom du plus conſiderable
+                 Charactere de la Paſſion qu'elles deſi-
+                 gent.
+              
+              
+
+                 Car il ne faut pas croire que par le mot
+                 de Pleurs & de Larmes on entende ſeule-
+                 ment ces goutes d'eau qui ſortent des yeux
+                 puis que l'on dit que la vie de l'Homme
+                 commence par les Larmes, quoy qu'il ne
+                 ſoit capable d'en ietter que quarante iours
+                 apres qu'il eſt venu au monde; Et qu'il n'y
+                 a rien de ſi ordinaire que de dire que les
+                 Enfans pleurent, & que les Hommes pleu-
+                 rent leurs pechez, quoy que ſouuent les
+                 vns ny les autres ne répandent point de
+                 Larmes. Mais ſous ce mot on comprend
+                 les cris, les plaintes, l'air du viſage, le
+                 mouuement des parties & les autres effets
+                 qui accompagnent cette pluye orageuſe
+                 qui tombe des yeux. Car il eſt vray que
+                 c'eſt vn Orage où la pluye eſt meſlée auec
+                 le vent des ſoûpirs & des ſanglots; auec
+                 
+                 A ij
+                 4
+                 LES CHARACTERES
+                 
+                 l'éclat & le bruit des cris & des gemiſſe-
+                 mens; où enfin toute la ſerenité du viſage
+                 ſe perd & ſe change en vn air ſombre &
+                 tenebreux. Et ce ſont là les choſes
+                 qui doiuent entrer dans le Tableau que nous
+                 en deuons faire ſuiuant la methode que
+                 nous auons tenuë iuſques icy.
+
+           
+        </div>
+        
+     </body>
+     
+     <back>
+        <div/>
+     </back>
+
+  </text>
+</TEI>

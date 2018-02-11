@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE film [
+<!ELEMENT film (title,casting)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT casting (director,actor+)>
+<!ELEMENT director (firstName,lastName)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT actor (#PCDATA)>
+]>
+
+<film>
+    <title>Raiders of the Lost Ark</title>
+    <casting>
+        <director>
+            <firstName>Steven</firstName>
+            <lastName>Spielberg</lastName>
+        </director>
+        <actor>
+            Harrison Ford
+        </actor>
+        <actor>
+            Karen Allen
+        </actor>
+    </casting>
+</film>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- On définit une entité paramétrique -->
+<!ENTITY % noms "nom,prénom">
+<!ELEMENT prénom (#PCDATA) >
+<!ELEMENT nom (#PCDATA) >
+
+<!-- On définit les éléments de la bibliographie -->
+<!ELEMENT bibliographie (listeDocuments,indexPersonnes) >
+<!ELEMENT listeDocuments (document+) >
+<!ELEMENT document (auteur,titre,traducteur*,livre?,revue?,lien+,résumé,motsClefs?)>
+<!ELEMENT auteur (%noms;) >
+<!ELEMENT titre (#PCDATA) >
+<!ELEMENT lien (#PCDATA) >
+<!ELEMENT résumé (#PCDATA|p)* >
+<!ELEMENT p (#PCDATA) >
+<!ELEMENT motsClefs (#PCDATA) >
+
+<!-- Si le document est un livre -->
+<!ELEMENT livre (éditeur,datePublication,collection) >
+<!ELEMENT éditeur (ville,maisonEdition) >
+<!ELEMENT ville (#PCDATA) >
+<!ELEMENT maisonEdition (#PCDATA) >
+<!ELEMENT datePublication (#PCDATA) >
+<!ELEMENT collection (#PCDATA) >
+
+<!-- Si le document est un article -->
+<!ELEMENT revue (titre,numéro,datePublication) >
+<!ELEMENT numéro (#PCDATA) >
+<!ELEMENT traducteur (%noms;) >
+
+<!-- On définit les éléments de l'index des personnes -->
+<!ELEMENT indexPersonnes (personne+) >
+<!ELEMENT personne (%noms;) >
+
+<!-- On définit les attributs des éléments -->
+<!ATTLIST document
+    idDoc ID #REQUIRED
+    lang (en | fr) #REQUIRED>
+<!ATTLIST auteur
+    idPersonne IDREF #REQUIRED>
+<!ATTLIST traducteur
+    idPersonne IDREF #REQUIRED>
+<!ATTLIST titre
+    type (livre | article| revue) #IMPLIED>
+<!ATTLIST datePublication
+    mois (01 | 02 | 03 | 04 | 05 | 06 | 07 | 08 | 09 | 10 | 11 | 12) #IMPLIED
+    année CDATA #REQUIRED>
+<!ATTLIST numéro
+    n CDATA #REQUIRED>
+<!ATTLIST personne
+    idPersonne ID #REQUIRED>

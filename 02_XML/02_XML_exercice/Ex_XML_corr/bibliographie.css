@@ -1,0 +1,131 @@
+/* Informations générales */
+bibliographie {
+    font-family: "Times New Roman";
+    font-size: 14pt;
+}
+
+/* Liste des documents */
+listeDocuments:before{
+    content: "Liste des documents";
+}
+listeDocuments{
+    display: block;
+    background-color: lightyellow;
+}
+
+document{
+    display: block;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+nom{
+    text-transform: uppercase;
+}
+
+prénom:before{
+    content: ", ";
+}
+
+traducteur:before{
+        content: "[trad: ";
+}
+
+traducteur:after{
+        content: "]";
+}
+
+titre[type='livre']{
+    font-style: italic;
+}
+
+titre[type='revue']{
+    font-style: italic;
+}
+
+titre[type='article']:before{
+    content: "« ";
+}
+
+titre[type='article']:after{
+    content: " »";
+}
+
+
+éditeur:before{
+    content: ", ";
+}
+
+ville:after{
+    content: ": ";
+}
+
+datePublication:before{
+    content: "(";
+}
+
+datePublication:after{
+    content: ")";
+}
+
+collection:before{
+    content: ", Coll. « ";
+}
+
+collection:after{
+    content: " »";
+}
+
+résumé:before{
+    content: "Résumé : ";
+}
+
+résumé{
+    display: block;
+    font-size: 12pt;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+
+p{
+    display: block;
+    text-indent: 1em;
+
+}
+
+motsClefs:before{
+    content: "Mots-clefs : ";   
+}
+
+motsClefs{
+    display: block;
+    font-size: 12pt;
+    margin-left: 2em;
+    font-style: italic;
+}
+
+lien{
+    content: "En ligne: ";
+    display: block;
+    font-size: 12pt;
+    margin-left: 2em;
+    color: blue
+}
+
+/* Liste des personnes */
+
+indexPersonnes:before{
+    content: "Liste des personnes mentionnées";
+    border-top: 1px solid #000; 
+    width : 700px; 
+}
+indexPersonnes{
+    display: block;
+    margin-top: 1em;
+}
+
+personne{
+    display: block;
+    margin-top: 1em;
+    margin-left: 1em;
+}

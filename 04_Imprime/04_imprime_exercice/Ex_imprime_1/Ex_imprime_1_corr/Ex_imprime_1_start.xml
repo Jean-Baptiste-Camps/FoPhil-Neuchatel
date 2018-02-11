@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title></title>
+         </titleStmt>
+         <publicationStmt>
+            <p></p>
+         </publicationStmt>
+         <sourceDesc>
+            <p></p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   
+  <text>
+     <front>
+        
+
+                 LES
+                 CHARACTERES
+                 DES PASSIONS.
+                 DERNIER VLOLVME
+                 Où il eſt traitté de la NAture des
+                 Cauſes &amp; des Effects
+                 DES LARMES,
+                 DE LA CRAINTE,
+                 DV DESESPOIR.
+                 Par le Sieur DE LA CHAMBRE, Conſeiller du Roy en ſes
+                 Conſeils, &amp; premier Medecin Ordinaire de ſa Majeſté.
+                 de la Garde.
+                 A PARIS,
+                 Chez IACQVES D'ALLIN,ruë Saint Iacques, au coin de
+                 la ruë de la Parcheminerie, à l'Image S. Eſtienne.
+                 M. DC. LXII.
+                 Auec Priuilege de ſa Majeſté.
+        
+     </front>
+     
+     <body>
+        <p></p>
+     </body>
+
+  </text>
+</TEI>
