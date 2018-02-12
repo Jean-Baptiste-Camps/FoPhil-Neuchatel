@@ -1,0 +1,188 @@
+\documentclass{beamer}
+%\usetheme{Boadilla}
+\usetheme{PaloAlto}
+%\usetheme{Berlin}
+%\usecolor{}
+
+\usepackage{minted}
+
+\usepackage{fontspec}
+\setmainfont{Linux Libertine O}
+\usepackage[english,french]{babel}
+
+\usepackage{hyperref}
+
+\institute{Univ. de Neuchâtel}
+
+\title{Exploiter les données}
+\subtitle{Introduction à la textométrie avec \textsc{txm}}
+\author{Jean-Baptiste Camps \& Simon Gabay}
+\date[FoPhil -- 14 févr. 2018]{Formation en philologie numérique:\\ encoder, exploiter, diffuser\\
+12-16 février 2018}
+
+\makeatletter 
+         
+        \AtBeginSection[]{% 
+        \begin{frame}{Plan}%
+        \small
+        \tableofcontents[currentsection]%
+        \end{frame} }
+
+        %\AtBeginSubsection[]{% 
+	%\begin{frame}{Plan}%
+	%\small
+	%\tableofcontents[currentsection,currentsubsection]%
+%\end{frame} }
+
+
+\makeatother 
+    
+    
+\begin{document}
+
+\maketitle
+%\frontmatter 
+  
+
+%\mainmatter 
+
+\begin{frame}{Objectifs}
+	
+	\begin{itemize}
+		\item S'initier à la \alert{textométrie},
+		\begin{itemize}
+			\item créer des corpus;
+			\item les interroger;
+			\item faire (un peu) d'analyse quantitative.
+		\end{itemize}
+		\item dans le cadre d'un logiciel ``tout en un'' et convivial, 
+	\alert{\textsc{txm}} \cite{Heiden2010},
+		\item sur des cas tirés de la littérature du XVII\ieme{} siècle.
+	\end{itemize}
+	
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{\textsc{txm}: un logiciel de textométrie}
+
+
+\begin{columns}
+	\begin{column}{0.30\textwidth}
+	\begin{center}
+	\includegraphics[width= 0.8\textwidth]{img/txm.png}
+	\end{center}
+\begin{itemize}
+	\item Logiciel libre et multiplateforme;
+	\item développé à l'ÉNS-LSH de Lyon;
+	\item \url{http://textometrie.ens-lyon.fr/}.
+	\item fait tourner notamment la \textit{Base de français médiéval}
+\end{itemize}
+	\end{column}
+	\begin{column}{0.66\textwidth}
+		\begin{itemize}
+			\item dévoué à la textométrie;
+			\item repose sur des technologies de référence:
+				\begin{itemize}
+					\item \textsc{xml/tei} pour les données;
+					\item \textsc{r} pour l'analyse statistique;
+					\item \textsc{cqp} pour l'interrogation de corpus;
+					\item \texttt{TreeTagger} pour l'annotation.
+				\end{itemize}
+		\end{itemize}
+	\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame} 
+  \frametitle{Plan} 
+  \tableofcontents
+\end{frame}
+
+\section{Mise en jambe: \textit{Andromaque}}
+
+\begin{frame}{Création d'un corpus à partir de notre édition d'\textit{Andromaque}}
+
+\begin{enumerate}
+	\item Fichier, importer, import XML/W + CSV;
+	\item sélectionner le dossier avec les sources et remplir les paramètres du corpus;
+	\item lancer la création du corpus.
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Premières fonctionnalités}
+\begin{enumerate}
+\item Consulter la description du corpus;
+\item parcourir l'édition;
+\item regarder le lexique;
+\item ouvrir l'index, y chercher les occurrences de 'Seigneur';
+	\begin{enumerate}
+		\item clic-droit, envoyer vers les concordances;
+		\item double-clic sur une occurrence pour aller au texte;
+		\item clic-droit, envoyer vers les cooccurrents;
+			\begin{enumerate}
+				\item aller d'un cooccurrent aux concordances, puis au texte
+			\end{enumerate}
+		\item clic-droit, envoyer vers la progression;
+	\end{enumerate}
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Partitions et quelques éléments descriptifs}
+\begin{enumerate}
+\item créer une partition, en sélectionnant la structure \texttt{sp} et l'attribut \texttt{\@who};
+\item consulter les dimensions;
+\item créer une table lexicale, expérimenter avec les tris, la fusion ou suppression des colonnes, etc.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Statistiques de base}
+\begin{enumerate}
+\item créer une partition, en sélectionnant la structure \texttt{sp} et l'attribut \texttt{\@who};
+\item consulter les dimensions;
+\item créer une table lexicale, expérimenter avec les tris, la fusion des colonnes, etc.
+\end{enumerate}
+\end{frame}
+
+
+
+\section{Importer des données et créer un corpus}
+
+\section{Interroger les données}
+
+\section{Quelques notions d'analyse quantitative}
+
+
+\begin{frame}[fragile]
+\frametitle{Approches principales: la forme (linguistique) ou le fond (sémantique)?}
+
+Sans prétention à l'exhaustivité, on peut distinguer deux approches principales qui font emploi des méthodes que nous allons présenter:
+\begin{itemize}
+	\item \textbf{approche stylométrique}, qui se préoccupe d'attribution, datation, localisation des textes; pour ce type d'approche, on va s'intéresser à l'information graphique (variantes d'orthographe), flexionnelle (terminaisons verbales, …), etc. On va aussi tendre à s'intéresser seulement aux \alert{mots les plus fréquents} (mots-outils, mots-vides), les moins sensibles aux variations intentionnelles de leurs auteurs (genre, sujet, etc.). Le \textbf{sens des textes nous indiffère} (ou presque).
+	\item \textbf{approche sémantique}, lexicométrique, etc., qui est à peu près l'inverse de la précédente: intérêt pour les mots en tant que lemmes et leurs rapports entre eux (cooccurrences), pour les réseaux de sens, les thèmes des textes, etc.
+\end{itemize}
+Très schématique, mais nous en reparlerons plus tard.
+\end{frame}
+
+
+\begin{frame}{test}
+
+\end{frame}
+
+\appendix
+
+\begin{frame}[fragile]
+\frametitle{Bibliographie} 
+
+\begin{thebibliography}{Heiden et al., 2010}
+	\bibitem[Heiden et al., 2010]{Heiden2010} Heiden, S., Magué, J-P., et Pincemin, B., \og{}TXM: Une plateforme logicielle open-source pour la textométrie – conception et développement\fg{}, dans \textit{Proc. of 10th International Conference on the Statistical Analysis of Textual Data - JADT 2010}, éd. Sergio Bolasco, Isabella Chiari, Luca Giuliano, Rome, 2010, t.~2, p. 1021-1032, \url{https://halshs.archives-ouvertes.fr/halshs-00549779/fr/}.
+\end{thebibliography}
+
+
+\end{frame}
+
+
+\end{document}
