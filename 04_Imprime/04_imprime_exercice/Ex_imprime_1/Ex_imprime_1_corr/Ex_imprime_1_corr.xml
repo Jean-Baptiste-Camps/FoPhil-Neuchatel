@@ -12,7 +12,7 @@
             <p>Encodé par <persName>Simon Gabay</persName> en <date>2018</date></p>
          </publicationStmt>
          <sourceDesc>
-            <p>Il s'agit des <title>Characteres des Passions</title> de <persName>Marin Cureau de La Chambre (<date>1662</date>)</persName></p>
+            <p>Il s'agit des <title>Characteres des Passions</title> de <persName>Marin Cureau de La Chambre</persName> (<date>1662</date>)</p>
          </sourceDesc>
       </fileDesc>
    </teiHeader>
@@ -28,7 +28,7 @@
                  <lb/>DES PASSIONS.
               </titlePart>
               <titlePart type="sub">
-                 <lb/>DERNIER VLOLVME
+                 <lb/>DERNIER VOLVME
                  <lb/>Où il eſt traitté de la Nature des
                  <lb/>Cauſes &amp; des Effects
                  <lb/>DES LARMES,
