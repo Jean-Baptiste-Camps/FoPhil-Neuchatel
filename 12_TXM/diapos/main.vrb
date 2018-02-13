@@ -1,0 +1,11 @@
+\frametitle{Bibliographie}
+
+\begin{thebibliography}{Heiden et al., 2010}
+^^I\bibitem[Heiden et al., 2010]{Heiden2010} Heiden, S., Magué, J-P., et Pincemin, B., \og{}TXM: Une plateforme logicielle open-source pour la textométrie – conception et développement\fg{}, dans \textit{Proc. of 10th International Conference on the Statistical Analysis of Textual Data - JADT 2010}, éd. Sergio Bolasco, Isabella Chiari, Luca Giuliano, Rome, 2010, t.~2, p. 1021-1032, \url{https://halshs.archives-ouvertes.fr/halshs-00549779/fr/}.
+^^I\bibitem[Pincemin et al., 2008]{Pincemin2008} Pincemin, Bénédicte, Céline Guillot, Serge Heiden, Alexei Lavrentiev, et Christiane Marchello-Nizia, « Usages linguistiques de la textométrie: analyse qualitative de la consultation de la Base de Français Médiéval via le logiciel Weblex », \textit{Syntaxe et Sémantique}, 9 (2008), p.~87–110, \url{https://halshs.archives-ouvertes.fr/halshs-00355461}.
+^^I
+^^I
+^^I
+\end{thebibliography}
+
+
