@@ -12,11 +12,15 @@
 
 %\usepackage{minted}
 
-
 %\setmainfont{Linux Libertine O}
 \usepackage[english,french]{babel}
 
+%Un peu de config de Beamer
+\setbeamersize{description width=0.47cm}
+
+
 \usepackage{hyperref}
+
 \usepackage{graphicx}
 
 \institute{Univ. de Neuchâtel}
@@ -355,26 +359,249 @@ complet);
 
 \section{Interroger les données}
 
-%interrogation des mots
+\begin{frame}{\textsc{cqp} et \textsc{cql}}
+	
+	\begin{block}{Corpus Query Processor}
+		Composant logiciel qui traite des requêtes:\\
+		moteur de recherche qui permet de trouver toutes les occurrences
+		correspondant à une requête.
+		
+		\begin{itemize}
+			\item logiciel libre;
+			\item développé initialement à l'Univ. de Stuttgart;
+			\item \url{http://cwb.sourceforge.net/}.
+		\end{itemize}
+		
+	\end{block}
 
-%interrogation des lemmes
+	\begin{block}{Corpus Query Language}
+		Langage d'expression de requêtes (cf. SQL, XQuery…).\\
+		Une expression CQL est une chaîne de caractères exprimant un motif
+		linguistique (un mot, ou une suite de mots) à partir des valeurs de leurs propriétés (comme la
+		catégorie grammaticale, le lemme, la forme graphique). (voir Manuel de TXM).
+	\end{block}
+	
+\end{frame}
 
-%rudiments de CQL (CQP)
+\begin{frame}{Interroger avec \textsc{txm}: niveau 0}
+	
+	Entrer un mot dans le champ de l'interface \texttt{Index}.
+	
+	Ex. 'seigneur'.
+	
+\end{frame}
 
-%Partitions par genre, auteur, texte. Table-lexicale, lemmes ou formes
+\begin{frame}{Interroger avec \textsc{txm}: niveau 1, assistant}
+
+Cliquer sur la baguette magique, pour accéder à l'assistant de création de requêtes
+
+Chercher:
+\begin{itemize}
+	\item la forme 'seigneur',
+	\item suivie d'un pronom (cf. la doc, \\ \texttt{JeuEtiquettesModeleFrancaisTreeTagger.pdf}),
+		\begin{itemize}
+			\item astuce: commence par 'PRO'
+		\end{itemize}
+	\item suivi de n'importe quelle forme du lemme 'être'.
+\end{itemize}
+
+%TODO: screenshot (déjà enregistré)
+
+\end{frame}
+
+\begin{frame}{Interroger avec \textsc{txm}: niveau 2, un peu de \textsc{cql}}
+	
+	En \textsc{cql}, la requête précédente correspond à:\\
+	\texttt{[word="seigneur"][frpos="PRO.*"] [frlemma="être"] }
+	
+	On se lance:
+	\begin{enumerate}
+		\item Modifier la requête pour permettre un mot, quel qu'il soit, entre seigneur et le pronom;
+		\item la modifier, pour limiter aux cas où ce mot est une virgule;
+		\item l'éditer pour étendre aux cas où ce mot est une virgule OU un point d'interrogation.
+	\end{enumerate}
+	
+\end{frame}
+
+
+\begin{frame}{Interroger avec \textsc{txm}: niveau 3, \textsc{cql} (plus) avancé}
+
+\begin{columns}
+	\begin{column}{0.48\textwidth}
+		
+		\begin{block}{Ignorer:}
+			\begin{description}
+				\item[\texttt{\%c}] casse, ex. \texttt{[word="état"\%c]}
+				\item[\texttt{\%d}] diacritiques, ex. \texttt{[word="état"\%d]}
+				\item[\texttt{\%d}] les deux, ex., \texttt{[word="état"\%cd]}
+			\end{description}
+		\end{block}
+
+		\begin{block}{Opérateurs:}
+			\begin{description}
+				\item[=] égal
+				\item[!=] différent
+				\item[|] ou
+				\item[\&] et
+				\item[()] priorité des opérations
+			\end{description}
+		\end{block}		
+		
+	\end{column}
+	\begin{column}{0.48\textwidth}
+	
+	\begin{block}{Quantificateurs}
+		\begin{description}
+			\item[mot] mot une seule fois (1);
+			\item[mot+] mot une seule fois ou plus (1…n);
+			\item[mot?] mot 0 ou une fois (0…1);
+			\item[mot*] mot 0 fois ou plus (0…n);
+			\item[mot\{2,4\}] mot entre 2 et 4 fois (2…4);
+		\end{description}
+	\end{block}
+		
+	\end{column}
+\end{columns}
+
+
+\end{frame}
+
+
+\begin{frame}{Interroger avec \textsc{txm}: niveau 3, (suite)}
+
+\begin{columns}
+	\begin{column}{0.48\textwidth}
+		
+		\begin{block}{Échapper des caractères spéciaux}
+			
+			Pour entrer '?', '*', '.', '+', '|', '\&', …, qui sont des caractères spéciaux,\\
+			les \textbf{faire précéder d'une barre oblique inverse}. Ex.,\\
+			\texttt{\textbackslash?}
+			
+		\end{block}
+		
+	\end{column}
+	\begin{column}{0.48\textwidth}
+		
+		
+		\begin{block}{Classes de caractères}
+		
+		\begin{description}
+			\item[.] n'importe quel caractère;
+			\item[{[mn]}] un m ou un n;
+			\item[{[a-z]}] une minuscule non accentuée;
+			\item[{[\^~a-z]}] tout sauf … ;
+			\item[\textbackslash{}d] un chiffre;
+			\item[\textbackslash{}s] un caractère d'espacement;
+			\item[\textbackslash{}w] un caractère de mot;
+			\item[\textbackslash{}D] tout sauf un chiffre;
+			\item[\textbackslash{}S] tout sauf un car. d'espacement;
+			\item[\textbackslash{}W] tout sauf un car. de mot;
+		\end{description}
+		\end{block}
+		
+		
+	\end{column}
+\end{columns}
+
+
+\end{frame}
+
+
+\begin{frame}{Interroger avec \textsc{txm}: niveau 3, exercices}
+
+\begin{enumerate}
+	\item un mot contenant un chiffre.
+	\item une forme commençant par 'a' et finissant par 'er';
+	\item une forme de deux lettres: une voyelle et 'h';
+	\item 'seigneur' ou 'dame', suivi ou non d'un mot et suivi d'un pronom (n'importe quel type de pronom).
+	\item la forme 'je', suivie d'entre 2 et 4 mots, et d'une virgule.
+\end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Interroger avec \textsc{txm}: niveau 4, \textsc{cql} \emph{hardcore}}
+		
+		\begin{block}{Expressions régulières plus avancées}
+			\textbf{Classes de caractères Unicode}
+			\begin{description}
+				\item[\textbackslash{}p\{Lu\}] une majuscule (au sens de la propriété Unicode);
+				\item[\textbackslash{}p\{P\}] une majuscule (au sens de la propriété Unicode);
+				\item[\textit{etc.}]
+			\end{description}
+		\end{block}
+		
+		N.B.: \alert{Toutes les PCRE (Perl-Compatible Regular Expressions) sont disponibles dans \textsc{cql}}. 
+		Voir  \href{http://regexkit.sourceforge.net/Documentation/pcre/pcrepattern.html}{\textcolor{blue}{la doc}}.
+		
+		%within, expand to, …
+		
+		\begin{block}{Instructions de \textsc{cql}}
+			
+			On peut limiter la zone de recherche en utilisant \texttt{within}.
+			Ex. \\
+			\verb|[word="et"][]*[word="je"] within 10|\\
+			'et … je', dans une limite de 10 mots\\
+			\verb|[word="et"][]*[word="je"] within l|\\
+			'et … je', dans un vers.
+		\end{block}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Interroger avec \textsc{txm}: niveau 4, suite}
+
+\begin{block}{Utiliser les propriétés de structure}
+	Possible d'utiliser les propriétés de structure et \textsc{xml} pour préciser les requêtes.
+	
+	\verb|<l> [frpos="VER.*"] [] * </l>|\\
+	Vers commençant par un verbe.
+	
+	\verb|<l>  [] * [word=".*uite"] </l>|\\
+	Vers ayant 'uite' à la rime.
+	
+\end{block}
+
+\textit{Want more?} La \href{http://cwb.sourceforge.net/documentation.php}{\textcolor{blue}{doc de CQL}} est pour vous, ainsi que le 
+\href{http://txm.sourceforge.net/doc/manual/manual1.xhtml}{\textcolor{blue}{manuel de TXM}}.
+
+\end{frame}
+
+\begin{frame}{Interroger avec \textsc{txm}: niveau 4, exercices}
+
+\begin{enumerate}
+	\item une forme contenant de la ponctuation;
+	\item un vers d'entre 4 et 5 mots;
+	\item un vers débutant par un pronom personnel (\texttt{PRO:PER}) débutant par 't';
+	\item un vers se terminant par '-ron' (suivi ou non d'une consonne).
+\end{enumerate}
+
+\end{frame}
 
 \section{Quelques notions d'analyse quantitative}
 
 \begin{frame}[fragile]
-\frametitle{Approches principales: la forme (linguistique) ou le fond (sémantique)?}
+\frametitle{Deux approches: la forme (style) ou le fond (sémantique)?}
 
-Sans prétention à l'exhaustivité, on peut distinguer deux approches principales qui font emploi des méthodes que nous allons présenter:
-\begin{itemize}
-	\item \textbf{approche stylométrique}, qui se préoccupe d'attribution, datation, localisation des textes; pour ce type d'approche, on va s'intéresser à l'information graphique (variantes d'orthographe), flexionnelle (terminaisons verbales, …), etc. On va aussi tendre à s'intéresser seulement aux \alert{mots les plus fréquents} (mots-outils, mots-vides), les moins sensibles aux variations intentionnelles de leurs auteurs (genre, sujet, etc.). Le \textbf{sens des textes nous indiffère} (ou presque).
-	\item \textbf{approche sémantique}, lexicométrique, etc., qui est à peu près l'inverse de la précédente: intérêt pour les mots en tant que lemmes et leurs rapports entre eux (cooccurrences), pour les réseaux de sens, les thèmes des textes, etc.
-\end{itemize}
-Très schématique, mais nous en reparlerons plus tard.
+\begin{description}
+	\item[stylométrie] attribution, datation, localisation des textes. 
+		\begin{itemize}
+			\item information graphique, flexionnelle, etc. 
+			\item \alert{mots les plus fréquents} (mots-outils, mots-vides), moins sensibles aux variations intentionnelles de leurs auteurs (genre, sujet, etc.).
+		\end{itemize}
+	\item[approche sémantique] (lexicométrie, lecture distante,…), à peu près l'inverse de la précédente: 
+		\begin{itemize}
+			\item lemmes;
+			\item cooccurrents;
+			\item mots plus rares.
+		\end{itemize}
+\end{description}
+
 \end{frame}
+
+%Partitions par genre, auteur, texte. Table-lexicale, lemmes ou formes
 
 % Quelques stats desc?
 
@@ -385,6 +612,56 @@ Très schématique, mais nous en reparlerons plus tard.
 
 
 \appendix
+
+\begin{frame}{Solutions}{Interroger avec \textsc{txm}: niveau 2, un peu de \textsc{cql}}
+
+\begin{enumerate}
+	\item Modifier la requête pour permettre un mot, quel qu'il soit, entre seigneur et le pronom;\\
+	\texttt{[word="seigneur"][][frpos="PRO.*"] [frlemma="être"]}
+	\item la modifier, pour limiter aux cas où ce mot est une virgule;\\
+	\texttt{[word="seigneur"][word=','][frpos="PRO.*"] [frlemma="être"] }
+	\item l'éditer pour étendre aux cas où ce mot est une virgule OU un point d'interrogation.\\
+	\texttt{[word="seigneur"][word=',' | word='\textbackslash?'][frpos="PRO.*"] [frlemma="être"] }
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Solutions}
+\framesubtitle{Interroger avec \textsc{txm}: niveau 3, exercices}
+
+\begin{enumerate}
+	\item un mot contenant un chiffre.\\
+	\texttt{[word=".*\textbackslash{}d.*"]}
+	\item une forme commençant par 'a' et finissant par 'er';\\
+	\texttt{[word="[a].*er"]}
+	\item une forme de deux lettres: une voyelle et 'h';\\
+	\texttt{[word="[aeiouy]h"]}
+	\item 'seigneur' ou 'dame', suivi ou non d'un mot et suivi d'un pronom (n'importe quel type de pronom).\\
+	\texttt{[word="seigneur" | word="dame"][]?[frpos="PRO.*"]}
+	\item la forme 'je', suivie d'entre 2 et 4 mots, et d'une virgule.\\
+	\texttt{[word="je"][]{2,4}[word=","]}
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Solutions}
+\framesubtitle{Interroger avec \textsc{txm}: niveau 4, exercices}
+
+\begin{enumerate}
+	\item une forme contenant de la ponctuation;\\
+	\verb|[word=".*\p{P}.*"]}|
+	\item un vers d'entre 4 et 5 mots;\\
+	\verb|<l>  []{4,5} </l>|
+	\item un vers débutant par un pronom personnel (\texttt{PRO:PER}) débutant par 't';\\
+	\verb|<l>  [word="t.*" & frpos="PRO:PER"] []* </l>|
+	\item un vers se terminant par '-ron' (suivi ou non d'une consonne).\\
+	\verb|<l>  [] * [word=".*ron[^aeiou]"] </l>|
+\end{enumerate}
+
+\end{frame}
+
 
 \begin{frame}[fragile]
 \frametitle{Bibliographie} 

@@ -2,4 +2,4 @@
 \beamer@sectionintoc {1}{Mise en jambe: \textit {Andromaque}}{6}{0}{1}
 \beamer@sectionintoc {2}{Importer des données et créer un corpus}{13}{0}{2}
 \beamer@sectionintoc {3}{Interroger les données}{21}{0}{3}
-\beamer@sectionintoc {4}{Quelques notions d'analyse quantitative}{22}{0}{4}
+\beamer@sectionintoc {4}{Quelques notions d'analyse quantitative}{32}{0}{4}
