@@ -1,16 +1,23 @@
+% !TeX spellcheck = fr
+% !TeX encoding = UTF-8
 \documentclass{beamer}
+
+\usepackage{fontspec}
+\usepackage{xltxtra}
+
 %\usetheme{Boadilla}
 \usetheme{PaloAlto}
 %\usetheme{Berlin}
 %\usecolor{}
 
-\usepackage{minted}
+%\usepackage{minted}
 
-\usepackage{fontspec}
-\setmainfont{Linux Libertine O}
+
+%\setmainfont{Linux Libertine O}
 \usepackage[english,french]{babel}
 
 \usepackage{hyperref}
+\usepackage{graphicx}
 
 \institute{Univ. de Neuchâtel}
 
@@ -44,6 +51,33 @@
 %\frontmatter 
   
 
+\begin{frame}{De la production des données à l'exploitation}
+	
+	\begin{columns}[T]
+		
+		\begin{column}{0.62\textwidth}
+			
+			\textsc{Ceux-ci collectent les données}
+			
+			\centering
+			
+			\includegraphics[width=\textwidth]{img/vendange.jpg}
+			
+		\end{column}
+			\begin{column}{0.38\textwidth}
+		
+		\textsc{Ceux-là les exploitent}
+		
+		\centering
+		
+		\includegraphics[width=\textwidth]{img/vin2.jpg}
+		
+	\end{column}
+		
+	\end{columns}
+	
+\end{frame}
+
 %\mainmatter 
 
 \begin{frame}{Objectifs}
@@ -59,6 +93,17 @@
 	\alert{\textsc{txm}} \cite{Heiden2010},
 		\item sur des cas tirés de la littérature du XVII\ieme{} siècle.
 	\end{itemize}
+
+
+\begin{block}{La textométrie selon \cite{Pincemin2008}}
+	\begin{quote}
+		La   textométrie développe  les  possibilités  de  consultation  et  d'analyse  de
+		corpus  textuels  en  faisant  appel  à  des  décomptes  et des
+		modélisations  statistiques  et  en  combinant  aux  possibilités
+		de repérage d'occurrences des calculs de tri, de sélection et
+		de réorganisation statistique.
+	\end{quote}
+\end{block}
 	
 \end{frame}
 
@@ -72,15 +117,15 @@
 	\begin{center}
 	\includegraphics[width= 0.8\textwidth]{img/txm.png}
 	\end{center}
-\begin{itemize}
-	\item Logiciel libre et multiplateforme;
-	\item développé à l'ÉNS-LSH de Lyon;
-	\item \url{http://textometrie.ens-lyon.fr/}.
-	\item fait tourner notamment la \textit{Base de français médiéval}
-\end{itemize}
+
+\url{http://textometrie.ens-lyon.fr/}
+
+\textit{Base de français médiéval:} \url{http://txm.bfm-corpus.org/}.
 	\end{column}
 	\begin{column}{0.66\textwidth}
 		\begin{itemize}
+			\item Logiciel libre et multiplateforme;
+			\item développé à l'ÉNS-LSH de Lyon;
 			\item dévoué à la textométrie;
 			\item repose sur des technologies de référence:
 				\begin{itemize}
@@ -120,7 +165,9 @@
 \item ouvrir l'index, y chercher les occurrences de 'Seigneur';
 	\begin{enumerate}
 		\item clic-droit, envoyer vers les concordances;
-		\item double-clic sur une occurrence pour aller au texte;
+			\begin{enumerate}
+				\item double-clic sur une occurrence pour aller au texte;
+			\end{enumerate}
 		\item clic-droit, envoyer vers les cooccurrents;
 			\begin{enumerate}
 				\item aller d'un cooccurrent aux concordances, puis au texte
@@ -140,21 +187,183 @@
 \end{frame}
 
 \begin{frame}{Statistiques de base}
+À partir de la table lexicale créée,
 \begin{enumerate}
-\item créer une partition, en sélectionnant la structure \texttt{sp} et l'attribut \texttt{\@who};
-\item consulter les dimensions;
-\item créer une table lexicale, expérimenter avec les tris, la fusion des colonnes, etc.
+\item calculer les spécificités;
+\item quels sont les mots les plus spécifiques d'Oreste? de Pylade?
+\item en sélectionner quelques uns qui sont pertinents;
+\item calculer le diagramme en bâton des lignes sélectionnées.
 \end{enumerate}
 \end{frame}
 
+\begin{frame}{Qu'en déduire?}
+	
+	\includegraphics[width=\textwidth]{img/graphique_word_Oreste.png}
+	
+\end{frame}
 
+%TODO: ajouter formule et expliquer maths des spécificités, si temps.
+
+
+\frame{Prêts à passer aux choses sérieuses?}
 
 \section{Importer des données et créer un corpus}
 
+\begin{frame}{Différents modes d'import}
+	
+	\begin{description}
+		\item[flemmards] import (avec ou sans métadonnées complémentaires)
+		depuis 
+		\begin{itemize}
+			\item presse-papier;
+			\item des fichiers \texttt{txt} ;
+			\item traitement de texte.
+		\end{itemize}
+		\item[XML] XML/ TEI ou autre;
+		\item[spécifiques] formats de logiciels de textométrie.
+	\end{description}
+	
+\end{frame}
+
+% Le corpus
+
+\begin{frame}[fragile]
+\frametitle{Corpus du jour: un peu de théâtre du XVII\ieme{} siècle}
+
+Corpus constitué pour le cours d'aujourd'hui:
+
+\begin{itemize}
+	\item source: Paul Fièvre,  \url{http://www.theatre-classique.fr/};
+	\item documents encodés en \textsc{xml}/\textsc{tei} (ou dans plusieurs \textsc{xml/tei});
+	\item corpus de \alert{36} pièces de théâtre en vers du XVII\ieme{} siècle,
+	\item appartenant à trois genres principaux:
+		\begin{itemize}
+			\item comédie,
+			\item tragédie,
+			\item tragi-comédie.
+		\end{itemize}
+	\item sélectionnées un peu au hasard,
+	\begin{itemize}
+		\item mais en essayant de conserver un équilibre entre les genres principaux (comédie, tragédie, tragi-comédie),
+		\item d'avoir des pièces de longueur similaire (entre 1250 et 2000 vers),
+		\item un équilibre entre les auteurs (4 pièces par auteur),
+		\item et entre les générations (4 auteurs par génération).
+	\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{9 auteurs, 2 générations}
+	%	Auteurs, approximativement de deux générations un peu différentes du XVII\ieme{} siècle,
+	\begin{columns}[T]
+		\begin{column}{0.45\textwidth}
+			G1, c.~1630-1650
+			\begin{itemize}
+			    \item Pierre Du Ryer \\(fl. 1628-1655);
+			    \item Georges de Scudéry\\ (fl. 1631-1643).
+				\item Jean de Rotrou\\ (fl. 1635-1649);
+				\item Paul Scarron\\ (fl. 1648-1660);
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.45\textwidth}
+			G2, c.~1650-1690
+			\begin{itemize}
+				\item Claude Boyer\\ (fl. 1646-1697);
+				\item Thomas Corneille\\ (fl. 1651-1696)
+				\item Molière\\ (fl. 1655-1673)
+				\item Jean Racine\\ (fl. 1664-1691);
+			\end{itemize}
+		
+		\end{column}
+	\end{columns}
+	
+			Et un monstre sacré, \textbf{Pierre Corneille} (fl. 1629-1675).
+	
+\end{frame}
+
+\begin{frame}{Sources et pré-traitements}
+	
+	
+	 \begin{itemize}
+	 	\item Graphies modernisées (dommage… mais va faire notre affaire dans ce cas précis);
+	 	\item Faut-il supprimer la distinction majuscule/minuscule?
+	 		\begin{itemize}
+	 			\item Pour: suppression de biais éditoriaux.
+	 			\item Contre: les majuscules peuvent conserver de l'information syntaxique.
+	 		\end{itemize}
+ 		\item Veut-on garder tout ce qui est extérieur aux répliques (liste des personnages, page de titre, etc.)?
+ 			\begin{itemize}
+ 				\item Peut être retiré grâce à la structuration \textsc{xml/tei}.
+ 			\end{itemize}
+	 	\item pas de lemmatisation: possibilité de lemmatiser et annoter automatiquement.
+	 \end{itemize}
+	
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Transformations avant l'import}
+	
+	Dossier \texttt{xsl}, feuille \texttt{source\_to\_txt.xsl} (2.0), deux sorties:
+	
+	\begin{enumerate}
+		\item fichier \texttt{metadata.csv}: métadonnées des documents extraites automatiquement des fichiers \textsc{tei} (\texttt{teiHeader} et page de titre, \texttt{docDate});
+		\item dossier \texttt{txt}: transformation en \texttt{txt} des pièces:
+			\begin{itemize}
+				\item passage en bas de casse;
+				\item suppression du \texttt{teiHeader};
+				\item suppression du \texttt{castList} et des mentions de personnage, \texttt{speaker};
+				\item suppression du \texttt{front}, des \texttt{docTitle}, \texttt{docDate}, \texttt{docAuthor}, \texttt{docImprint}, \texttt{printer}, \texttt{performance}, \verb|div[\@type='dedicace']|;
+				\item suppression des titres, notes.
+			\end{itemize}
+	\end{enumerate}
+	
+\end{frame}
+
+\begin{frame}{Import \texttt{txt} + \texttt{csv}}
+	
+	\begin{enumerate}
+		\item sélectionner le répertoire de sources \texttt{txm\_import1\_txt} (contenant fichiers \texttt{txt} et métadonnées \texttt{csv},
+		corpus tronqué pour gagner un peu de temps);
+		\item paramétrer l'import (nommer le corpus THEATRENEUCHTXT);
+		\item demander la lemmatisation;
+		\item vérifier que les métadonnées sont bien comprises;
+		\item lancer l'import;
+		\item (regarder le log de l'import);
+		\item une fois l'import réussi, jeter un œil à la description, à l'édition, etc.
+	\end{enumerate}
+	
+\end{frame}
+
+% Import XML amélioré, avec XSLT intermédiaire, lemmatisation, etc. etc.
+
+\begin{frame}{Import \texttt{xml/w} + \texttt{csv} amélioré}
+
+\begin{enumerate}
+	\item sélectionner le répertoire de sources \texttt{txm\_import2\_xml} (contenant fichiers \texttt{xml} et métadonnées \texttt{csv},
+complet);
+	\item paramétrer l'import (nommer le corpus THEATRENEUCHXML);
+	\item demander la lemmatisation;
+	\item vérifier que les métadonnées sont bien comprises;
+	\item \alert{associer l'\texttt{xsl} 2.0 de pré-traitement, \texttt{import\_xml\_filtre.xsl}};
+	\item lancer l'import;
+	\item (regarder le log de l'import);
+	\item une fois l'import réussi, jeter un œil à la description, à l'édition, etc.
+\end{enumerate}
+
+\end{frame}
+
+
 \section{Interroger les données}
 
-\section{Quelques notions d'analyse quantitative}
+%interrogation des mots
 
+%interrogation des lemmes
+
+%rudiments de CQL (CQP)
+
+%Partitions par genre, auteur, texte. Table-lexicale, lemmes ou formes
+
+\section{Quelques notions d'analyse quantitative}
 
 \begin{frame}[fragile]
 \frametitle{Approches principales: la forme (linguistique) ou le fond (sémantique)?}
@@ -167,10 +376,13 @@ Sans prétention à l'exhaustivité, on peut distinguer deux approches principal
 Très schématique, mais nous en reparlerons plus tard.
 \end{frame}
 
+% Quelques stats desc?
 
-\begin{frame}{test}
+% Problématique: les genres littéraires (thématique)
 
-\end{frame}
+% Problématique: les auteurs (stylométrie)
+
+
 
 \appendix
 
@@ -179,6 +391,10 @@ Très schématique, mais nous en reparlerons plus tard.
 
 \begin{thebibliography}{Heiden et al., 2010}
 	\bibitem[Heiden et al., 2010]{Heiden2010} Heiden, S., Magué, J-P., et Pincemin, B., \og{}TXM: Une plateforme logicielle open-source pour la textométrie – conception et développement\fg{}, dans \textit{Proc. of 10th International Conference on the Statistical Analysis of Textual Data - JADT 2010}, éd. Sergio Bolasco, Isabella Chiari, Luca Giuliano, Rome, 2010, t.~2, p. 1021-1032, \url{https://halshs.archives-ouvertes.fr/halshs-00549779/fr/}.
+	\bibitem[Pincemin et al., 2008]{Pincemin2008} Pincemin, Bénédicte, Céline Guillot, Serge Heiden, Alexei Lavrentiev, et Christiane Marchello-Nizia, « Usages linguistiques de la textométrie: analyse qualitative de la consultation de la Base de Français Médiéval via le logiciel Weblex », \textit{Syntaxe et Sémantique}, 9 (2008), p.~87–110, \url{https://halshs.archives-ouvertes.fr/halshs-00355461}.
+	
+	
+	
 \end{thebibliography}
 
 

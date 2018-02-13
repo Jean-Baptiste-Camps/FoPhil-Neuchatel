@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2018/dev/Debian) (preloaded format=xelatex 2018.2.6)  12 FEB 2018 20:09
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2018/dev/Debian) (preloaded format=xelatex 2018.2.6)  13 FEB 2018 14:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -670,226 +670,6 @@ Package: amsthm 2017/10/31 v2.20.4
 \beamer@dimb=\dimen189
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemePaloAlto.sty
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
-\beamer@sidebarwidth=\dimen190
-\beamer@headheight=\dimen191
-)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty))
-(/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
-Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
-
-(/usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
-Package: fvextra 2017/07/08 v1.3.1 fvextra - extensions and patches for fancyvr
-b
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2008/02/07
-
-Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
-<2008/02/07> (tvz)
-\FV@CodeLineNo=\count157
-\FV@InFile=\read2
-\FV@TabBox=\box54
-\c@FancyVerbLine=\count158
-\FV@StepNumber=\count159
-\FV@OutFile=\write5
-)
-(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
-Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
-tim
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
-Package textcomp Info: Sub-encoding information:
-(textcomp)               5 = only ISO-Adobe without \textcurrency
-(textcomp)               4 = 5 + \texteuro
-(textcomp)               3 = 4 + \textohm
-(textcomp)               2 = 3 + \textestimated + \textcurrency
-(textcomp)               1 = TS1 - \textcircled - \t
-(textcomp)               0 = TS1 (full)
-(textcomp)             Font families with sub-encoding setting implement
-(textcomp)             only a restricted character set as indicated.
-(textcomp)             Family '?' is the default used for unknown fonts.
-(textcomp)             See the documentation for details.
-Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
-File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-)
-LaTeX Info: Redefining \oldstylenums on input line 334.
-Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
-Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
-Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
-Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
-Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
-Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
-Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
-Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
-Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
-Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
-Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
-Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
-Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
-Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
-Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
-Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
-Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
-Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
-Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
-Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
-Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
-Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
-Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
-Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
-
-Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
-Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
-Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
-Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
-Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
-Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
-Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
-Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
-Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
-Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
-Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
-Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
-Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
-Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
-Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
-Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
-Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
-Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
-Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
-Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
-Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
-Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
-Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
-Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
-Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
-Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
-Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
-Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
-Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
-Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
-Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
-Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
-Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
-Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
-Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
-Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
-Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-))
-(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
-Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
-\linenopenalty=\count160
-\output=\toks43
-\linenoprevgraf=\count161
-\linenumbersep=\dimen192
-\linenumberwidth=\dimen193
-\c@linenumber=\count162
-\c@pagewiselinenumber=\count163
-\c@LN@truepage=\count164
-\c@internallinenumber=\count165
-\c@internallinenumbers=\count166
-\quotelinenumbersep=\dimen194
-\bframerule=\dimen195
-\bframesep=\dimen196
-\bframebox=\box55
-LaTeX Info: Redefining \\ on input line 3056.
-)
-\c@FV@TrueTabGroupLevel=\count167
-\c@FV@TrueTabCounter=\count168
-\FV@TabBox@Group=\box56
-\FV@TmpLength=\skip57
-\c@FV@HighlightLinesStart=\count169
-\c@FV@HighlightLinesStop=\count170
-\FV@LoopCount=\count171
-\FV@NCharsBox=\box57
-\FV@BreakIndent=\dimen197
-\FV@BreakIndentNChars=\count172
-\FV@BreakSymbolSepLeft=\dimen198
-\FV@BreakSymbolSepLeftNChars=\count173
-\FV@BreakSymbolSepRight=\dimen199
-\FV@BreakSymbolSepRightNChars=\count174
-\FV@BreakSymbolIndentLeft=\dimen256
-\FV@BreakSymbolIndentLeftNChars=\count175
-\FV@BreakSymbolIndentRight=\dimen257
-\FV@BreakSymbolIndentRightNChars=\count176
-\c@FancyVerbLineBreakLast=\count177
-\FV@LineBox=\box58
-\FV@LineIndentBox=\box59
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count178
-\calc@Bcount=\count179
-\calc@Adimen=\dimen258
-\calc@Bdimen=\dimen259
-\calc@Askip=\skip58
-\calc@Bskip=\skip59
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count180
-\calc@Cskip=\skip60
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
-Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
-Package shellesc Info: Unrestricted shell escape enabled on input line 67.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
-Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/catchfile.sty
-Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
-)
-runsystem(uname -s > "main.w18")...executed.
-
- (./main.w18)
-runsystem(rm -- "main.w18")...executed.
-
-) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
-(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\@xs@message=\write6
-\integerpart=\count181
-\decimalpart=\count182
-)
-Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
-Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip61
-\fb@frw=\dimen260
-\fb@frh=\dimen261
-\FrameRule=\dimen262
-\FrameSep=\dimen263
-)
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count183
-\float@exts=\toks44
-\float@box=\box60
-\@float@everytoks=\toks45
-\@floatcapt=\box61
-)
-\minted@appexistsfile=\read3
-\minted@bgbox=\box62
-\minted@code=\write7
-\c@minted@FancyVerbLineTemp=\count184
-\c@minted@pygmentizecounter=\count185
-\@float@every@listing=\toks46
-\c@listing=\count186
-)
-runsystem(mkdir -p _minted-main)...executed.
-
-
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -897,172 +677,172 @@ Package: expl3 2017/12/16 L3 programming layer (loader)
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2017/12/16 L3 programming layer (code)
-\c_max_int=\count187
-\l_tmpa_int=\count188
-\l_tmpb_int=\count189
-\g_tmpa_int=\count190
-\g_tmpb_int=\count191
-\g__intarray_font_int=\count192
-\g__prg_map_int=\count193
-\c_log_iow=\count194
-\l_iow_line_count_int=\count195
-\l__iow_line_target_int=\count196
-\l__iow_one_indent_int=\count197
-\l__iow_indent_int=\count198
-\c_zero_dim=\dimen264
-\c_max_dim=\dimen265
-\l_tmpa_dim=\dimen266
-\l_tmpb_dim=\dimen267
-\g_tmpa_dim=\dimen268
-\g_tmpb_dim=\dimen269
-\c_zero_skip=\skip62
-\c_max_skip=\skip63
-\l_tmpa_skip=\skip64
-\l_tmpb_skip=\skip65
-\g_tmpa_skip=\skip66
-\g_tmpb_skip=\skip67
+\c_max_int=\count157
+\l_tmpa_int=\count158
+\l_tmpb_int=\count159
+\g_tmpa_int=\count160
+\g_tmpb_int=\count161
+\g__intarray_font_int=\count162
+\g__prg_map_int=\count163
+\c_log_iow=\count164
+\l_iow_line_count_int=\count165
+\l__iow_line_target_int=\count166
+\l__iow_one_indent_int=\count167
+\l__iow_indent_int=\count168
+\c_zero_dim=\dimen190
+\c_max_dim=\dimen191
+\l_tmpa_dim=\dimen192
+\l_tmpb_dim=\dimen193
+\g_tmpa_dim=\dimen194
+\g_tmpb_dim=\dimen195
+\c_zero_skip=\skip57
+\c_max_skip=\skip58
+\l_tmpa_skip=\skip59
+\l_tmpb_skip=\skip60
+\g_tmpa_skip=\skip61
+\g_tmpb_skip=\skip62
 \c_zero_muskip=\muskip12
 \c_max_muskip=\muskip13
 \l_tmpa_muskip=\muskip14
 \l_tmpb_muskip=\muskip15
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
-\l_keys_choice_int=\count199
-\c__fp_leading_shift_int=\count266
-\c__fp_middle_shift_int=\count267
-\c__fp_trailing_shift_int=\count268
-\c__fp_big_leading_shift_int=\count269
-\c__fp_big_middle_shift_int=\count270
-\c__fp_big_trailing_shift_int=\count271
-\c__fp_Bigg_leading_shift_int=\count272
-\c__fp_Bigg_middle_shift_int=\count273
-\c__fp_Bigg_trailing_shift_int=\count274
-\l__sort_length_int=\count275
-\l__sort_min_int=\count276
-\l__sort_top_int=\count277
-\l__sort_max_int=\count278
-\l__sort_true_max_int=\count279
-\l__sort_block_int=\count280
-\l__sort_begin_int=\count281
-\l__sort_end_int=\count282
-\l__sort_A_int=\count283
-\l__sort_B_int=\count284
-\l__sort_C_int=\count285
-\l__tl_build_start_index_int=\count286
-\l__tl_build_index_int=\count287
-\l__tl_analysis_normal_int=\count288
-\l__tl_analysis_index_int=\count289
-\l__tl_analysis_nesting_int=\count290
-\l__tl_analysis_type_int=\count291
-\l__regex_internal_a_int=\count292
-\l__regex_internal_b_int=\count293
-\l__regex_internal_c_int=\count294
-\l__regex_balance_int=\count295
-\l__regex_group_level_int=\count296
-\l__regex_mode_int=\count297
-\c__regex_cs_in_class_mode_int=\count298
-\c__regex_cs_mode_int=\count299
-\l__regex_catcodes_int=\count300
-\l__regex_default_catcodes_int=\count301
-\c__regex_catcode_L_int=\count302
-\c__regex_catcode_O_int=\count303
-\c__regex_catcode_A_int=\count304
-\c__regex_all_catcodes_int=\count305
-\l__regex_show_lines_int=\count306
-\l__regex_min_state_int=\count307
-\l__regex_max_state_int=\count308
-\l__regex_left_state_int=\count309
-\l__regex_right_state_int=\count310
-\l__regex_capturing_group_int=\count311
-\l__regex_min_pos_int=\count312
-\l__regex_max_pos_int=\count313
-\l__regex_curr_pos_int=\count314
-\l__regex_start_pos_int=\count315
-\l__regex_success_pos_int=\count316
-\l__regex_curr_char_int=\count317
-\l__regex_curr_catcode_int=\count318
-\l__regex_last_char_int=\count319
-\l__regex_case_changed_char_int=\count320
-\l__regex_curr_state_int=\count321
-\l__regex_step_int=\count322
-\l__regex_min_active_int=\count323
-\l__regex_max_active_int=\count324
-\l__regex_replacement_csnames_int=\count325
-\l__regex_match_count_int=\count326
-\l__regex_min_submatch_int=\count327
-\l__regex_submatch_int=\count328
-\l__regex_zeroth_submatch_int=\count329
-\g__debug_trace_regex_int=\count330
-\c_empty_box=\box63
-\l_tmpa_box=\box64
-\l_tmpb_box=\box65
-\g_tmpa_box=\box66
-\g_tmpb_box=\box67
-\l__box_top_dim=\dimen270
-\l__box_bottom_dim=\dimen271
-\l__box_left_dim=\dimen272
-\l__box_right_dim=\dimen273
-\l__box_top_new_dim=\dimen274
-\l__box_bottom_new_dim=\dimen275
-\l__box_left_new_dim=\dimen276
-\l__box_right_new_dim=\dimen277
-\l__box_internal_box=\box68
-\l__coffin_internal_box=\box69
-\l__coffin_internal_dim=\dimen278
-\l__coffin_offset_x_dim=\dimen279
-\l__coffin_offset_y_dim=\dimen280
-\l__coffin_x_dim=\dimen281
-\l__coffin_y_dim=\dimen282
-\l__coffin_x_prime_dim=\dimen283
-\l__coffin_y_prime_dim=\dimen284
-\c_empty_coffin=\box70
-\l__coffin_aligned_coffin=\box71
-\l__coffin_aligned_internal_coffin=\box72
-\l_tmpa_coffin=\box73
-\l_tmpb_coffin=\box74
-\l__coffin_display_coffin=\box75
-\l__coffin_display_coord_coffin=\box76
-\l__coffin_display_pole_coffin=\box77
-\l__coffin_display_offset_dim=\dimen285
-\l__coffin_display_x_dim=\dimen286
-\l__coffin_display_y_dim=\dimen287
-\l__coffin_bounding_shift_dim=\dimen288
-\l__coffin_left_corner_dim=\dimen289
-\l__coffin_right_corner_dim=\dimen290
-\l__coffin_bottom_corner_dim=\dimen291
-\l__coffin_top_corner_dim=\dimen292
-\l__coffin_scaled_total_height_dim=\dimen293
-\l__coffin_scaled_width_dim=\dimen294
+\l_keys_choice_int=\count169
+\c__fp_leading_shift_int=\count170
+\c__fp_middle_shift_int=\count171
+\c__fp_trailing_shift_int=\count172
+\c__fp_big_leading_shift_int=\count173
+\c__fp_big_middle_shift_int=\count174
+\c__fp_big_trailing_shift_int=\count175
+\c__fp_Bigg_leading_shift_int=\count176
+\c__fp_Bigg_middle_shift_int=\count177
+\c__fp_Bigg_trailing_shift_int=\count178
+\l__sort_length_int=\count179
+\l__sort_min_int=\count180
+\l__sort_top_int=\count181
+\l__sort_max_int=\count182
+\l__sort_true_max_int=\count183
+\l__sort_block_int=\count184
+\l__sort_begin_int=\count185
+\l__sort_end_int=\count186
+\l__sort_A_int=\count187
+\l__sort_B_int=\count188
+\l__sort_C_int=\count189
+\l__tl_build_start_index_int=\count190
+\l__tl_build_index_int=\count191
+\l__tl_analysis_normal_int=\count192
+\l__tl_analysis_index_int=\count193
+\l__tl_analysis_nesting_int=\count194
+\l__tl_analysis_type_int=\count195
+\l__regex_internal_a_int=\count196
+\l__regex_internal_b_int=\count197
+\l__regex_internal_c_int=\count198
+\l__regex_balance_int=\count199
+\l__regex_group_level_int=\count266
+\l__regex_mode_int=\count267
+\c__regex_cs_in_class_mode_int=\count268
+\c__regex_cs_mode_int=\count269
+\l__regex_catcodes_int=\count270
+\l__regex_default_catcodes_int=\count271
+\c__regex_catcode_L_int=\count272
+\c__regex_catcode_O_int=\count273
+\c__regex_catcode_A_int=\count274
+\c__regex_all_catcodes_int=\count275
+\l__regex_show_lines_int=\count276
+\l__regex_min_state_int=\count277
+\l__regex_max_state_int=\count278
+\l__regex_left_state_int=\count279
+\l__regex_right_state_int=\count280
+\l__regex_capturing_group_int=\count281
+\l__regex_min_pos_int=\count282
+\l__regex_max_pos_int=\count283
+\l__regex_curr_pos_int=\count284
+\l__regex_start_pos_int=\count285
+\l__regex_success_pos_int=\count286
+\l__regex_curr_char_int=\count287
+\l__regex_curr_catcode_int=\count288
+\l__regex_last_char_int=\count289
+\l__regex_case_changed_char_int=\count290
+\l__regex_curr_state_int=\count291
+\l__regex_step_int=\count292
+\l__regex_min_active_int=\count293
+\l__regex_max_active_int=\count294
+\l__regex_replacement_csnames_int=\count295
+\l__regex_match_count_int=\count296
+\l__regex_min_submatch_int=\count297
+\l__regex_submatch_int=\count298
+\l__regex_zeroth_submatch_int=\count299
+\g__debug_trace_regex_int=\count300
+\c_empty_box=\box54
+\l_tmpa_box=\box55
+\l_tmpb_box=\box56
+\g_tmpa_box=\box57
+\g_tmpb_box=\box58
+\l__box_top_dim=\dimen196
+\l__box_bottom_dim=\dimen197
+\l__box_left_dim=\dimen198
+\l__box_right_dim=\dimen199
+\l__box_top_new_dim=\dimen256
+\l__box_bottom_new_dim=\dimen257
+\l__box_left_new_dim=\dimen258
+\l__box_right_new_dim=\dimen259
+\l__box_internal_box=\box59
+\l__coffin_internal_box=\box60
+\l__coffin_internal_dim=\dimen260
+\l__coffin_offset_x_dim=\dimen261
+\l__coffin_offset_y_dim=\dimen262
+\l__coffin_x_dim=\dimen263
+\l__coffin_y_dim=\dimen264
+\l__coffin_x_prime_dim=\dimen265
+\l__coffin_y_prime_dim=\dimen266
+\c_empty_coffin=\box61
+\l__coffin_aligned_coffin=\box62
+\l__coffin_aligned_internal_coffin=\box63
+\l_tmpa_coffin=\box64
+\l_tmpb_coffin=\box65
+\l__coffin_display_coffin=\box66
+\l__coffin_display_coord_coffin=\box67
+\l__coffin_display_pole_coffin=\box68
+\l__coffin_display_offset_dim=\dimen267
+\l__coffin_display_x_dim=\dimen268
+\l__coffin_display_y_dim=\dimen269
+\l__coffin_bounding_shift_dim=\dimen270
+\l__coffin_left_corner_dim=\dimen271
+\l__coffin_right_corner_dim=\dimen272
+\l__coffin_bottom_corner_dim=\dimen273
+\l__coffin_top_corner_dim=\dimen274
+\l__coffin_scaled_total_height_dim=\dimen275
+\l__coffin_scaled_width_dim=\dimen276
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
 File: l3xdvidpfmx.def 2017/03/18 v L3 Experimental driver: xdvipdfmx
-\g__driver_image_int=\count331
-\l__driver_tmp_box=\box78
+\g__driver_image_int=\count301
+\l__driver_tmp_box=\box69
 ))
 Package: xparse 2017/12/16 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count332
-\g__xparse_grabber_int=\count333
-\l__xparse_m_args_int=\count334
-\l__xparse_mandatory_args_int=\count335
-\l__xparse_v_nesting_int=\count336
+\l__xparse_current_arg_int=\count302
+\g__xparse_grabber_int=\count303
+\l__xparse_m_args_int=\count304
+\l__xparse_mandatory_args_int=\count305
+\l__xparse_v_nesting_int=\count306
 )
 Package: fontspec 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count337
-\l__fontspec_language_int=\count338
-\l__fontspec_strnum_int=\count339
-\l__fontspec_tmp_int=\count340
-\l__fontspec_em_int=\count341
-\l__fontspec_emdef_int=\count342
-\l__fontspec_strong_int=\count343
-\l__fontspec_strongdef_int=\count344
-\l__fontspec_tmpa_dim=\dimen295
-\l__fontspec_tmpb_dim=\dimen296
-\l__fontspec_tmpc_dim=\dimen297
-\g__file_internal_ior=\read4
+\l__fontspec_script_int=\count307
+\l__fontspec_language_int=\count308
+\l__fontspec_strnum_int=\count309
+\l__fontspec_tmp_int=\count310
+\l__fontspec_em_int=\count311
+\l__fontspec_emdef_int=\count312
+\l__fontspec_strong_int=\count313
+\l__fontspec_strongdef_int=\count314
+\l__fontspec_tmpa_dim=\dimen277
+\l__fontspec_tmpb_dim=\dimen278
+\l__fontspec_tmpc_dim=\dimen279
+\g__file_internal_ior=\read2
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
@@ -1264,34 +1044,75 @@ LaTeX Info: Redefining \- on input line 4015.
 . Defining command \liningnums with sig. 'm' on line 4114.
 .................................................
 ))
-\g__fontspec_family_LinuxLibertineO_int=\count345
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'LinuxLibertineO(0)' created for font 'Linux Libertine O' with
-. options [Ligatures=TeX].
-.  
-.  This font family consists of the following NFSS series/shapes:
-.  
-. - 'normal' (m/n) with NFSS spec.: <->"Linux Libertine
-. O/OT:script=latn;language=DFLT;mapping=tex-text;"
-. - 'small caps'  (m/sc) with NFSS spec.: <->"Linux Libertine
-. O/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
-. - 'bold' (bx/n) with NFSS spec.: <->"Linux Libertine
-. O/B/OT:script=latn;language=DFLT;mapping=tex-text;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: <->"Linux Libertine
-. O/B/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
-. - 'italic' (m/it) with NFSS spec.: <->"Linux Libertine
-. O/I/OT:script=latn;language=DFLT;mapping=tex-text;"
-. - 'italic small caps'  (m/itsc) with NFSS spec.: <->"Linux Libertine
-. O/I/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
-. - 'bold italic' (bx/it) with NFSS spec.: <->"Linux Libertine
-. O/BI/OT:script=latn;language=DFLT;mapping=tex-text;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: <->"Linux Libertine
-. O/BI/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
-.................................................
-LaTeX Info: Redefining \rmfamily on input line 10.
+(/usr/share/texlive/texmf-dist/tex/latex/xltxtra/xltxtra.sty
+Package: xltxtra 2016/01/21 v0.6 Improvements for the "XeLaTeX" format
 
+(/usr/share/texlive/texmf-dist/tex/latex/realscripts/realscripts.sty
+Package: realscripts 2016/02/13 v0.3d Access OpenType subscripts and superscrip
+ts
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fakesubscript with sig. 'm' on line 19.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fakesuperscript with sig. 'm' on line 22.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \textsubscript with sig. 's' on line 25.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \textsuperscript with sig. 's' on line 28.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \realsubscript with sig. 'm' on line 45.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \realsuperscript with sig. 'm' on line 60.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \textsubsuperscript with sig. 'sO{l}mm' on line 138.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \textsupersubscript with sig. 'sO{l}mm' on line 143.
+.................................................
+\subsupersep=\dimen280
+)
+(/usr/share/texlive/texmf-dist/tex/latex/metalogo/metalogo.sty
+Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
+\xl@everylogo=\toks43
+\xl@@everylogo=\toks44
+LaTeX Info: Redefining \TeX on input line 193.
+LaTeX Info: Redefining \LaTeX on input line 202.
+LaTeX Info: Redefining \LaTeXe on input line 219.
+)
+\l__xetex_show_hyphens_wrapping_box=\box70
+\l__xetex_show_hyphens_temp_box=\box71
+\l__xetex_show_hyphens_final_box=\box72
+\g__xetex_show_hyphens_word_box=\box73
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemePaloAlto.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesidebar.sty
+\beamer@sidebarwidth=\dimen281
+\beamer@headheight=\dimen282
+)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2018/01/04 3.16 The Babel package
 
@@ -1307,13 +1128,13 @@ File: babel.def 2018/01/04 3.16 Babel common definitions
 (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2018/01/04 3.16 Babel switching mechanism
 )
-\babel@savecnt=\count346
-\U@D=\dimen298
+\babel@savecnt=\count315
+\U@D=\dimen283
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/xebabel.def
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def))
 LaTeX Info: Redefining \textlatin on input line 1799.
-\bbl@dirlevel=\count347
+\bbl@dirlevel=\count316
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -1321,9 +1142,9 @@ LaTeX Info: Redefining \textlatin on input line 1799.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
 Language: french 2017/10/19 v3.3d French support from the babel system
-\FB@nonchar=\count348
-\FBcolonsp=\toks47
-\FBthinsp=\toks48
+\FB@nonchar=\count317
+\FBcolonsp=\toks45
+\FBthinsp=\toks46
 Package french.ldf Info: No need for active punctuation characters
 (french.ldf)             with this version of XeTeX!
 (french.ldf)             reported on input line 234.
@@ -1333,59 +1154,48 @@ Package french.ldf Info: No need for active punctuation characters
 \FB@guilo=\XeTeXcharclass4
 \FB@guilf=\XeTeXcharclass5
 \FB@guilnul=\XeTeXcharclass6
-\FBguillsp=\toks49
-\FBguill@level=\count349
-\FB@everypar=\toks50
-\FB@Mht=\dimen299
+\FBguillsp=\toks47
+\FBguill@level=\count318
+\FB@everypar=\toks48
+\FB@Mht=\dimen284
 LaTeX Info: Redefining \degres on input line 681.
-\mc@charclass=\count350
-\mc@charfam=\count351
-\mc@charslot=\count352
-\std@mcc=\count353
-\dec@mcc=\count354
-\c@FBcaption@count=\count355
-\listindentFB=\skip68
-\descindentFB=\skip69
-\labelwidthFB=\skip70
-\leftmarginFB=\skip71
-\parindentFFN=\dimen300
-\FBfnindent=\skip72
+\mc@charclass=\count319
+\mc@charfam=\count320
+\mc@charslot=\count321
+\std@mcc=\count322
+\dec@mcc=\count323
+\c@FBcaption@count=\count324
+\listindentFB=\skip63
+\descindentFB=\skip64
+\labelwidthFB=\skip65
+\leftmarginFB=\skip66
+\parindentFFN=\dimen285
+\FBfnindent=\skip67
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 Package french.ldf Info: No list customisation for the beamer class,
-(french.ldf)             reported on input line 12.
-runsystem(which pygmentize && touch main.aex)...executed.
-
-runsystem(rm main.aex)...executed.
-
+(french.ldf)             reported on input line 18.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 41.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1422,8 +1232,8 @@ LaTeX Font Info:    ... okay on input line 41.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box79
-Package hyperref Info: Link coloring OFF on input line 41.
+\AtBeginShipoutBox=\box74
+Package hyperref Info: Link coloring OFF on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1431,60 +1241,58 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count356
+\c@section@level=\count325
 )
-LaTeX Info: Redefining \ref on input line 41.
-LaTeX Info: Redefining \pageref on input line 41.
-LaTeX Info: Redefining \nameref on input line 41.
+LaTeX Info: Redefining \ref on input line 48.
+LaTeX Info: Redefining \pageref on input line 48.
+LaTeX Info: Redefining \nameref on input line 48.
 
 (./main.out) (./main.out)
-\@outlinefile=\write8
-\openout8 = `main.out'.
+\@outlinefile=\write5
+\openout5 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 41.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 48.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 41.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 48.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/LinuxLibertineO(0)/m/n on input lin
-e 41.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 41.
+(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 48.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmss/bx/n on input line 41.
+(Font)                  OT1/cmr/bx/n --> TU/lmss/bx/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmss/bx/n on input line 41.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 41.
+(Font)                  OT1/cmr/bx/n --> TU/lmss/bx/n on input line 48.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 41.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/m/n on input line 41.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 41.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/m/n on input line 48.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmss/m/it on input line 41.
+(Font)                  OT1/cmr/m/it --> TU/lmss/m/it on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmss/m/it on input line 41.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 41.
+(Font)                  OT1/cmr/bx/it --> TU/lmss/m/it on input line 48.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 41.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 41.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 48.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 41.
+(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 48.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 41.
+(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/LinuxLibertineO(0)/bx/n on input l
-ine 41.
+(Font)                  OT1/cmss/bx/n --> TU/lmr/bx/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 41.
+(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 41.
+(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 41.
+(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/bx/n on input line 41.
+(Font)                  TU/lmtt/m/n --> TU/lmtt/bx/n on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1517,74 +1325,76 @@ Dictionary: translator-theorem-dictionary, Language: English
 .................................................
 \symlegacymaths=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 41.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 41.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 41.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 41.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 41.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 41.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 41.
-LaTeX Font Info:    Redeclaring math accent \check on input line 41.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 41.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 41.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 41.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 41.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 41.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 41.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 41.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 41.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 41.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 41.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 41.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 41.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 41.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 41.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 41.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 41.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 48.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 48.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 48.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 48.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 48.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 48.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 48.
+LaTeX Font Info:    Redeclaring math accent \check on input line 48.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 48.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 48.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 48.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 48.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 41.
+(Font)              `operators' in the math version `normal' on input line 48.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/LinuxLibertineO(0)/m/n on input lin
-e 41.
+(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 48.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 41.
+(Font)              `operators' in the math version `bold' on input line 48.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/LinuxLibertineO(0)/m/n on input li
-ne 41.
+(Font)                  OT1/cmss/bx/n --> TU/lmr/m/n on input line 48.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/LinuxLibertineO(0)/m/n --> TU/LinuxLibertineO(0)/m/n
- on input line 41.
-LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 41.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 48.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  TU/lmss/m/it --> TU/LinuxLibertineO(0)/m/it on input li
-ne 41.
+(Font)                  TU/lmss/m/it --> TU/lmr/m/it on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  TU/lmss/bx/n --> TU/LinuxLibertineO(0)/bx/n on input li
-ne 41.
+(Font)                  TU/lmss/bx/n --> TU/lmr/bx/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  TU/lmss/m/n --> TU/lmss/m/n on input line 41.
+(Font)                  TU/lmss/m/n --> TU/lmss/m/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/m/n on input line 41.
+(Font)                  TU/lmtt/m/n --> TU/lmtt/m/n on input line 48.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/LinuxLibertineO(0)/m/n --> TU/LinuxLibertineO(0)/bx/
-n on input line 41.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/lmss/bx/it --> TU/LinuxLibertineO(0)/bx/it on input 
-line 41.
+(Font)                  TU/lmss/bx/it --> TU/lmr/bx/it on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 41.
+(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 48.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/bx/n --> TU/lmtt/bx/n on input line 41.
-LaTeX Info: Redefining \dots on input line 41.
-LaTeX Info: Redefining \up on input line 41.
+(Font)                  TU/lmtt/bx/n --> TU/lmtt/bx/n on input line 48.
+LaTeX Info: Redefining \dots on input line 48.
+LaTeX Info: Redefining \up on input line 48.
  (./main.nav)
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 43.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 50.
 
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 50.
 [1
 
-] [2
+]
+File: img/vendange.jpg Graphic file (type bmp)
+<img/vendange.jpg>
+File: img/vin2.jpg Graphic file (type bmp)
+<img/vin2.jpg>
+ [2
+
+] [3
 
 ]
 \openout4 = `main.vrb'.
@@ -1592,23 +1402,18 @@ LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
  (./main.vrb
 File: img/txm.png Graphic file (type bmp)
 <img/txm.png>
-LaTeX Font Info:    Try loading font information for U+msa on input line 12.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Try loading font information for U+msa on input line 10.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 12.
+LaTeX Font Info:    Try loading font information for U+msb on input line 10.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 12.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 12.
-
-Overfull \hbox (3.66132pt too wide) in paragraph at lines 12--13
-[][][][][][][][][][][] [] 
- []
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 10.
 
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
@@ -1617,24 +1422,71 @@ LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10> not available
 )
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <14.4> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 95.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 140.
 
-
-Overfull \vbox (88.93651pt too high) detected at line 95
- []
-
-[3
-
-] (./main.toc) [4
+[4
 
 ] (./main.toc) [5
 
-] (./main.toc) [6
-
-] (./main.toc) [7
+] (./main.toc
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 2.
+) [6
 
 ]
-[8
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 158.
+ [7
+
+] [8
+
+] [9
+
+] [10
+
+]
+File: img/graphique_word_Oreste.png Graphic file (type bmp)
+<img/graphique_word_Oreste.png>
+ [11
+
+] [12
+
+] (./main.toc)
+[13
+
+] [14
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [15
+
+] [16
+
+] [17
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [18
+
+] [19
+
+] [20
+
+] (./main.toc)
+[21
+
+] (./main.toc) [22
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb)
+Overfull \vbox (26.51526pt too high) detected at line 376
+ []
+
+[23
 
 ]
 \openout4 = `main.vrb'.
@@ -1644,31 +1496,33 @@ File: beamericonarticle.pdf Graphic file (type pdf)
 <use beamericonarticle.pdf>
 File: beamericonarticle.pdf Graphic file (type pdf)
 <use beamericonarticle.pdf>
-) [9
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+) [24
 
 ]
-\tf@nav=\write9
-\openout9 = `main.nav'.
+\tf@nav=\write6
+\openout6 = `main.nav'.
 
-\tf@toc=\write10
-\openout10 = `main.toc'.
+\tf@toc=\write7
+\openout7 = `main.toc'.
 
-\tf@snm=\write11
-\openout11 = `main.snm'.
+\tf@snm=\write8
+\openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 403.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 403.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 127.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 127.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 403.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 403.
  ) 
 Here is how much of TeX's memory you used:
- 33838 strings out of 493005
- 676758 string characters out of 6136702
- 816758 words of memory out of 7000000
- 37243 multiletter control sequences out of 15000+600000
- 535773 words of font info for 67 fonts, out of 8000000 for 9000
+ 31331 strings out of 493005
+ 623245 string characters out of 6136702
+ 726293 words of memory out of 7000000
+ 34791 multiletter control sequences out of 15000+600000
+ 535472 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 56i,16n,65p,10418b,853s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,64p,10407b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (9 pages).
+Output written on main.pdf (24 pages).

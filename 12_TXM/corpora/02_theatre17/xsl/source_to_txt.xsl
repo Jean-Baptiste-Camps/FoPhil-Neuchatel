@@ -15,17 +15,17 @@
     <xsl:variable name="myCollection" select="collection($sourceFolder)"/>
     
     <xsl:template match="/">
+        
+        <!-- Sorties txt -->
         <xsl:for-each select="$myCollection/*">
-            <!-- This here for debugging purposes -->
-            <!--<xsl:sort select="tokenize(document-uri(/), '/')[last()]"/>-->
             <xsl:variable name="nomfichier" select="concat(substring-before(tokenize(document-uri(/), '/')[last()], '.xml'), '_', /TEI/text[1]/descendant::docDate[1]/@value)"/>
-            <!--<xsl:value-of select="$nomfichier"/>-->
             <xsl:text>&#xA;</xsl:text>
             <xsl:result-document href="../txt/{$nomfichier}.txt">
                 <xsl:apply-templates select="/TEI/text"/>
             </xsl:result-document>
         </xsl:for-each>
         
+        <!-- Métadonnées -->
         <xsl:result-document href="../metadata.csv">
             <xsl:text>id,auteur,titre,date,genre,inspiration,structure,type,periode,taille,permalien</xsl:text>
             <xsl:text>&#xA;</xsl:text>
@@ -55,15 +55,6 @@
                 <xsl:text>"&#xA;</xsl:text>
             </xsl:for-each>
             
-            <!-- <SourceDesc>
-				<genre>Tragédie</genre>
-				<inspiration>histoire chrétienne</inspiration>
-				<structure>Cinq actes</structure>
-				<type>vers</type>
-				<periode>1661-1670</periode>
-				<taille>2250-2500</taille>
-				<permalien>http://gallica.bnf.fr/ark:/12148/bpt6k5619355h</permalien>
-			</SourceDesc> -->
         </xsl:result-document>
         
     </xsl:template>
@@ -79,9 +70,9 @@
     <xsl:template match="head"/>
     <xsl:template match="note"/>
     
+    <!-- Passage en bas de casse -->
     <xsl:template match="text()">
         <xsl:value-of select="lower-case(.)"/>
     </xsl:template>
-    
     
 </xsl:stylesheet>
