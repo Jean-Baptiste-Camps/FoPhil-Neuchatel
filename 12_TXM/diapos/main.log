@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2018/dev/Debian) (preloaded format=xelatex 2018.2.6)  13 FEB 2018 17:34
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2018/dev/Debian) (preloaded format=xelatex 2018.2.6)  13 FEB 2018 23:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1113,6 +1113,218 @@ LaTeX Info: Redefining \LaTeXe on input line 219.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2017/07/08 v1.3.1 fvextra - extensions and patches for fancyvr
+b
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count315
+\FV@InFile=\read3
+\FV@TabBox=\box74
+\c@FancyVerbLine=\count316
+\FV@StepNumber=\count317
+\FV@OutFile=\write5
+)
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
+\linenopenalty=\count318
+\output=\toks45
+\linenoprevgraf=\count319
+\linenumbersep=\dimen283
+\linenumberwidth=\dimen284
+\c@linenumber=\count320
+\c@pagewiselinenumber=\count321
+\c@LN@truepage=\count322
+\c@internallinenumber=\count323
+\c@internallinenumbers=\count324
+\quotelinenumbersep=\dimen285
+\bframerule=\dimen286
+\bframesep=\dimen287
+\bframebox=\box75
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count325
+\c@FV@TrueTabCounter=\count326
+\FV@TabBox@Group=\box76
+\FV@TmpLength=\skip63
+\c@FV@HighlightLinesStart=\count327
+\c@FV@HighlightLinesStop=\count328
+\FV@LoopCount=\count329
+\FV@NCharsBox=\box77
+\FV@BreakIndent=\dimen288
+\FV@BreakIndentNChars=\count330
+\FV@BreakSymbolSepLeft=\dimen289
+\FV@BreakSymbolSepLeftNChars=\count331
+\FV@BreakSymbolSepRight=\dimen290
+\FV@BreakSymbolSepRightNChars=\count332
+\FV@BreakSymbolIndentLeft=\dimen291
+\FV@BreakSymbolIndentLeftNChars=\count333
+\FV@BreakSymbolIndentRight=\dimen292
+\FV@BreakSymbolIndentRightNChars=\count334
+\c@FancyVerbLineBreakLast=\count335
+\FV@LineBox=\box78
+\FV@LineIndentBox=\box79
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count336
+\calc@Bcount=\count337
+\calc@Adimen=\dimen293
+\calc@Bdimen=\dimen294
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count338
+\calc@Cskip=\skip66
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 67.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/catchfile.sty
+Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
+)
+runsystem(uname -s > "main.w18")...executed.
+
+ (./main.w18)
+runsystem(rm -- "main.w18")...executed.
+
+) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write6
+\integerpart=\count339
+\decimalpart=\count340
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip67
+\fb@frw=\dimen295
+\fb@frh=\dimen296
+\FrameRule=\dimen297
+\FrameSep=\dimen298
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count341
+\float@exts=\toks46
+\float@box=\box80
+\@float@everytoks=\toks47
+\@floatcapt=\box81
+)
+\minted@appexistsfile=\read4
+\minted@bgbox=\box82
+\minted@code=\write7
+\c@minted@FancyVerbLineTemp=\count342
+\c@minted@pygmentizecounter=\count343
+\@float@every@listing=\toks48
+\c@listing=\count344
+)
+runsystem(mkdir -p _minted-main)...executed.
+
+
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2018/01/04 3.16 The Babel package
 
@@ -1128,13 +1340,13 @@ File: babel.def 2018/01/04 3.16 Babel common definitions
 (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2018/01/04 3.16 Babel switching mechanism
 )
-\babel@savecnt=\count315
-\U@D=\dimen283
+\babel@savecnt=\count345
+\U@D=\dimen299
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/xebabel.def
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def))
 LaTeX Info: Redefining \textlatin on input line 1799.
-\bbl@dirlevel=\count316
+\bbl@dirlevel=\count346
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -1142,9 +1354,9 @@ LaTeX Info: Redefining \textlatin on input line 1799.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-french/french.ldf
 Language: french 2017/10/19 v3.3d French support from the babel system
-\FB@nonchar=\count317
-\FBcolonsp=\toks45
-\FBthinsp=\toks46
+\FB@nonchar=\count347
+\FBcolonsp=\toks49
+\FBthinsp=\toks50
 Package french.ldf Info: No need for active punctuation characters
 (french.ldf)             with this version of XeTeX!
 (french.ldf)             reported on input line 234.
@@ -1154,28 +1366,39 @@ Package french.ldf Info: No need for active punctuation characters
 \FB@guilo=\XeTeXcharclass4
 \FB@guilf=\XeTeXcharclass5
 \FB@guilnul=\XeTeXcharclass6
-\FBguillsp=\toks47
-\FBguill@level=\count318
-\FB@everypar=\toks48
-\FB@Mht=\dimen284
+\FBguillsp=\toks51
+\FBguill@level=\count348
+\FB@everypar=\toks52
+\FB@Mht=\dimen300
 LaTeX Info: Redefining \degres on input line 681.
-\mc@charclass=\count319
-\mc@charfam=\count320
-\mc@charslot=\count321
-\std@mcc=\count322
-\dec@mcc=\count323
-\c@FBcaption@count=\count324
-\listindentFB=\skip63
-\descindentFB=\skip64
-\labelwidthFB=\skip65
-\leftmarginFB=\skip66
-\parindentFFN=\dimen285
-\FBfnindent=\skip67
+\mc@charclass=\count349
+\mc@charfam=\count350
+\mc@charslot=\count351
+\std@mcc=\count352
+\dec@mcc=\count353
+\c@FBcaption@count=\count354
+\listindentFB=\skip68
+\descindentFB=\skip69
+\labelwidthFB=\skip70
+\leftmarginFB=\skip71
+\parindentFFN=\dimen301
+\FBfnindent=\skip72
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 Package french.ldf Info: No list customisation for the beamer class,
 (french.ldf)             reported on input line 17.
- (./main.aux)
+runsystem(which pygmentize && touch main.aex)...executed.
+
+runsystem(rm main.aex)...executed.
+
+ (./main.aux
+
+LaTeX Warning: Label `Heiden2010' multiply defined.
+
+
+LaTeX Warning: Label `Pincemin2008' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
@@ -1195,6 +1418,12 @@ LaTeX Font Info:    ... okay on input line 52.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
 LaTeX Font Info:    ... okay on input line 52.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 52.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
 LaTeX Font Info:    ... okay on input line 52.
 
 *geometry* driver: auto-detecting
@@ -1232,7 +1461,7 @@ LaTeX Font Info:    ... okay on input line 52.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box74
+\AtBeginShipoutBox=\box83
 Package hyperref Info: Link coloring OFF on input line 52.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1241,15 +1470,15 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count325
+\c@section@level=\count355
 )
 LaTeX Info: Redefining \ref on input line 52.
 LaTeX Info: Redefining \pageref on input line 52.
 LaTeX Info: Redefining \nameref on input line 52.
 
 (./main.out) (./main.out)
-\@outlinefile=\write5
-\openout5 = `main.out'.
+\@outlinefile=\write8
+\openout8 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 52.
@@ -1519,22 +1748,177 @@ Overfull \vbox (11.38843pt too high) detected at line 508
 
 (./main.vrb) [33
 
+] [34
+
+]
+Overfull \vbox (15.93475pt too high) detected at line 648
+ []
+
+[35
+
+]
+File: img/Graphique_genre_frlemma_specif.png Graphic file (type bmp)
+<img/Graphique_genre_frlemma_specif.png>
+ [36
+
+] [37
+
+]
+File: img/Graphique_word_parAuteurs_specif.png Graphic file (type bmp)
+<img/Graphique_word_parAuteurs_specif.png>
+ [38
+
+]
+File: img/parAuteur_word_AFC_1-2.png Graphic file (type bmp)
+<img/parAuteur_word_AFC_1-2.png>
+ [39
+
+]
+File: img/parAuteur_word_AFC_1-2_edit.png Graphic file (type bmp)
+<img/parAuteur_word_AFC_1-2_edit.png>
+ [40
+
+] [41
+
+] [42
+
+] (./main.toc) [43
+
 ]
 
 LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <9> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 627.
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 723.
 
-[34
-
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb) [35
+[44
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [36
+ (./main.vrb) [45
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [46
+
+] (./main.toc) [47
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb)
+[48
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [49
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [50
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+File: img/af.png Graphic file (type bmp)
+<img/af.png>
+)
+Overfull \vbox (36.28473pt too high) detected at line 815
+ []
+
+[51
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [52
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [53
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 4.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 4.
+) [54
+
+] [55
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb)
+[56
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [57
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb)
+Overfull \vbox (17.25963pt too high) detected at line 925
+ []
+
+[58
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [59
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [60
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+\openout5 = `main.pyg'.
+
+runsystem(pygmentize -S default -f latex -P commandprefix=PYG > _minted-main/de
+fault-pyg-prefix.pygstyle)...executed.
+
+
+(./_minted-main/default-pyg-prefix.pygstyle)
+runsystem(pygmentize -S default -f latex -P commandprefix=PYGdefault > _minted-
+main/default.pygstyle)...executed.
+
+ (./_minted-main/default.pygstyle)
+runsystem(pygmentize -l r -f latex -P commandprefix=PYG -F tokenmerge -o _minte
+d-main/86B7A1417F4752B2E7CD6A49B0AC0F9AD1B441A9AB0E232E9D4562FAA45AEAC6.pygtex 
+main.pyg)...executed.
+
+
+(./_minted-main/86B7A1417F4752B2E7CD6A49B0AC0F9AD1B441A9AB0E232E9D4562FAA45AEAC
+6.pygtex
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
+)
+\openout5 = `main.pyg'.
+
+runsystem(pygmentize -l r -f latex -P commandprefix=PYG -F tokenmerge -o _minte
+d-main/ED2BBB6756BC3DE9F4654427A19DFF90D1B441A9AB0E232E9D4562FAA45AEAC6.pygtex 
+main.pyg)...executed.
+
+
+(./_minted-main/ED2BBB6756BC3DE9F4654427A19DFF90D1B441A9AB0E232E9D4562FAA45AEAC
+6.pygtex)) [61
+
+] (./main.toc) [62
 
 ]
 \openout4 = `main.vrb'.
@@ -1546,31 +1930,469 @@ File: beamericonarticle.pdf Graphic file (type pdf)
 <use beamericonarticle.pdf>
 File: beamericonarticle.pdf Graphic file (type pdf)
 <use beamericonarticle.pdf>
-) [37
+) [63
 
 ]
-\tf@nav=\write6
-\openout6 = `main.nav'.
+\tf@nav=\write9
+\openout9 = `main.nav'.
 
-\tf@toc=\write7
-\openout7 = `main.toc'.
+\tf@toc=\write10
+\openout10 = `main.toc'.
 
-\tf@snm=\write8
-\openout8 = `main.snm'.
+\tf@snm=\write11
+\openout11 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 681.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 681.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1016.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1016.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 681.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 681.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1016.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1016.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+runsystem(rm main.pyg)...executed.
+
  ) 
 Here is how much of TeX's memory you used:
- 31374 strings out of 493005
- 623684 string characters out of 6136702
- 740012 words of memory out of 7000000
- 34825 multiletter control sequences out of 15000+600000
- 535480 words of font info for 66 fonts, out of 8000000 for 9000
+ 34553 strings out of 493005
+ 689707 string characters out of 6136702
+ 842134 words of memory out of 7000000
+ 37868 multiletter control sequences out of 15000+600000
+ 537726 words of font info for 82 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 56i,16n,64p,10407b,838s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,68p,10407b,850s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (37 pages).
+Output written on main.pdf (63 pages).
+mp)
+<img/Graphique_word_parAuteurs_specif.png>
+ [38
+
+]
+File: img/parAuteur_word_AFC_1-2.png Graphic file (type bmp)
+<img/parAuteur_word_AFC_1-2.png>
+ [39
+
+]
+File: img/parAuteur_word_AFC_1-2_edit.png Graphic file (type bmp)
+<img/parAuteur_word_AFC_1-2_edit.png>
+ [40
+
+] [41
+
+] [42
+
+] (./main.toc) [43
+
+]
+
+LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <9> not available
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 723.
+
+[44
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [45
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [46
+
+] (./main.toc) [47
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb)
+[48
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [49
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [50
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [51
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb)
+[52
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 4.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 4.
+) [53
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [54
+
+] [55
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+! Missing $ inserted.
+<inserted text> 
+                $
+l.15 _
+      {i}-y_{i}\right)^{2}}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra \right.
+l.15 _{i}-y_{i}\right)
+                      ^{2}}
+I'm ignoring a \right that had no matching \left.
+
+! Extra }, or forgotten $.
+l.15 _{i}-y_{i}\right)^{2}}
+                           
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{beamer@framepauses} on input line 885 ended by \end{equat
+ion*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \]
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.16 \]
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: \begin{beamer@framepauses} on input line 885 ended by \end{linen
+omath}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \]
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+<argument> .../enumerate \beameritemnestingprefix 
+                                                  body end
+l.20 \end{itemize}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{beamer@frameslide} on input line 885 ended by \end{itemiz
+e}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \end{itemize}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.20 \end{itemize}
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+)
+! Extra \endgroup.
+\beamer@doifinframe ...\input {main.vrb}\endgroup 
+                                                  \end {beamer@frameslide}
+l.885 \end{frame}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+
+! LaTeX Error: \begin{document} ended by \end{beamer@framepauses}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.885 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.885 \end{frame}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+! Too many }'s.
+\endbeamer@frameslide ...amer@framepauses}\egroup 
+                                                  \ifx \beamer@frametitle \@...
+l.885 \end{frame}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Undefined control sequence.
+\endbeamer@frameslide ...box \else \beamer@zoomer 
+                                                  \fi \beamer@undolabels \be...
+l.885 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{beamer@frameslide}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.885 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.885 \end{frame}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+[56
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb)
+Overfull \vbox (38.25963pt too high) detected at line 902
+ []
+
+[57
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb)
+Overfull \vbox (38.25963pt too high) detected at line 925
+ []
+
+[58
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [59
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [60
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+) [61
+
+] (./main.toc)
+[62
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+) [63
+
+]
+\tf@nav=\write9
+\openout9 = `main.nav'.
+
+\tf@toc=\write10
+\openout10 = `main.toc'.
+
+\tf@snm=\write11
+\openout11 = `main.snm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1016.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1016.
+ (./main.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1016.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1016.
+ ) 
+Here is how much of TeX's memory you used:
+ 34342 strings out of 493005
+ 686408 string characters out of 6136702
+ 842437 words of memory out of 7000000
+ 37671 multiletter control sequences out of 15000+600000
+ 537702 words of font info for 79 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 56i,16n,68p,10407b,850s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on main.pdf (63 pages).
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   X Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.902 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.902 \end{frame}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+[57
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb)
+Overfull \vbox (38.25963pt too high) detected at line 925
+ []
+
+[58
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb)
+Overfull \vbox (38.25963pt too high) detected at line 947
+ []
+
+[59
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [60
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [61
+
+] (./main.toc) [62
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+File: beamericonarticle.pdf Graphic file (type pdf)
+<use beamericonarticle.pdf>
+)
+[63
+
+]
+\tf@nav=\write9
+\openout9 = `main.nav'.
+
+\tf@toc=\write10
+\openout10 = `main.toc'.
+
+\tf@snm=\write11
+\openout11 = `main.snm'.
+
+runsystem(rm _minted-main/default-pyg-prefix.pygstyle)...executed.
+
+runsystem(rm _minted-main/default.pygstyle)...executed.
+
+runsystem(rm _minted-main/86B7A1417F4752B2E7CD6A49B0AC0F9AD1B441A9AB0E232E9D456
+2FAA45AEAC6.pygtex)...executed.
+
+runsystem(rm _minted-main/ED2BBB6756BC3DE9F4654427A19DFF90D1B441A9AB0E232E9D456
+2FAA45AEAC6.pygtex)...executed.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1016.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1016.
+ (./main.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1016.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1016.
+ ) 
+Here is how much of TeX's memory you used:
+ 34346 strings out of 493005
+ 686445 string characters out of 6136702
+ 842406 words of memory out of 7000000
+ 37674 multiletter control sequences out of 15000+600000
+ 537702 words of font info for 79 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 56i,16n,68p,10407b,850s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on main.pdf (63 pages).

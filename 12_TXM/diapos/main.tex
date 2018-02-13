@@ -10,7 +10,7 @@
 %\usetheme{Berlin}
 %\usecolor{}
 
-%\usepackage{minted}
+\usepackage{minted}
 
 %\setmainfont{Linux Libertine O}
 \usepackage[english,french]{babel}
@@ -601,17 +601,113 @@ Chercher:
 
 \end{frame}
 
+\begin{frame}{Un peu d'exploration du corpus}
+	
+	Vérifions tout d'abord si le corpus est bien équilibré, et étudions les distributions par:
+	\begin{itemize}
+		\item genre;
+		\item auteur;
+		\item période
+		\item taille des textes.
+	\end{itemize}
+
+Pour ce faire:
+\begin{enumerate}
+	\item créer une partition pour chacune de ces questions, grâce aux métadonnées de \texttt{text};
+	\item observer les \texttt{dimensions}.
+\end{enumerate}
+	
+\end{frame}
+
+
 %Partitions par genre, auteur, texte. Table-lexicale, lemmes ou formes
 
-% Quelques stats desc?
+\begin{frame}{Un peu d'exploration des genres}
+	
+	\begin{block}{Thématique}
+		
+		\begin{enumerate}
+			\item créer une table lexicale (idéalement, des lemmes) de la partition genre, des 500 formes les plus fréquents;
+			\item la traiter pour retirer les mots vides;
+			\item calculer les spécificités, sélectionner pour mettre en valeur les particularités de la tragédie, créer le graphique;
+			\item calculer la classification;
+			\item calculer l'AFC.
+		\end{enumerate}
+	\end{block}
 
-% Problématique: les genres littéraires (thématique)
+\begin{block}{Stylistique}
+	
+	\begin{enumerate}
+		\item créer une table lexicale des formes de la partition genre, des 200 formes les plus fréquentes;
+		\item la traiter pour retirer les mots porteurs de sens;
+		\item calculer la classification;
+		\item calculer l'AFC.
+	\end{enumerate}
+\end{block}
+	
+\end{frame}
+
+
+\begin{frame}{(Quelques) lemmes spécifiques de la tragédie}
+	\includegraphics[width=\textwidth]{img/Graphique_genre_frlemma_specif.png}
+\end{frame}
+
+
+\begin{frame}{Problématiques autoriales}
+	Passons maintenant aux choses sérieuses et aux questions d'attribution.
+	
+	\textbf{Étape 1: observer la répartition des auteurs}
+	
+	Sur la partition par auteurs,
+	\begin{enumerate}
+		\item Créer une table lexicale des 200 formes les plus fréquentes, retirer les mots porteurs de sens;
+		\item calculer les spécificités, et les étudier pour voir quels auteurs ont des tics très marqués;
+		\item calculer la classification;
+		\item calculer l'AFC.
+	\end{enumerate}
+	
+\end{frame}
+
+\begin{frame}{(Quelques) tics de langage de Claude Boyer}
+\includegraphics[width=\textwidth]{img/Graphique_word_parAuteurs_specif.png}
+\end{frame}
+
+\begin{frame}{L'Analyse factorielle des correspondances}
+\includegraphics[width=\textwidth]{img/parAuteur_word_AFC_1-2.png}
+\end{frame}
+
+\begin{frame}{Une répartition surtout chronologique}
+\includegraphics[width=\textwidth]{img/parAuteur_word_AFC_1-2_edit.png}
+\end{frame}
 
 % Problématique: les auteurs (stylométrie)
 
+\begin{frame}{Et maintenant: les textes eux-mêmes…}
+
+	Sur la partition par textes,
+\begin{enumerate}
+	\item Créer une table lexicale des 200 formes les plus fréquentes, retirer les mots porteurs de sens;
+	\item calculer la classification;
+	\item calculer l'AFC.
+\end{enumerate}
+
+\end{frame}
+
+
+\frame{
+	\vspace{0.3\textheight}
+\begin{center} 
+	\Large \textsc{to be continued}…\\
+	Avec R.
+	
+\end{center}
+
+}
 
 
 \appendix
+
+\section{Solutions des exercices}
 
 \begin{frame}{Solutions}{Interroger avec \textsc{txm}: niveau 2, un peu de \textsc{cql}}
 
@@ -662,6 +758,245 @@ Chercher:
 
 \end{frame}
 
+%TODO: quelques explications stats AFC et CAH
+
+\section{Explications mathématiques}
+\subsection{AFC}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Analyse par réduction des dimensions}
+
+\begin{itemize}
+	\item Nous avons vu lors du cours précédent comment des représentations graphiques simples permettaient de résumer une grande partie de la relation entre deux variables.
+	\item L'objectif des méthodes d'analyse de données que nous allons présenter est de remplir les mêmes offices dans le domaine plus délicat des statistiques multivariées.
+	\item Ces analyses de données, qui visent à simplifier l'information pour la rendre lisible, sont appelées \alert{analyse par réduction des dimensions}.
+	\item Au-delà d'usages descriptifs que nous évoquerons ici, certaines de ces méthodes ont un usage prédictif. Elles feront l'objet de notre dernière séance.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Analyse par réduction des dimensions: objectifs}
+
+La valeur de ces méthodes est pour nous triple:
+
+\begin{itemize}
+\item \textbf{Visualiser} des données complexes pour y discerner des regroupements, des régularités, des typologies
+\item \textbf{Débruiter} les données, en supprimant de l'analyse les dimensions qui peuvent être considérées comme à négliger
+\item \textbf{Décorréler}: les axes créés au cours de ces analyses ne sont pas nécessairement des variables de la base, mais des construits n'ayant aucune corrélation entre eux.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Analyse par réduction des dimensions: méthode}
+
+
+
+\begin{itemize}
+\item Dans une analyse factorielle, on cherche à déterminer les axes qui absorbent le plus d’inertie possible par rapport au centre de gravité du nuage de point.
+\item Concrètement, on va passer d'un nuage de points de grande dimension à un sous-espace de plus petite dimension, sur lequel on pourra réunir la plus grande quantité d'information possible. 
+\item On choisit de déterminer des axes, définissant un plan sur lequel les points du nuage seront projetés. 
+\item Ces axes sont choisis pour que les points projetés soient les plus dispersés possibles.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Analyse par réduction des dimensions: typologie}
+
+\begin{center}
+%\vspace{-3em}
+\includegraphics[height=8.6 cm]{img/af.png}
+\end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Analyse par réduction des dimensions: typologie}
+
+Trois de ces méthodes sont particulièrement usitées. Elles sont utiles dans des circonstances différentes: 
+\begin{enumerate}
+\item Quand les variables sont quantitatives, on peut réaliser une \alert{Analyse en Composantes Principales (ACP)}.
+\item Quand les variables sont qualitatives, on utilise des \alert{Analyses des Correspondances} - la correspondance étant "l'équivalent" de la corrélation pour des variables qualitatives:
+\begin{itemize}
+\item Quand les individus sont décrits par deux variables qualitatives, on peut construire un tableau de contingence et réaliser une \alert{Analyse Factorielle des Correspondances (AFC)}. 
+\item Quand les individus sont décrits par un jeu plus de deux variables qualitatives, on peut réaliser une \alert{Analyse des Correspondances Multiples (ACM)}.
+\end{itemize}
+
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]
+
+\frametitle{Analyse par réduction des dimensions: ventilation}
+
+\begin{itemize}
+\item Nécessité parfois de se débarrasser de modalités peu pertinentes, car elles brouillent le calcul, ou la visualisation
+\item Plutôt que la suppression, possibilité de ventiler: on remplace les modalités ne dépassant pas un effectif minimal par la valeur moyenne de l'échantillon sans ces modalités. On les neutralise ainsi.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Analyse factorielle des correspondances (AFC)}
+
+\begin{itemize}
+	\item L'AFC s’applique à des \alert{tableaux de contingence} \footnote{Voir Pearson K., "On the Theory of Contingency and Its Relation to Association and Normal Correlation", \textit{Mathematical Contributions to the Theory of Evolution}, London: Dulau $\&$ Co, 1904} c'est-à-dire des tableaux croisant deux variables qualitatives.
+	\item L'AFC est en cela très distincte de l'ACP :  les lignes et les colonnes jouent ici des rôles symétriques alors que la distinction entre lignes et colonnes, i.e. entre individus et variables, est majeure en ACP.
+	\item Mais elle découle en fait de l'ACP: une AFC réalise une ACP sur le profil "ligne", une autre ACP sur le profil "colonne", et superpose les deux graphiques.
+	
+\end{itemize}
+\end{frame}
+
+\subsection{Classification ascendante hiérarchique}
+
+\begin{frame}{Classification ascendante hiérarchique}
+
+
+\begin{itemize}
+	\item La \alert{classification ascendante hiérarchique}  réalise un regroupement sous forme de dendogramme entre les différents individus d'un jeu de données.
+	\item Elle est utilisable dans le cadre d'individus décrit par des \textbf{variables quantitatives}
+	\item On peut toutefois tricher, en transformant des données qualitatives en données quantitatives - ce que nous verrons un peu plus tard.
+	
+	(La méthode la plus employée est de réaliser une \textbf{analyse factorielle} à partir des données quantitatives, et de se servir des coordonnées des points dans les axes factoriels pour réaliser la CAH.)
+	
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Métrique (1)}
+
+Pour réalisation ce type de classification, il faut d'abord définir comment on mesurera la "distance" entre deux textes. Il existe autant de possibilités qu'on le souhaite, mais certaines mesures sont plus usitées, et plus adaptées à nos types d'étude.
+
+\begin{itemize}
+\item \textbf{Distance euclidienne}:
+\[
+\sqrt{\sum_{i=1}^{n} \left( x_{i}-y_{i}\right)^{2}}
+\]
+
+C'est la mesure habituelle de la distance, celle du monde physique.  
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Métrique (2)}
+
+\begin{itemize}
+\item \textbf{Distance de Manhattan \footnote{Pour en savoir plus sur cette géométrie particulière: Krause, E. F., \textit{Taxicab Geometry: An Adventure in Non-Euclidean Geometry}. New York: Dover, 1986. }}:
+
+Somme des valeurs absolues des différences entre coordonnées.
+\[
+\sum_{i=1}^{n} |x_{i}-y_{i}|
+\]
+
+
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Métrique (3)}
+
+Elle pose en effet quelques problèmes, notamment pour des valeurs trop proches de 0, mais ce n'est pas un cas qui se présente dans nos usages en textométrie. Elle n'est pas implémentée dans le package \texttt{agnes}, mais se révèle pourtant souvent intéressante.
+
+\begin{itemize}
+\item \textbf{Distance de Canberra \footnote{Lance, G. N.; Williams, W. T. (1966). "Computer programs for hierarchical polythetic classification ("similarity analysis").", \textit{Computer Journal}, 9 (1): 60–64. }}:
+
+Distance de Manhattan pondérée.
+\[
+D_{Canb} (x,y) = \sum_{i=1}^{n} \frac{|x_{i}-y_{i}|}{|x_{i}|+|y_{i}|}
+\]
+
+\item \textbf{Utilité:} permet d'atténuer l'importance de certaines différences majeures d'un point de vue numérique. On s'intéresse plus à l'existence de différences qu'à l'importance quantitative de chacune de ces différences.
+
+\item 
+\end{itemize}
+
+
+
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Métrique (4)}
+
+Le delta de Burrows, parfois dit ``classique'' (en stylométrie)\footnote{%
+John Burrows, ‘Delta’: a Measure of Stylistic Difference and a Guide to Likely Authorship, \textit{Lit Linguist Computing} (2002) 17 (3).
+}.
+
+Procédure un peu complexe de standardisation des comptes d'occurrences (z-transformation) et d'un changement de métrique (calcul de distance en utilisant la distance de Manhattan dont nous avons déjà parlé).
+
+Considéré comme un outil aussi performant pour la prose que pour la poésie\footnote{%
+David L. Hoover, ``Testing Burrows's Delta'', \textit{Literary $\&$ Linguistic Computing} (2004) 19 (4).
+}.
+
+\[
+\Delta_{(AB)} = \frac{1}{n} \sum\limits_{i=1}^{n}
+\left| \frac{A_i - B_i}{\sigma_i} \right|
+\]
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Méthode}
+
+On doit ensuite choisir comment on regroupe les individus entre eux.
+Par défaut, le package propose d'utiliser la
+
+\textbf{Distance moyenne - "average"}  Calcule toutes les distances entre les différents points et en fait la moyenne
+
+On peut aussi raisonner en terme d'extrémités 
+
+\textbf{"Complete linkage"}: calcule la distance maximale entre deux points
+
+\textbf{"Single linkage"}: calcule la distance minimale entre deux points
+
+L'algorithme le plus couramment utilisé est la:
+
+\textbf{Méthode de Ward}: on calcule la distance entre les centres de gravité 
+
+Ces méthodes se rejoignent seulement dans des cas très spécifiques.
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{CAH avec R et cluster}
+
+\begin{minted}{r}
+agnes(x, diss = inherits(x, "dist"), 
+metric = "euclidean | manhattan",
+stand = FALSE, 
+method = "average|single|complete|ward|weighted",
+par.method,
+keep.diss = n < 100, keep.data = !diss)
+\end{minted}
+
+\begin{minted}[linenos]{r}
+#importer la bibliotheque cluster
+library(cluster)
+#calculer la CAH
+maCAH = agnes(CansosPondere100, 
+metric ="manhattan", method="ward")
+#consulter les resultats
+summary(maCAH)
+#les tracer
+plot(maCAH)
+\end{minted}
+
+\end{frame}
+
+
+
+\section{Bibliographie}
 
 \begin{frame}[fragile]
 \frametitle{Bibliographie} 
