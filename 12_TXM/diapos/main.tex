@@ -138,9 +138,25 @@
 					\item \textsc{cqp} pour l'interrogation de corpus;
 					\item \texttt{TreeTagger} pour l'annotation.
 				\end{itemize}
+			\item existe en version
+				\begin{itemize}
+					\item bureau;
+					\item serveur.
+				\end{itemize}
 		\end{itemize}
 	\end{column}
 \end{columns}
+\end{frame}
+
+\begin{frame}{Installer \texttt{TreeTagger} dans \textsc{txm}}
+	
+	Il existe plusieurs outils d'annotation linguistique (lemmatisation, étiquetage morpho-syntaxique,  syntaxique…) qui peuvent s'utiliser seuls (\texttt{TreeTagger}, \texttt{Wapiti}, \texttt{Pandora},  Marmot, \texttt{Mate Tools}, …) pour préparer un corpus.
+	
+	\texttt{TXM} permet en outre d'utiliser \texttt{TreeTagger} 
+	pour annoter les corpora lors de leur création.
+	
+	\alert{Aller dans aide / installer TreeTagger et suivre les étapes présentées pour votre système d'exploitation.}
+	
 \end{frame}
 
 
@@ -622,7 +638,8 @@ Pour ce faire:
 
 %Partitions par genre, auteur, texte. Table-lexicale, lemmes ou formes
 
-\begin{frame}{Un peu d'exploration des genres}
+\begin{frame}[shrink]
+\frametitle{Un peu d'exploration des genres}
 	
 	\begin{block}{Thématique}
 		
@@ -695,10 +712,16 @@ Pour ce faire:
 
 
 \frame{
-	\vspace{0.3\textheight}
+	\vspace{0.2\textheight}
 \begin{center} 
 	\Large \textsc{to be continued}…\\
 	Avec R.
+	
+	\vspace{0.2\textheight}
+	
+	{\small N.B.: ne pas oublier de télécharger la table de fréquence des formes par textes nettoyée,
+pour utilisation dans R.	
+}
 	
 \end{center}
 
@@ -769,10 +792,9 @@ Pour ce faire:
 \frametitle{Analyse par réduction des dimensions}
 
 \begin{itemize}
-	\item Nous avons vu lors du cours précédent comment des représentations graphiques simples permettaient de résumer une grande partie de la relation entre deux variables.
+	\item Des représentations graphiques simples permettent de résumer une grande partie de la relation entre deux variables.
 	\item L'objectif des méthodes d'analyse de données que nous allons présenter est de remplir les mêmes offices dans le domaine plus délicat des statistiques multivariées.
 	\item Ces analyses de données, qui visent à simplifier l'information pour la rendre lisible, sont appelées \alert{analyse par réduction des dimensions}.
-	\item Au-delà d'usages descriptifs que nous évoquerons ici, certaines de ces méthodes ont un usage prédictif. Elles feront l'objet de notre dernière séance.
 \end{itemize}
 
 \end{frame}
@@ -809,7 +831,8 @@ La valeur de ces méthodes est pour nous triple:
 
 \begin{center}
 %\vspace{-3em}
-\includegraphics[height=8.6 cm]{img/af.png}
+\centering %
+\includegraphics[height=8.2 cm]{img/af.png}
 \end{center}
 
 \end{frame}
