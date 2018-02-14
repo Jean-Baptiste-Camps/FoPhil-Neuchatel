@@ -167,32 +167,78 @@ maCAHaGarder = maCAH
 Varions éventuellement les mesures de distance, en utilisant la *distance de Canberra*. 
 NB: comme celle-ci est absente de la fonction `agnes()` en elle-même, nous la calculerons avec la fonction `dist()`.
 
-```{r}
+```{r, fig.width=20, fig.height=10, dpi=45}
 maCAH = agnes(dist(t(theatreTraite), method="canberra"), method="ward", par(cex=0.7))
-plot(maCAH)
+plot(maCAH,which.plots = 2)
 ```
 
 Testons éventuellement avec un changement de méthode d'agglomération, en optant pour du _complete linkage_.
 ```{r, fig.width=20, fig.height=10, dpi=45}
 maCAH = agnes(dist(t(theatreTraite), method="canberra"), method="complete")
-plot(maCAH)
+plot(maCAH, which.plots = 2)
 ```
 
 ###Mesures de distance spécifiques à la stylométrie
 
-La stylométrie a développé ses propres mesures de distance. Une d'entre elles, parmi les plus récentes, est la métrique 'min max' (Koppel & Winter, 2014). D'emploi (un peu plus) courant est la similarité cosinus.
+Parmi les métriques un peu plus exotiques employées en stylométrie, on trouve la similarité cosinus.
 
 ```{r, fig.width=20, fig.height=10, dpi=45}
 library(stylo)
-maCAH = agnes(dist.cosine(t(theatreTraite)), method="ward")
-plot(maCAH)
+maCAH = agnes(as.dist(dist.cosine(t(theatreTraite))), method="ward")
+plot(maCAH,which.plots = 2)
 ```
+
+La stylométrie a aussi développé ses propres mesures de distance. 
+Une d'entre elles, parmi les plus récentes, est la métrique 'min max' (Koppel & Winter, 2014). Comme elle n'est pas encore implémentée dans R, nous allons la programmer (ça demande un peu plus d'effort).
+
+```{r}
+#Create a matrix with as much rows and cols as individuals
+myDist = matrix(nrow = ncol(theatreTraite),ncol = ncol(theatreTraite), dimnames = list(colnames(theatreTraite),colnames(theatreTraite)))
+
+for(i in 1:ncol(theatreTraite)){
+  for(j in 1:ncol(theatreTraite)){
+    min = sum(apply(cbind(theatreTraite[,i],theatreTraite[,j]), 1, min))
+    max = sum(apply(cbind(theatreTraite[,i],theatreTraite[,j]), 1, max))
+    resultat = 1 - (min / max)
+    myDist[i,j] = resultat
+  }
+}
+```
+
+Et réalisons maintenant la CAH
+
+```{r, fig.width=20, fig.height=10, dpi=45}
+maCAH = agnes(myDist,method="ward")
+plot(maCAH, which.plots = 2, main = "CAH du corpus theatre 17\nDist. min/max | méthode de Ward")
+#Je garde celle-ci pour plus tard
+#maCAHaGarder = maCAH
+```
+
+N.B.: si je considère que cette métrique min / max peut encore m'être utile, je peux même créer une nouvelle fonction de R:
+
+```{r}
+MinMax =
+function(x){
+  myDist = matrix(nrow = ncol(x),ncol = ncol(x), dimnames = list(colnames(x),colnames(x)))
+  for(i in 1:ncol(x)){
+    for(j in 1:ncol(x)){
+      min = sum(apply(cbind(x[,i],x[,j]), 1, min))
+      max = sum(apply(cbind(x[,i],x[,j]), 1, max))
+      resultat = 1 - (min / max)
+      myDist[i,j] = resultat
+    }
+  }
+  return(myDist)
+}
+
+```
+
 
 ##Pré-traitements 2
 
 Plutôt que d'opérer une sélection sèche des _n_ mots les plus fréquents,  il est possible également de sélectionner manuellement les mots-outils dans la liste de fréquence
 
-```{r}
+```{r, fig.width=20, fig.height=10, dpi=45}
 #Import
 theatre2 = as.data.frame(read.csv(file="Frequences_selectionnees.csv", sep = ";", header = TRUE, row.names=1, quote = '\"'))
 theatreRetraite = theatre2
@@ -200,8 +246,9 @@ theatreRetraite = theatre2
 for(i in 1:ncol(theatreRetraite)){
     	theatreRetraite[,i] = theatreRetraite[,i]/sum(theatreRetraite[,i])
 }
-maCAH = agnes(t(theatreRetraite), metric = "manhattan", method="ward")
-plot(maCAH)
+#maCAH = agnes(t(theatreRetraite), metric = "manhattan", method="ward")
+maCAH = agnes(MinMax(theatreRetraite), method="ward")
+plot(maCAH,which.plots = 2)
 ```
 
 ##Description des classes
@@ -268,13 +315,12 @@ library(stylo)
 stylo(gui = FALSE, frequencies = t(theatre2), analysis.type="BCT", consensus.strength=0.5, corpus.lang="French", linkage="ward.D2", mfw.min=100, mfw.max=150, mfw.incr=50, culling.min=20, culling.max=100, distance.measure="dist.cosine")
 ```
 
-
 La situation paraît plus complexe qu'attendue, avec des attractions multiples… Cela mérite en fait un peu plus d'analyse exploratoire.
 
 ##Analyse en composantes principales
 ###Première analyse
 Pour réaliser notre première ACP (ou _PCA_ en anglais), nous allons utiliser le module `FactoMineR`.
-```{r}
+```{r, fig.width=20, fig.height=10, dpi=45}
 #On charge FactoMineR
 library('FactoMineR')
 #Et on calcule l'ACP.  Comme la fonction attend les individus en ligne et les variables en colonnes, je transpose mon tableau avec t()
@@ -300,7 +346,6 @@ plot.PCA(monACP)
 
 *Question*: Ce résultat est-il pertinent ? Comment peut-on l'interpréter ? 
 
-
 L'axe 2 paraît renvoyer à une dimension chronologique, mais la pertinence du premier axe est encore peu claire.
 
 ## Positionnement multidimensionnel
@@ -311,15 +356,13 @@ Un outil pour faire cela est le Positionnement multidimensionnel (ou _Multidimen
 
 Là aussi, le format attendu est un tableau dans lequel les lignes sont les individus et les colonnes les variables.
 
-Commençons par calculer les distances entre nos individus (nous choisissons une nouvelle fois la distance de Manhattan de préférence à la distance euclidienne).
-
-```{r}
-distance = dist(t(theatreTraite), method = "manhattan")
-```
-
+Commençons par calculer les distances entre nos individus (nous choisissons une nouvelle fois la distance de Manhattan de préférence à la distance euclidienne, mais nous pouvons aussi expérimenter avec MinMax);
 et nous «ajustons» sur deux dimensions,
 ```{r}
-fit = cmdscale(distance,eig=TRUE, k=2) # k est le nombre de dimensions souhaité
+#Manhattan
+#fit = cmdscale(dist(t(theatreTraite), method = "manhattan"),eig=TRUE, k=2) # k est le nombre de dimensions souhaité
+#MinMax
+fit = cmdscale(MinMax(theatreTraite),eig=TRUE, k=2) # k est le nombre de dimensions souhaité
 ```
 
 Traçons à présent le graphique,
@@ -339,8 +382,8 @@ fit
 La procédure ressemble à la précédente, excepté que nous utiliserons la fonction `isoMDS()` du module `MASS`,
 ```{r}
 library(MASS)
-distance = dist(t(theatreTraite), method = "manhattan")
-fit = isoMDS(distance, k=2)
+#fit = isoMDS(dist(t(theatreTraite), method = "manhattan"), k=2)
+fit = isoMDS(MinMax(theatreTraite), k=2)
 fit
 ```
 
@@ -371,3 +414,6 @@ pour les charger, une fois installés (ex. `stylo`)
 ```{r}
 #update.packages()
 ```
+
+
+
