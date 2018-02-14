@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <import author="jbc"
         date="2018-02-12"
-        desc="&lt;pre&gt;&lt;br/&gt; ANDROMAQUE&lt;br/&gt;Corpus créé bla&lt;br/&gt; 2018-02-12&lt;/pre&gt;"
+        desc="&lt;pre&gt;&lt;br/&gt;ANDROMAQUE&lt;br/&gt;Corpus créé lors de la formation FoPhil&lt;br/&gt; 2018-02-14&lt;br/&gt;&lt;/pre&gt;"
         name="ANDROMAQUE"
         rootDir="/home/jbc/Data/F/Cours, interventions, colloques,/2018-02-12_Neuchatel/github/12_TXM/corpora/01_andromaque"
         script="xmlLoader.groovy"
@@ -9,11 +9,11 @@
    <linkGrp type="align"/>
    <corpora>
       <corpus annotate="true"
-              cqpid="ANDROMAQUE1518463029830"
-              desc="&lt;pre&gt;&lt;br/&gt; ANDROMAQUE&lt;br/&gt;Corpus créé bla&lt;br/&gt; 2018-02-12&lt;/pre&gt;"
+              cqpid="ANDROMAQUE1518597168047"
+              desc="&lt;pre&gt;&lt;br/&gt;ANDROMAQUE&lt;br/&gt;Corpus créé lors de la formation FoPhil&lt;br/&gt; 2018-02-14&lt;br/&gt;&lt;/pre&gt;"
               encoding="UTF-8"
               font=""
-              lang="fj"
+              lang="fr"
               name="ANDROMAQUE">
          <tokenizer onlyThoseTests="false" skip="false">
             <param name="whitespaces">[\p{Z}\p{C}]+</param>

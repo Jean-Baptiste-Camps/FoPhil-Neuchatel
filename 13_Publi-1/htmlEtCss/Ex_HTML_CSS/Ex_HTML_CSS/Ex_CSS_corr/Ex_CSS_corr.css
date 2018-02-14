@@ -1,0 +1,108 @@
+/* Je mets une marge au document */
+
+TEI{
+    margin: 1em;
+}
+
+/* Je dissimule de le teiHEader */
+
+teiHeader{
+    display: none;
+}
+
+
+/* Je mets en page la page de titre
+en séparant les différents éléments,
+et en les mettant au centre */
+
+titlePage{
+    display: block;
+    background-color: green;
+}
+
+titlePart{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+docImprint{
+    display: block;
+    text-align: center;
+}
+
+imprimatur{
+    display: block;
+    text-align: center;
+}
+
+/* Je mets en page l'épître dédicatoire */
+
+div[type="epistle"]{
+    display: block;
+    background-color: yellow;
+    text-align: justify;
+}
+
+opener{
+    display: block;
+    text-indent: 50px;
+}
+
+/* Système de cascade: on applique
+le dernier style défini. Seul le type
+header sera centré*/
+
+fw{
+    display: block;
+    text-align: right;
+}
+
+fw[type="header"]{
+    display: block;
+    text-align: center;
+}
+
+/* Je mets en page la préface */
+
+div[type="foreword"]{
+    display: block;
+    background-color: orange;
+    text-align: justify;
+}
+
+castItem{
+        display: block;
+    }
+
+/* Je mets en page les vers */
+
+l{
+    display: block;
+    font-style: italic;
+    text-indent: 1em;
+}
+
+desc{
+    display: none;
+}
+
+
+speaker{
+    display: block;
+    color: coral;
+}
+
+
+/* fw */
+
+fw[type="header"]{
+            display: block;
+    text-align: center;
+}
+
+fw[type="pageNum"]{
+            display: block;
+    text-align: right;
+}
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Untitled Document</title>
+            <author>Jean-Baptiste Camps</author>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <date>2010-11-20T18:10:30</date>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <p>no publication statement available</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Written by OpenOffice</p>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <listChange>
+            <change>
+               <name>jbc </name>
+               <date>2013-11-11T15:11:30.470241114</date>
+            </change>
+         </listChange>
+      </revisionDesc>
+   </teiHeader>
+   <text>       
+      <body>
+         <div type="div1" rend="P13">
+            <head>1. <anchor type="bookmark-start" xml:id="id___DdeLink__881_926654905"/>Titre de premier niveau : Quelques travaux pratiques<ptr type="bookmark-end" target="#id___DdeLink__881_926654905"/>
+            </head>
+            <p rend="start">Un premier paragraphe, contenant du texte qui se situe à ce premier niveau.</p>
+            <div type="div2" rend="P14">
+               <head>1.1. Titre de second niveau : Un premier document XML</head>
+               <p>Mon premier paragraphe de ce second niveau contient, de façon plutôt étonnante, une locution latine, <hi rend="italic">Vulnerant omnes, ultima necat</hi>
+                  <hi rend="italic">
+                     <note xml:id="ftn1" place="foot" n="1"> Cette note se refuse à donner des informations sur la locution en question.</note>
+                  </hi>.</p>
+               <p>Mon deuxième contient une courte biographie : « Pierre Corneille, aussi appelé « le Grand Corneille » ou « Corneille l'aîné », né le 6 juin 1606 à Rouen et mort le 1er octobre 1684 à Paris (paroisse Saint-Roch), est un dramaturge et poète français du XVIIe siècle. Il écrivit d'abord des comédies comme <hi rend="italic">L'Illusion comique</hi>, et en 1637, <hi rend="italic">Le Cid</hi>, qui fut un triomphe, malgré les critiques de ses rivaux et des théoriciens.</p>
+               <p>Et mon troisième  paragraphe introduit un dialogue tiré du <hi rend="italic">Cid</hi>  de Corneille (acte II, scène 2, v. 411-418) :</p>
+               <p rend="center bold smallcaps">Le Comte</p>
+               <p rend="justify">Sais-tu bien qui je suis ?</p>
+               <p rend="center bold smallcaps">Don Rodrigue</p>
+               <p rend="start">				Oui ; tout autre que moi<lb/>Au seul bruit de ton nom pourrait trembler d’effroi.<lb/>Les palmes dont je vois ta tête si couverte<lb/>Semblent porter écrit le destin de ma perte.<lb/>J’attaque en téméraire un bras toujours vainqueur ;<lb/>Mais j’aurai trop de force, ayant assez de cœur.<lb/>À qui venge son père il n’est rien d’impossible.<lb/>Ton bras est invaincu, mais non pas invincible.</p>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
