@@ -1,0 +1,29 @@
+
+
+> On 13 Feb 2018, at 16:09, GABAY Simon <simon.gabay@unine.ch> wrote:
+> 
+> Il est malade… #CestlaVie
+> 
+>> On 13 Feb 2018, at 16:06, GABAY Simon <simon.gabay@unine.ch> wrote:
+>> 
+>> Ouais. Je lui écris actuellement.
+>>> On 13 Feb 2018, at 16:05, Jean-Baptiste CAMPS <jean-baptiste.camps@enc-sorbonne.fr> wrote:
+>>> 
+>>> Ah zut, c'est ce qu'a dit l'informaticien ?
+>>> 
+>>> ----- Mail original -----
+>>> De: "GABAY Simon" <simon.gabay@unine.ch>
+>>> À: "Jean-Baptiste CAMPS" <jean-baptiste.camps@enc-sorbonne.fr>
+>>> Envoyé: Mardi 13 Février 2018 16:04:58
+>>> Objet: Re: TXM
+>>> 
+>>> Apparemment, problème d’installation treetagger en revanche…
+>>>> On 13 Feb 2018, at 15:55, Jean-Baptiste CAMPS <jean-baptiste.camps@enc-sorbonne.fr> wrote:
+>>>> 
+>>>> Salut Simon,
+>>>> Le bouclage TXM avance vraiment bien, mais je vais rester encore un petit peu pour finaliser certaines choses.
+>>>> À tout à l'heure,
+>>>> JB
+>> 
+> 
+
