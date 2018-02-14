@@ -353,8 +353,6 @@ plot(x, y, xlab="Coordonnée 1", ylab="Coordonnée 1",
 text(x, y, labels = row.names(t(theatreTraite)), cex=.7) 
 ```
 
-
-
 #Annexes
 ##Installer ou mettre à jour des modules complémentaires pour R
 Une des grandes forces de `R` vient de l'importante communauté qui l'entoure, et qui enrichit le langage par la création de modules complémentaires (_packages_) dédié à tel ou tel type d'analyse. Pour pouvoir les utiliser, il importe de les installer, et, quand on n'en a besoin, de les charger.

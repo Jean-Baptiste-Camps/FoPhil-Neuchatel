@@ -58,17 +58,96 @@
 % Présentation R
 
 
-
-\begin{frame} 
-  \frametitle{Plan} 
-  \tableofcontents
+\begin{frame}{R: un langage et environnement d'analyse statistique}
+	
+	\textsc{R} est un langage et un environnement généraliste dédié à l'analyse statistique.
+	
+	\begin{enumerate}
+		\item R est un logiciel gratuit et libre: \\
+		R est distribué sous licence GNU - General Public License, la licence la plus répandue dans le logiciel libre.
+		
+		\item R est un logiciel de référence: \\
+		Le logiciel R connaît une popularité croissante, en particulier dans le monde de la recherche. 
+		
+		\item R est multiplateforme: \\
+		L'installation est possible sous les systèmes Unix (Linux, Mac OS, etc.) ou Windows.
+		
+	\end{enumerate}
+	
+	
+	{\centering \includegraphics[width= 1.5cm]{img/Rlogo.png} }
 \end{frame}
 
-\section{Un peu de stylométrie…}
+\begin{frame}[fragile]
+\frametitle{RStudio}
+
+\begin{itemize}
+	\item Pour rendre la manipulation de R un peu plus attrayante, nous allons utiliser un environnement de développement (un IDE - \textit{Integrated Development Environment}): \alert{RStudio}
+	\item RStudio permet d'appeler un grand nombre de fonctions depuis ses menus, intègre un débogueur, et permet, par son jeu de fenêtres, d'écrire et enregistrer des scripts, tout en visualisant des graphiques et en disposant d'une console R.
+\end{itemize}
+
+\flushright{ \includegraphics[width= 2.3cm]{img/rstudio.png} }
+
+
+\end{frame}
+
+%
+%\begin{frame} 
+%  \frametitle{Plan} 
+%  \tableofcontents
+%\end{frame}
+
+%\section{Un peu de stylométrie…}
 
 % Notions clés de stylométrie
 
-% Mots fréquents
+\begin{frame}{La stylométrie}
+	
+	\begin{block}{définition}
+		La stylométrie est l'étude et la mesure du \alert{style}, souvent dans une perspective
+		attributionniste.
+	\end{block}
+	
+	\begin{block}{Postulats}
+		Chaque individu (et au-delà, chaque catégorie d'individus) emploie une langue démontrant des \textit{propriétés particulières} et \alert{mesurables}.
+	\end{block}
+	
+	
+\end{frame}
+
+
+\begin{frame}{Stylométrie: quels données}
+
+Approche ``\alert{sac de mot}'' (\textit{bag of words}).
+
+\begin{itemize}
+	\item Suppression des mots rares (lourdement liés au thème du texte; suppression du bruit relatif aux thèmes évoqués) et accent sur les mots-outils, les 100/200/500 mots les plus fréquents (empiriquement, c'est ce qui caractérise le plus chaque individu et est le moins accessible à des changements conscients);
+	\item conserver un maximum d'information grammaticale,  graphique, … voire travailler au niveau des séquences de n-caractères (\textit{n-grams});
+	\item chercher les éléments les plus stables d'un texte à un autre du même auteur (quand cela est possible);
+	\item pondérer pour éviter les biais dus à la longueur des textes,  etc.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Les mots les plus fréquents}
+Pourquoi travailler sur les mots les plus fréquents (mots-vides, mots-outils)?
+
+\textbf{Raisons statistiques}
+\begin{itemize}
+\item Plus d'occurrences $=$ plus de fiabilité;
+\item éviter la survalorisation des hapax;
+\item contourner la distribution parétienne.
+\end{itemize}
+
+\textbf{Raisons philologiques et cognitives}
+\begin{itemize}
+\item moins soumis aux variations de contenu, thèmes, niveau de langue, genre, versification,\dots;
+\item usage inconscient des scripteurs (moins falsifiable, plus caractéristique d'un individu).
+\end{itemize}
+
+\end{frame}
+
 
 \begin{frame}{Pourquoi les mots fréquents?}
 
@@ -89,49 +168,38 @@ Préparez-vous à compter les \textit{l} sur la diapositive suivante…
 
 \huge
 
-\og{}La loi et le roi sont les meilleurs garants de la liberté civile\fg{}, dit-il.
+Il dit que la loi et le roi sont les meilleurs garants de la liberté civile.
 
 \end{frame}
 
 \begin{frame}{Combien de \textit{l} ?}
 
 
+\end{frame}
 
 
+\begin{frame}
+\frametitle{5 ou 10?}
+
+\huge
+
+I\alert{l} dit que \alert{l}a \textbf{l}oi et \alert{l}e roi sont \alert{l}es mei\textbf{ll}eurs garants de \alert{l}a \textbf{l}iberté civi\textbf{l}e.
 
 \end{frame}
 
 
 \begin{frame}
-\frametitle{5 ou 9?}
-
-\huge
-
-\og{}\alert{L}a \textbf{l}oi et \alert{l}e roi sont \alert{l}es mei\textbf{ll}eurs garants de \alert{l}a \textbf{l}iberté civi\textbf{l}e\fg{}, dit-i\alert{l}.
-
-\end{frame}
-
-
-\section{Statistiques descriptives}
-
-% Moyenne… etc.
-
-
-
-\appendix
-
-\section{Bibliographie}
-
-\begin{frame}[fragile]
-\frametitle{Bibliographie} 
-
-\begin{thebibliography}{}
-	\bibitem[]{} 
+\frametitle{Programme du T.P.}
 	
-\end{thebibliography}
-
-
+	\begin{enumerate}
+		\item un peu de statistique descriptive;
+		\item traitement des données;
+		\item partitionnement;
+		\item analyse exploratoire par réduction de la dimensionnalité.
+	\end{enumerate}
+	
 \end{frame}
+
 
 
 \end{document}
