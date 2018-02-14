@@ -1,0 +1,137 @@
+% !TeX spellcheck = fr
+% !TeX encoding = UTF-8
+\documentclass{beamer}
+
+\usepackage{fontspec}
+\usepackage{xltxtra}
+
+%\usetheme{Boadilla}
+\usetheme{PaloAlto}
+%\usetheme{Berlin}
+%\usecolor{}
+
+\usepackage{minted}
+
+%\setmainfont{Linux Libertine O}
+\usepackage[english,french]{babel}
+
+%Un peu de config de Beamer
+\setbeamersize{description width=0.47cm}
+
+
+\usepackage{hyperref}
+
+\usepackage{graphicx}
+
+\institute{Univ. de Neuchâtel}
+
+\title{Exploiter les données}
+\subtitle{Analyse statistique et stylométrie avec \textit{R}}
+\author{Jean-Baptiste Camps \& Simon Gabay}
+\date[FoPhil -- 15 févr. 2018]{Formation en philologie numérique:\\ encoder, exploiter, diffuser\\
+12-16 février 2018}
+
+\makeatletter 
+         
+        \AtBeginSection[]{% 
+        \begin{frame}{Plan}%
+        \small
+        \tableofcontents[currentsection]%
+        \end{frame} }
+
+        %\AtBeginSubsection[]{% 
+	%\begin{frame}{Plan}%
+	%\small
+	%\tableofcontents[currentsection,currentsubsection]%
+%\end{frame} }
+
+
+\makeatother 
+    
+    
+\begin{document}
+
+\maketitle
+%\frontmatter 
+  
+
+% Présentation R
+
+
+
+\begin{frame} 
+  \frametitle{Plan} 
+  \tableofcontents
+\end{frame}
+
+\section{Un peu de stylométrie…}
+
+% Notions clés de stylométrie
+
+% Mots fréquents
+
+\begin{frame}{Pourquoi les mots fréquents?}
+
+\huge
+
+Préparez-vous à compter les \textit{l} sur la diapositive suivante…
+
+
+{\normalsize Idée empruntée à Mike Kestemont!}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{}
+
+\transduration{4}
+
+\huge
+
+\og{}La loi et le roi sont les meilleurs garants de la liberté civile\fg{}, dit-il.
+
+\end{frame}
+
+\begin{frame}{Combien de \textit{l} ?}
+
+
+
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{5 ou 9?}
+
+\huge
+
+\og{}\alert{L}a \textbf{l}oi et \alert{l}e roi sont \alert{l}es mei\textbf{ll}eurs garants de \alert{l}a \textbf{l}iberté civi\textbf{l}e\fg{}, dit-i\alert{l}.
+
+\end{frame}
+
+
+\section{Statistiques descriptives}
+
+% Moyenne… etc.
+
+
+
+\appendix
+
+\section{Bibliographie}
+
+\begin{frame}[fragile]
+\frametitle{Bibliographie} 
+
+\begin{thebibliography}{}
+	\bibitem[]{} 
+	
+\end{thebibliography}
+
+
+\end{frame}
+
+
+\end{document}
