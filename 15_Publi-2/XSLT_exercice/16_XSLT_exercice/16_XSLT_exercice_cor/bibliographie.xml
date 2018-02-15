@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="bibliographie.css"?>
+
+<document idDoc="doc1" lang="fr">
+    <auteur idPersonne="LBurnard">
+        <nom>Burnard</nom>, <prénom>Lou</prénom>
+    </auteur>
+    <titre type="livre">Qu'est-ce que la Text Encoding Initiative ?</titre>
+    <traducteur idPersonne="MBurghart">
+        <nom>Burghart</nom> <prénom>Marjorie</prénom>
+    </traducteur>
+    <livre>
+        <éditeur>
+            <ville>Marseille</ville>:
+            <maisonEdition>OpenEdition Press</maisonEdition>,
+        </éditeur>
+        <datePublication année="2015">2015</datePublication>
+        <collection>Encyclopédie numérique</collection>
+    </livre>
+    <lien>http://books.openedition.org/oep/1237?lang=fr</lien>
+    <résumé>
+        <p>Les Guidelines de la Text Encoding Initiative (TEI) sont depuis longtemps considérées comme le standard de fait pour la préparation de ressources textuelles numériques dans la communauté académique. Elles offrent au débutant un éventail de possibilités qui peut paraître intimidant, mais qui reflète l’impressionnante étendue des applications possibles pour l’encodage de texte, depuis les éditions critiques traditionnelles jusqu’aux corpus linguistiques, aux lexiques historiques, aux archives numériques et au-delà.</p>
+        <p>Utilisant de nombreux exemples de textes encodés en TEI issus de domaines variés, ce livre simple et direct est destiné à aider le débutant à faire ses propres choix parmi les multiples options offertes par la TEI. Il explique la technologie XML utilisée par la TEI d’une manière accessible au lecteur dépourvu de formation technique, et offre une visite guidée des dédales de l’univers de la TEI, et de la façon dont elle peut être personnalisée pour répondre aux besoins d’un projet particulier.</p>
+    </résumé>
+</document>

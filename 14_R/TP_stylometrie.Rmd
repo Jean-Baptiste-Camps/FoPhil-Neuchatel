@@ -312,7 +312,7 @@ library(stylo)
 #Pour lancer avec une interface graphique, et faire les choix par clic
 #stylo(corpus.dir = "corpus_Corneille_moliere/txt/")
 #Sinon
-stylo(gui = FALSE, frequencies = t(theatre2), analysis.type="BCT", consensus.strength=0.5, corpus.lang="French", linkage="ward.D2", mfw.min=100, mfw.max=150, mfw.incr=50, culling.min=20, culling.max=100, distance.measure="dist.cosine")
+stylo(gui = FALSE, frequencies = t(theatre), analysis.type="BCT", consensus.strength=0.5, corpus.lang="French", linkage="ward.D2", mfw.min=100, mfw.max=150, mfw.incr=50, culling.min=20, culling.max=100, distance.measure="dist.cosine")
 ```
 
 La situation paraît plus complexe qu'attendue, avec des attractions multiples… Cela mérite en fait un peu plus d'analyse exploratoire.
