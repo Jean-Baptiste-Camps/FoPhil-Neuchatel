@@ -1,0 +1,419 @@
+---
+title: "Analyse statistique et stylométrie avec R"
+author: "JBC & SG"
+date: "14/02/2018"
+output: html_document
+---
+
+#Mise en place de la session de travail
+
+##Dossier de travail
+Pour commencer, il faut spécifier à `R` le répertoire de travail courant (le dossier dans lequel vous travaillez, où sera sauvegardée votre session, et où se trouvent les fichiers à importer, etc.)
+
+Dans `Rstudio`, vous pouvez le faire en cliquant sur `session/set working directory/to source file location`.
+
+Sinon, vous pouvez spécifier l'adresse avec la commande `setwd()` (set working directory). L'adresse dépendera de l'endroit où se trouve le dossier sur l'arborescence de votre système de fichier, et de votre système d'exploitation (Unix ou non-Unix). Sur le poste de l'auteur, cela donne:
+
+```{r}
+#À modifier selon votre configuration locale !
+setwd("~/Data/F/Cours, interventions, colloques,/2018-02-12_Neuchatel/github/14_R")
+```
+
+#Un peu de stylométrie du théâtre du XVIIe siècle
+
+##Préparation et import des données
+Une fois le corpus prêt, la première étape pour pouvoir l'utiliser dans R est d'y importer les données. En général, on travaillera avec des données dans un format tabulaire (CSV). 
+
+Pour importer le csv du corpus
+```{r}
+#Je charge un csv, en donnant l'adresse, le séparateur de colonnes, les entêtes et étiquettes de lignes
+theatre = as.data.frame(read.csv(file="Frequences.csv", sep = ";", header = TRUE, row.names=1, quote = '\"'))
+```
+
+Je peux à présent les visualiser
+```{r}
+#View(theatre)
+```
+
+##Distributions
+
+Si l'on souhaite examiner une distribution avec R, on peut utiliser la fonction
+`plot()` pour un graphe de dispersion, ainsi que `hist()` pour un histogramme.
+
+*Nombre de mots des textes:*
+```{r}
+#Graphe de dispersion
+plot(colSums(theatre), ylab = "Nombre de mots", main="Graphe de dispersion", sub="Corpus théâtre 17")
+#Histogramme
+hist(colSums(theatre), main = "Nombre de mots par texte", sub="corpus théâtre 17", xlab = "Nombre de mots", ylab = "Fréquence")
+```
+
+On peut aussi examiner un certains nombre d'indicateurs très courants (moyenne, quartiles, médiane)
+Description:
+```{r}
+#Résumé de la variable
+summary(colSums(theatre))
+#Calcul de l'écart type
+sd(colSums(theatre))
+#Calcul de la variance
+var(colSums(theatre))
+```
+
+*Question* : de quel type de distribution se rapproche-t-on ? La moyenne est-elle significative ?
+
+Examinons enfin quelques éléments supplémentaires sur cette distribution.
+
+Voyons à présent à quel point cette distribution est asymétrique:
+```{r}
+library(moments)
+#L'asymétrie (skewness)
+skewness(colSums(theatre))
+#L'aplatissement (kurtosis)
+kurtosis(colSums(theatre))
+```
+
+NB: nous avons ici chargé un module complémentaire de R (`moments`). Il est possible qu'il vous faille l'installer (voir l'annexe). 
+
+Et examinons quelques autres indicateurs de dispersion, comme le *mode*,
+
+```{r}
+#Calculons le mode
+library(modeest)
+mlv(colSums(theatre), method = "mfv")
+plot(mlv(colSums(theatre), method = "mfv"))
+```
+
+
+Et observons la répartition selon ses différents quartiles:
+```{r}
+boxplot(colSums(theatre), main = "Distribution du nombre de mots par de texte", ylab="Nombre de mots", sub="Corpus Théâtre 17")
+```
+
+*Question:* Le corpus est-il homogène, et peut-on le conserver sous cette forme ?
+
+Si cette boîte à moustaches fait ressortir un point aberrant, on peut l'identifier et le retirer des données.
+
+```{r}
+#Je veux les individus possédant les valeurs les plus hautes ou les plus basses
+head(colSums(theatre[order(colSums(theatre))]))
+tail(colSums(theatre[order(colSums(theatre))]))
+```
+
+Une fois l'individu identifié, on peut aussi avoir recours à la lecture proche pour comprendre la cause du problème.
+
+On peut alors le retirer du sous-corpus, et recréer une table de fréquence (cette manière de procéder est préférable, car elle évite de créer des problèmes dans l'ordre global de fréquence, dans les hapax propres aux textes que l'on retire, etc.).
+
+*Fréquences absolues des mots*
+```{r}
+plot(rowSums(theatre), ylab = "Nombre d'occurrences", main="Graphe de dispersion")
+#Log log plot
+plot(table(rowSums(theatre)), ylab = "Fréquence", xlab = "Nombre d'occurrences", main="log-log plot", ylim = c(1,6500),log="xy")
+hist(rowSums(theatre), main="Fréquences des mots", sub="corpus Théâtre 17", xlab = "Nombre d'occurrences")
+```
+Ouch ! Configurons un peu…
+
+```{r}
+hist(rowSums(theatre), breaks=10000, main="Fréquences des mots", sub="corpus Théâtre 17", xlab = "Nombre d'occurrences", xlim=c(1,200))
+```
+
+Et nos indicateurs:
+```{r}
+#Résumé
+summary(rowSums(theatre))
+#Écart-type
+sd(rowSums(theatre))
+#Variance
+var(rowSums(theatre))
+```
+
+*Question* : de quel type de distribution se rapproche-t-on ? La moyenne arithmétique est-elle pertinente?
+
+Calculons la moyenne géométrique:
+```{r}
+exp(mean(log(rowSums(theatre))))
+```
+
+##Pré-traitements
+Dans une perspective d'analyse stylométrique, plus particulièrement pour travailler sur l'attribution (ou la datation, la localisation), il est fréquent de sélectionner uniquement les mots les plus fréquents. Essayons de nous limiter aux 100 les plus fréquents, en travaillant en fréquences relatives:
+```{r}
+#Fréquences relatives
+theatreTraite = theatre
+for(i in 1:ncol(theatreTraite)){
+    	theatreTraite[,i] = theatreTraite[,i]/sum(theatreTraite[,i])
+}
+
+#N plus fréquents
+#Faire varier le chiffre en dessous pour tenter d'autres sélections
+theatreTraite = theatreTraite[1:100,]
+```
+
+NB: vous pouvez modifier cette commande pour prendre en compte les 200, 300, 500… mots les plus fréquents.
+
+
+##Partitionnement
+Passons à présent à la classification ascendante hiérarchique, et cherchons à voir comment se répartissent nos textes dans un dendrogramme.
+
+```{r, fig.width=20, fig.height=10, dpi=45}
+#J'importe une bibliothèque de partitionnement
+library(cluster)
+maCAH = agnes(t(theatreTraite), metric = "manhattan", method="ward")
+plot(maCAH)
+#Je garde celle-ci pour plus tard
+maCAHaGarder = maCAH
+```
+
+###Mesures de distance et méthode d'agglomération
+
+Varions éventuellement les mesures de distance, en utilisant la *distance de Canberra*. 
+NB: comme celle-ci est absente de la fonction `agnes()` en elle-même, nous la calculerons avec la fonction `dist()`.
+
+```{r, fig.width=20, fig.height=10, dpi=45}
+maCAH = agnes(dist(t(theatreTraite), method="canberra"), method="ward", par(cex=0.7))
+plot(maCAH,which.plots = 2)
+```
+
+Testons éventuellement avec un changement de méthode d'agglomération, en optant pour du _complete linkage_.
+```{r, fig.width=20, fig.height=10, dpi=45}
+maCAH = agnes(dist(t(theatreTraite), method="canberra"), method="complete")
+plot(maCAH, which.plots = 2)
+```
+
+###Mesures de distance spécifiques à la stylométrie
+
+Parmi les métriques un peu plus exotiques employées en stylométrie, on trouve la similarité cosinus.
+
+```{r, fig.width=20, fig.height=10, dpi=45}
+library(stylo)
+maCAH = agnes(as.dist(dist.cosine(t(theatreTraite))), method="ward")
+plot(maCAH,which.plots = 2)
+```
+
+La stylométrie a aussi développé ses propres mesures de distance. 
+Une d'entre elles, parmi les plus récentes, est la métrique 'min max' (Koppel & Winter, 2014). Comme elle n'est pas encore implémentée dans R, nous allons la programmer (ça demande un peu plus d'effort).
+
+```{r}
+#Create a matrix with as much rows and cols as individuals
+myDist = matrix(nrow = ncol(theatreTraite),ncol = ncol(theatreTraite), dimnames = list(colnames(theatreTraite),colnames(theatreTraite)))
+
+for(i in 1:ncol(theatreTraite)){
+  for(j in 1:ncol(theatreTraite)){
+    min = sum(apply(cbind(theatreTraite[,i],theatreTraite[,j]), 1, min))
+    max = sum(apply(cbind(theatreTraite[,i],theatreTraite[,j]), 1, max))
+    resultat = 1 - (min / max)
+    myDist[i,j] = resultat
+  }
+}
+```
+
+Et réalisons maintenant la CAH
+
+```{r, fig.width=20, fig.height=10, dpi=45}
+maCAH = agnes(myDist,method="ward")
+plot(maCAH, which.plots = 2, main = "CAH du corpus theatre 17\nDist. min/max | méthode de Ward")
+#Je garde celle-ci pour plus tard
+#maCAHaGarder = maCAH
+```
+
+N.B.: si je considère que cette métrique min / max peut encore m'être utile, je peux même créer une nouvelle fonction de R:
+
+```{r}
+MinMax =
+function(x){
+  myDist = matrix(nrow = ncol(x),ncol = ncol(x), dimnames = list(colnames(x),colnames(x)))
+  for(i in 1:ncol(x)){
+    for(j in 1:ncol(x)){
+      min = sum(apply(cbind(x[,i],x[,j]), 1, min))
+      max = sum(apply(cbind(x[,i],x[,j]), 1, max))
+      resultat = 1 - (min / max)
+      myDist[i,j] = resultat
+    }
+  }
+  return(myDist)
+}
+
+```
+
+
+##Pré-traitements 2
+
+Plutôt que d'opérer une sélection sèche des _n_ mots les plus fréquents,  il est possible également de sélectionner manuellement les mots-outils dans la liste de fréquence
+
+```{r, fig.width=20, fig.height=10, dpi=45}
+#Import
+theatre2 = as.data.frame(read.csv(file="Frequences_selectionnees.csv", sep = ";", header = TRUE, row.names=1, quote = '\"'))
+theatreRetraite = theatre2
+#Fréquences relatives
+for(i in 1:ncol(theatreRetraite)){
+    	theatreRetraite[,i] = theatreRetraite[,i]/sum(theatreRetraite[,i])
+}
+#maCAH = agnes(t(theatreRetraite), metric = "manhattan", method="ward")
+maCAH = agnes(MinMax(theatreRetraite), method="ward")
+plot(maCAH,which.plots = 2)
+```
+
+##Description des classes
+Pour savoir ce qui caractérise tel ou tel groupe, il est possible de regrouper les textes en plusieurs classes, et de calculer leurs spécificités. Le nombre de classes est à choisir en fonction du dendrogramme, et l'on peut s'aider d'un graphe des hauteurs (qui correspondent aux hauteurs où s'effectuent les séparations des branches du dendrogramme).
+
+```{r}
+maCAH = maCAHaGarder
+maCAH2 = as.hclust(maCAH)
+plot(maCAH2$height, type="h", ylab="hauteurs")
+```
+
+On remarque des sauts importants entre la première et la deuxième, la quatrième et la cinquième, et la sixième et la suite.
+
+En coupant après la sixième, j'obtiens presque des groupes par auteur. Je peux choisir cette hauteur.
+
+```{r}
+#Je découpe en classes
+classes = cutree(maCAH, k = "7")
+#J'ajoute les classes à mon tableau
+theatreTraiteAvecClasses = t(theatreTraite)
+theatreTraiteAvecClasses = cbind(as.data.frame(theatreTraiteAvecClasses), as.factor(classes))
+colnames(theatreTraiteAvecClasses)[101] = "Classes"
+
+#Les classes
+theatreTraiteAvecClasses[101]
+#Boyer, P. Corneille, _Dom Garcie_ -> 1
+#T. Corneille -> 2
+#Duryer -> 3
+#Molière, Scarron -> 4
+#Racine -> 5
+#Rotrou -> 6
+#Scudéry -> 7
+
+#Je charge FactoMineR
+library(FactoMineR)
+#Et je décrit les classes
+mesClasses = catdes(theatreTraiteAvecClasses, num.var = 101)
+mesClasses
+plot(mesClasses)
+```
+
+##K-Medoïdes
+Essayons de faire, de manière supervisée, 7 groupes dans notre corpus.
+
+```{r}
+#Essayons avec trois groupes, ce qui correspond à ce que nous conseille à la CAH
+maPAM = pam(t(theatreTraite), 7, metric = "manhattan")
+maPAM$clustering
+maPAM$silinfo
+
+```
+
+##Arbre de consensus
+
+Parfois, on peut ne pas savoir exactement à quelle hauteur couper les effectifs. On peut vouloir en tester plusieurs, et chercher à dégager un consensus. C'est à ça que servent les arbres de consensus. Pour expérimenter avec eux, nous allons utiliser le module `stylo`.
+
+Disons que l'on veuille tester des 100 aux 200 plus fréquents, avec des étapes de 25.
+
+```{r, fig.width=20, fig.height=10, dpi=45}
+library(stylo)
+#Pour lancer avec une interface graphique, et faire les choix par clic
+#stylo(corpus.dir = "corpus_Corneille_moliere/txt/")
+#Sinon
+stylo(gui = FALSE, frequencies = t(theatre2), analysis.type="BCT", consensus.strength=0.5, corpus.lang="French", linkage="ward.D2", mfw.min=100, mfw.max=150, mfw.incr=50, culling.min=20, culling.max=100, distance.measure="dist.cosine")
+```
+
+La situation paraît plus complexe qu'attendue, avec des attractions multiples… Cela mérite en fait un peu plus d'analyse exploratoire.
+
+##Analyse en composantes principales
+###Première analyse
+Pour réaliser notre première ACP (ou _PCA_ en anglais), nous allons utiliser le module `FactoMineR`.
+```{r, fig.width=20, fig.height=10, dpi=45}
+#On charge FactoMineR
+library('FactoMineR')
+#Et on calcule l'ACP.  Comme la fonction attend les individus en ligne et les variables en colonnes, je transpose mon tableau avec t()
+monACP = PCA(t(theatreTraite))
+```
+
+Je peux à présent examiner la significativité de chacun des axes produits,
+tout d'abord numériquement
+```{r}
+monACP$eig
+```
+ou en la traçant comme un diagramme en bâtons,
+```{r}
+barplot(monACP$eig[,1], main="Eigenvalues", names.arg=1:nrow(monACP$eig))
+```
+*Questions*: 
+Que peut-on conclure de cet examen de la significativité des axes ? Quels axes méritent d'être examinés de près ? 
+
+Examinons à présent le premier plan factoriel (axes 1-2)
+```{r, fig.width=20, fig.height=10, dpi=45}
+plot.PCA(monACP)
+```
+
+*Question*: Ce résultat est-il pertinent ? Comment peut-on l'interpréter ? 
+
+L'axe 2 paraît renvoyer à une dimension chronologique, mais la pertinence du premier axe est encore peu claire.
+
+## Positionnement multidimensionnel
+### Métrique
+Après cette première approche qui a consisté à réduire la dimensionnalité en «découpant» en une série de dimensions non corrélées entre elles, nous pouvons en tenter une autre qui consiste à «écraser» toutes les dimensions en deux seulement, pour résumer un maximum d'information.
+
+Un outil pour faire cela est le Positionnement multidimensionnel (ou _Multidimensional scaling_, _MDS_ en anglais).
+
+Là aussi, le format attendu est un tableau dans lequel les lignes sont les individus et les colonnes les variables.
+
+Commençons par calculer les distances entre nos individus (nous choisissons une nouvelle fois la distance de Manhattan de préférence à la distance euclidienne, mais nous pouvons aussi expérimenter avec MinMax);
+et nous «ajustons» sur deux dimensions,
+```{r}
+#Manhattan
+#fit = cmdscale(dist(t(theatreTraite), method = "manhattan"),eig=TRUE, k=2) # k est le nombre de dimensions souhaité
+#MinMax
+fit = cmdscale(MinMax(theatreTraite),eig=TRUE, k=2) # k est le nombre de dimensions souhaité
+```
+
+Traçons à présent le graphique,
+```{r, fig.width=20, fig.height=10, dpi=45}
+x = fit$points[,1]
+y = fit$points[,2]
+plot(x, y, xlab="Coordinate 1", ylab="Coordinate 2", main="PMD métrique")
+text(x, y, labels = row.names(t(theatreTraite)), cex=.7) 
+```
+
+
+```{r}
+fit
+```
+
+### Non métrique
+La procédure ressemble à la précédente, excepté que nous utiliserons la fonction `isoMDS()` du module `MASS`,
+```{r}
+library(MASS)
+#fit = isoMDS(dist(t(theatreTraite), method = "manhattan"), k=2)
+fit = isoMDS(MinMax(theatreTraite), k=2)
+fit
+```
+
+et traçons le graphique
+```{r, fig.width=20, fig.height=10, dpi=45}
+x = fit$points[,1]
+y = fit$points[,2]
+plot(x, y, xlab="Coordonnée 1", ylab="Coordonnée 1",
+  main="PMD non métrique", type="n")
+text(x, y, labels = row.names(t(theatreTraite)), cex=.7) 
+```
+
+#Annexes
+##Installer ou mettre à jour des modules complémentaires pour R
+Une des grandes forces de `R` vient de l'importante communauté qui l'entoure, et qui enrichit le langage par la création de modules complémentaires (_packages_) dédié à tel ou tel type d'analyse. Pour pouvoir les utiliser, il importe de les installer, et, quand on n'en a besoin, de les charger.
+```{r}
+#installation du module complémentaire stylo
+#install.packages('stylo', dependencies=TRUE)
+#install.packages('FactoMineR', dependencies=TRUE)
+```
+
+pour les charger, une fois installés (ex. `stylo`)
+```{r}
+#library(stylo)
+```
+ 
+ et pour les mettre à jour
+```{r}
+#update.packages()
+```
+
+
+
